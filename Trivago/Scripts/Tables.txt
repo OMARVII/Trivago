@@ -1,0 +1,106 @@
+﻿/*drop table User;
+drop table Hotel;
+drop table Website;
+drop table Room;
+drop table FeedBack;
+drop table User_Hotel_FeedBack;
+drop table Room_In_Website;
+drop table Location;
+*/
+
+
+/*
+create table Hotel
+(
+ID Number primary Key ,
+Email varchar2(30) Not NULL,
+Contact_Number varchar2(20) Not Null,
+Rating Number Not Null,
+Name varchar2(30) Not Null,
+Description varchar2(200)
+);
+
+
+create table Users
+(
+  ID Number primary key , 
+  Email varchar2(30) NOT NULL,
+  Gender varchar2(6) NOT NULL,
+  Date_Of_Birth Date NOT NULL, 
+  First_Name varchar2(15) not null,
+  Last_Name varchar2(15) not null,
+  Mobile varchar2(20) not null,
+  Password varchar2(20) not null,
+  Is_Admin CHAR(1) not null
+);
+*/
+/*
+create table Website
+(
+  ID Number primary key , 
+  Name varchar2(30) not null
+);
+
+create table Room 
+(
+ID Number not null ,
+Type varchar2(10) not NULL ,
+Reserved_To date not null,
+Reserved_From date not null,
+
+User_ID number , 
+FOREIGN key (User_ID) REFERENCES Users(ID),
+
+Hotel_ID Number not NULL,
+FOREIGN key (Hotel_ID) REFERENCES Hotel(ID),
+
+primary key (ID,Hotel_ID)
+);
+
+create table FeedBack
+(
+  ID number Primary key,
+  FComment varchar2(200) not NULL ,
+  FDate Date not NULL
+);
+
+create table User_Hotel_FeedBack
+(
+	User_ID number not null,
+	FOREIGN key (User_ID) REFERENCES Users(ID),
+	Hotel_ID number not null,
+	FOREIGN key (Hotel_ID) REFERENCES Hotel(ID),
+	FeedBack_ID number not null,
+	FOREIGN key (FeedBack_ID) REFERENCES FeedBack(ID),
+	
+	primary key (User_ID,Hotel_ID,FeedBack_ID)
+	
+);
+
+
+create table Location
+(
+Street varchar2(30) not null,
+City varchar2(30) not null ,
+Country varchar2(30) not null,
+Hotel_ID number not null,
+FOREIGN KEY (Hotel_ID) REFERENCES Hotel(ID)
+);
+*/
+/*
+create table Room_In_Website
+(
+Price Number not null,
+
+Room_Number number not null,
+Hotel_ID number not null,
+FOREIGN KEY (Room_Number , Hotel_ID) REFERENCES Room(ID , Hotel_ID),
+
+
+Website_ID number not null,
+FOREIGN KEY (Website_ID) REFERENCES Website(ID),
+
+primary key (Website_ID,Hotel_ID,Room_Number)
+
+);
+*/
