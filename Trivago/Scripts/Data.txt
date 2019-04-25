@@ -1,0 +1,2 @@
+﻿insert into users (id, email, gender, date_of_birth, first_name, last_name, mobile, password, is_admin)
+values(1,'hazem@gmail.com','f', sysdate ,'hazem','khairy','01129908226','123456','t');
