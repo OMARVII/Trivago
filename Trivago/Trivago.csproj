@@ -33,11 +33,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Core, Version=1.10.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>..\..\..\..\..\Desktop\bb\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
       <HintPath>..\..\..\bunifu\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
@@ -65,6 +74,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\HelperClass.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +86,12 @@
     </Compile>
     <Compile Include="Forms\AddHotel.Designer.cs">
       <DependentUpon>AddHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddRoom.Designer.cs">
+      <DependentUpon>AddRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AddWebsite.cs">
       <SubType>Form</SubType>
@@ -96,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddHotel.resx">
       <DependentUpon>AddHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddRoom.resx">
+      <DependentUpon>AddRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddWebsite.resx">
       <DependentUpon>AddWebsite.cs</DependentUpon>
