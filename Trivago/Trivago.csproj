@@ -33,12 +33,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Core, Version=1.10.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
-<<<<<<< HEAD
     <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
       <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
     </Reference>
-=======
->>>>>>> e3f84fb8b0de02efa64ea7a801025ffb55afd1d8
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\..\bunifu\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
