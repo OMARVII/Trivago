@@ -33,14 +33,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Core, Version=1.10.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\..\bunifu\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>..\..\..\bunifu\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
       <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>..\..\..\bunifu\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\bunifu\Bunifu_UI_v1.5.3.dll</HintPath>
@@ -65,11 +77,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\HelperClass.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddHotel.Designer.cs">
+      <DependentUpon>AddHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddRoom.Designer.cs">
+      <DependentUpon>AddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddWebsite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddWebsite.Designer.cs">
+      <DependentUpon>AddWebsite.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
@@ -88,6 +119,15 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddHotel.resx">
+      <DependentUpon>AddHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddRoom.resx">
+      <DependentUpon>AddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddWebsite.resx">
+      <DependentUpon>AddWebsite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +142,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -117,6 +158,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\trivago_logo_new.png" />
+    <None Include="Resources\trivago-png-material-design-icon-trivago-8020.png" />
+    <None Include="Resources\maxresdefault.jpg" />
     <Content Include="Scripts\Data.txt" />
     <Content Include="Scripts\Procedures.txt" />
     <Content Include="Scripts\Tables.txt" />

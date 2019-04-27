@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +14,7 @@ namespace Trivago.Forms
     public partial class Login : Form
     {
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
         public Login()
         {
             InitializeComponent();
@@ -41,7 +41,10 @@ namespace Trivago.Forms
                 MessageBox.Show("wooow You have Logged in" );
             else
                 MessageBox.Show("Nooo wrong wrong wrong");
-            
+            AddWebsite temp = new AddWebsite();
+            this.Hide();
+            temp.ShowDialog();
+            this.Close();
         }
     }
 }
