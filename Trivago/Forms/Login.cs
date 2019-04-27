@@ -41,7 +41,10 @@ namespace Trivago.Forms
                 MessageBox.Show("wooow You have Logged in" );
             else
                 MessageBox.Show("Nooo wrong wrong wrong");
-            
+            AddWebsite temp = new AddWebsite();
+            this.Hide();
+            temp.ShowDialog();
+            this.Close();
         }
     }
 }
