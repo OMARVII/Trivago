@@ -1,1 +1,11 @@
-﻿
+﻿// Generate user id
+/*
+create or replace procedure generateuserID
+(userID out number)
+as
+begin
+select max(ID)
+into userID
+from USERS;
+end;
+*/

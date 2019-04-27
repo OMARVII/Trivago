@@ -14,7 +14,7 @@ namespace Trivago.Forms
     public partial class Login : Form
     {
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         public Login()
         {
             InitializeComponent();
