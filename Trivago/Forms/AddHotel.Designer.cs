@@ -269,7 +269,7 @@
             this.StreetNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.StreetNameTextBox.MaxLength = 32767;
             this.StreetNameTextBox.Name = "StreetNameTextBox";
-            this.StreetNameTextBox.Size = new System.Drawing.Size(379, 33);
+            this.StreetNameTextBox.Size = new System.Drawing.Size(359, 33);
             this.StreetNameTextBox.TabIndex = 12;
             this.StreetNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
