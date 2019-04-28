@@ -133,6 +133,7 @@
     </Compile>
     <Compile Include="Forms\DeleteWebsite.Designer.cs">
       <DependentUpon>DeleteWebsite.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EditHotel.cs">
       <SubType>Form</SubType>
     </Compile>
