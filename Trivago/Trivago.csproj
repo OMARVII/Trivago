@@ -180,6 +180,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DeleteWebsite.resx">
       <DependentUpon>DeleteWebsite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditHotel.resx">
       <DependentUpon>EditHotel.cs</DependentUpon>
     </EmbeddedResource>
