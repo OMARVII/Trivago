@@ -109,6 +109,7 @@
     </Compile>
     <Compile Include="Forms\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DeleteRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +144,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DeleteRoom.resx">
       <DependentUpon>DeleteRoom.cs</DependentUpon>
     </EmbeddedResource>
