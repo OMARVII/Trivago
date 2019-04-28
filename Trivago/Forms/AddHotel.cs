@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
+using Trivago.Classes;
 namespace Trivago.Forms
 {
     public partial class AddHotel : Form
@@ -64,17 +65,17 @@ namespace Trivago.Forms
                 HotelNameError.SetError(HotelName, "This Hotel Name Already Exists");
                 Result = true;
             }
-            if (!ValidEmail(HotelEmail.Text))
+            if (! HelperClass.ValidEmail(HotelEmail.Text))
             {
                 HotelEmailError.SetError(HotelEmail, "This Email Is Not Valid");
                 Result = true;
             }
-            if (!ValidNumber(HotelContactNumber.Text))
+            if (!HelperClass.ValidPhoneNumber(HotelContactNumber.Text))
             {
                 NumberError.SetError(HotelContactNumber, "The Number Format You Entered Wrong, Correct Form 12 numbers");
                 Result = true;
             }
-            if (!ValidRating(HotelRating.Value))
+            if (!HelperClass.ValidRating(HotelRating.Value))
             {
                 HotelRatingError.SetError(RatingLabel, "Please Enter Rating For The Hotel");
                 Result = true;
@@ -103,42 +104,10 @@ namespace Trivago.Forms
             datareader.Close();
             return true;
         }
-        private bool ValidEmail(string Email)
-        {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(Email);
-                return addr.Address == Email;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-        private bool ValidNumber(string Number)
-        {
-            if (IsDigitsOnly(Number) && Number.Length == 12)
-            {
-                return true;
-            }
-            return false;
-        }
-        bool IsDigitsOnly(string str)
-        {
-            foreach (char c in str)
-            {
-                if (c < '0' || c > '9')
-                    return false;
-            }
-
-            return true;
-        }
-        private bool ValidRating(int HotelRating)
-        {
-            if (HotelRating > 0 && HotelRating <= 5)
-                return true;
-            else return false;
-        }
+        
+        
+        
+        
         private int getHotelID()
         {
             int HotelID;

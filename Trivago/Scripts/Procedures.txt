@@ -1,1 +1,64 @@
-﻿
+####################################
+ALAA:
+####################################
+// Generate user id
+/*
+create or replace procedure generateuserID
+(userID out number)
+as
+begin
+select max(ID)
+into userID
+from USERS;
+end;
+*/
+####################################
+ALY:
+####################################
+create or replace procedure addhotel ( hotelname in VARCHAR2 , hotelid in number , hotelemail in VARCHAR2 , contactnumber in VARCHAR2 , hotelrating in number , description in VARCHAR2 , hotelcountry in VARCHAR2 , hotelcity in VARCHAR2 , hotelstreet in VARCHAR2)
+as
+begin
+insert into hotel values (hotelid , hotelemail , contactnumber , hotelrating , hotelname , description );
+insert into location values (hotelstreet , hotelcity , hotelcountry , hotelid);
+end;
+-----------------------------------
+create or replace procedure generateHotelId (tempid out number)
+as
+begin
+select max(id) into tempid from hotel;
+end;
+-----------------------------------
+create or replace procedure generateWebsiteId(tempid out number)
+as
+begin
+select max(id) into tempid from website;
+end;
+-----------------------------------
+create or replace procedure getHotelNames(HotelNames out sys_refcursor)
+as
+begin
+open HotelNames for
+select name 
+from Hotel;
+end;
+-----------------------------------
+create or replace procedure getWebsiteNames (Names out sys_refcursor)
+as
+begin
+open Names for
+select name 
+from website;
+end;
+------------------------------------
+####################################
+HAZEM:
+####################################
+
+####################################
+OMAR:
+####################################
+create or replace procedure deleteRoom (hID number, rID number)
+as
+begin
+delete from room where room.hotel_id = hid and room.id = rid;
+end;
