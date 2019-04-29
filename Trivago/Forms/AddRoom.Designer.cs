@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddRoom));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.AvaliableHotelsDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.RoomIDTextBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -68,6 +68,7 @@
             this.AvaliableHotelsDropdown.Name = "AvaliableHotelsDropdown";
             this.AvaliableHotelsDropdown.Size = new System.Drawing.Size(217, 32);
             this.AvaliableHotelsDropdown.TabIndex = 1;
+            this.AvaliableHotelsDropdown.Text = null;
             this.AvaliableHotelsDropdown.SelectedIndexChanged += new System.EventHandler(this.AvaliableHotelsDropdown_SelectedIndexChanged);
             // 
             // bunifuLabel1
@@ -135,6 +136,7 @@
             this.RoomTypeDropdown.Name = "RoomTypeDropdown";
             this.RoomTypeDropdown.Size = new System.Drawing.Size(217, 32);
             this.RoomTypeDropdown.TabIndex = 5;
+            this.RoomTypeDropdown.Text = null;
             // 
             // bunifuLabel2
             // 
@@ -185,13 +187,13 @@
             this.AddRoomButton.IdleIconRightImage = null;
             this.AddRoomButton.Location = new System.Drawing.Point(302, 402);
             this.AddRoomButton.Name = "AddRoomButton";
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties6.BorderRadius = 1;
-            stateProperties6.BorderThickness = 1;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties6.IconLeftImage = null;
-            stateProperties6.IconRightImage = null;
-            this.AddRoomButton.onHoverState = stateProperties6;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.BorderRadius = 1;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.AddRoomButton.onHoverState = stateProperties1;
             this.AddRoomButton.Size = new System.Drawing.Size(210, 45);
             this.AddRoomButton.TabIndex = 8;
             this.AddRoomButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -225,6 +227,7 @@
             this.Name = "AddRoom";
             this.Text = "AddRoom";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddRoom_FormClosing);
+            this.Load += new System.EventHandler(this.AddRoom_Load);
             this.NewRoomPanel.ResumeLayout(false);
             this.NewRoomPanel.PerformLayout();
             this.ResumeLayout(false);
