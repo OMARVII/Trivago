@@ -47,6 +47,7 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition">
       <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
@@ -303,6 +304,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewCustomers.resx">
       <DependentUpon>ViewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewWebsite.resx">
       <DependentUpon>ViewWebsite.cs</DependentUpon>
     </EmbeddedResource>
