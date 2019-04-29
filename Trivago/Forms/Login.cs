@@ -13,6 +13,7 @@ namespace Trivago.Forms
 {
     public partial class Login : Form
     {
+        public static string userID;
         OracleConnection conn;
         string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
         public Login()
@@ -38,7 +39,10 @@ namespace Trivago.Forms
             cmd.Parameters.Add("password", PasswordTxtBox.Text);
             OracleDataReader rd = cmd.ExecuteReader();
             if (rd.Read())
-                MessageBox.Show("wooow You have Logged in" );
+            {
+                MessageBox.Show("wooow You have Logged in");
+                userID = rd["id"].ToString();
+            }
             else
                 MessageBox.Show("Nooo wrong wrong wrong");
             AddWebsite temp = new AddWebsite();
