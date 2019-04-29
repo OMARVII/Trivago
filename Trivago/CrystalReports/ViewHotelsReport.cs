@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Trivago.Crystal_Reports {
+namespace Trivago.CrystalReports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,7 @@ namespace Trivago.Crystal_Reports {
         
         public override string FullResourceName {
             get {
-                return "Trivago.Crystal Reports.ViewHotelsReport.rpt";
+                return "Trivago.CrystalReports.ViewHotelsReport.rpt";
             }
             set {
                 // Do nothing

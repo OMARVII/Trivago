@@ -212,6 +212,7 @@
             this.Name = "AddRoom";
             this.Text = "AddRoom";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddRoom_FormClosing);
+            this.Load += new System.EventHandler(this.AddRoom_Load);
             this.NewRoomPanel.ResumeLayout(false);
             this.NewRoomPanel.PerformLayout();
             this.ResumeLayout(false);

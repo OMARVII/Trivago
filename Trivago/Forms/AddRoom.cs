@@ -103,5 +103,10 @@ namespace Trivago.Forms
                 MessageBox.Show("nooo");
 
         }
+
+        private void AddRoom_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

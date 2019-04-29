@@ -50,6 +50,14 @@ select name
 from website;
 end;
 ------------------------------------
+create or replace procedure getRoomIDS(RoomIDs out sys_refcursor)
+as
+begin
+open RoomIDs for
+select ID 
+from room;
+end;
+
 ####################################
 HAZEM:
 ####################################
