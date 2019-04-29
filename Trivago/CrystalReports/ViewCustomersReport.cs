@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Trivago.Crystal_Reports {
+namespace Trivago.CrystalReports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace Trivago.Crystal_Reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ViewHotelsReport : ReportClass {
+    public class ViewCustomersReport : ReportClass {
         
-        public ViewHotelsReport() {
+        public ViewCustomersReport() {
         }
         
         public override string ResourceName {
             get {
-                return "ViewHotelsReport.rpt";
+                return "ViewCustomersReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Trivago.Crystal_Reports {
         
         public override string FullResourceName {
             get {
-                return "Trivago.Crystal Reports.ViewHotelsReport.rpt";
+                return "Trivago.CrystalReports.ViewCustomersReport.rpt";
             }
             set {
                 // Do nothing
@@ -106,9 +106,9 @@ namespace Trivago.Crystal_Reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedViewHotelsReport : Component, ICachedReport {
+    public class CachedViewCustomersReport : Component, ICachedReport {
         
-        public CachedViewHotelsReport() {
+        public CachedViewCustomersReport() {
         }
         
         [Browsable(false)]
@@ -145,7 +145,7 @@ namespace Trivago.Crystal_Reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ViewHotelsReport rpt = new ViewHotelsReport();
+            ViewCustomersReport rpt = new ViewCustomersReport();
             rpt.Site = this.Site;
             return rpt;
         }

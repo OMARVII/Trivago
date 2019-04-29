@@ -92,15 +92,33 @@ namespace Trivago.Forms
 
 
         }
+        Boolean check()
+        {
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "select Email, Mobile from Users where Email=:email or Mobile=:mobile";
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("email", email.Text);
+            cmd.Parameters.Add("mobile", mobile.Text);
+            OracleDataReader dr = cmd.ExecuteReader();
+
+            if (dr.Read())
+            {
+                MessageBox.Show("Email/Mobile already exists");
+                return true;
+            }
+            return false;
+        }
         void update()
         {
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "update users set first_name=:nfirstname, last_name=:nlastname, email=:nemail, password=:npassword, gender=:ngender, date_of_birth=:ndateofbirth where id=:userid";
+            cmd.CommandText = "update users set first_name=:nfirstname, last_name=:nlastname, email=:nemail, mobile=:nmobile, password=:npassword, gender=:ngender, date_of_birth=:ndateofbirth where id=:userid";
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Add("nfirstname", first.Text);
             cmd.Parameters.Add("nlastname", last.Text);
             cmd.Parameters.Add("nemail", email.Text);
+            cmd.Parameters.Add("nmobile", email.Text);
             cmd.Parameters.Add("npassword", password.Text);
             if (f.Checked)
                 cmd.Parameters.Add("gender", 'f');
@@ -118,6 +136,7 @@ namespace Trivago.Forms
         }
         private void updateBTN_Click(object sender, EventArgs e)
         {
+            if (check()) return;
             if (validate()) return;
             update();
         }
