@@ -56,7 +56,8 @@ namespace Trivago.Classes
         }
         public static  bool ValidPhoneNumber(string Number)
         {
-            if (HelperClass.IsDigitsOnly(Number) && Number.Length == 12)
+
+            if (HelperClass.IsDigitsOnly(Number) && Number.Length == 11)
             {
                 return true;
             }
@@ -75,6 +76,52 @@ namespace Trivago.Classes
                 return Convert.ToInt32(datareader[0]);
             }
             return -1;
+        }
+        public static int getWebsiteID(string WebsiteName, OracleConnection conn)
+        {
+            OracleCommand getWebsiteID = new OracleCommand();
+            getWebsiteID.Connection = conn;
+            getWebsiteID.CommandText = " select id from website where name = :WebsiteName";
+            getWebsiteID.CommandType = CommandType.Text;
+            getWebsiteID.Parameters.Add("WebsiteName", WebsiteName);
+            OracleDataReader datareader = getWebsiteID.ExecuteReader();
+            if (datareader.Read())
+            {
+                return Convert.ToInt32(datareader[0]);
+            }
+            return -1;
+        }
+        public static bool UniqueHotelNumber(string number,OracleConnection conn)
+        {
+            OracleCommand CheckNumber = new OracleCommand();
+            CheckNumber.Connection = conn;
+            CheckNumber.CommandText = "select contact_number from hotel";
+            CheckNumber.CommandType = CommandType.Text;
+            OracleDataReader CheckNumberReader = CheckNumber.ExecuteReader();
+            while (CheckNumberReader.Read())
+            {
+                if (CheckNumberReader[0].ToString() == number)
+                {
+                    return false;
+                }
+            }
+            CheckNumberReader.Close();
+            return true;
+        }
+        public static bool UniqueHotelEmail(string Email,OracleConnection conn)
+        {
+            OracleCommand CheckEmail = new OracleCommand();
+            CheckEmail.Connection = conn;
+            CheckEmail.CommandText = "select email from hotel";
+            CheckEmail.CommandType = CommandType.Text;
+            OracleDataReader Emails = CheckEmail.ExecuteReader();
+            while (Emails.Read())
+            {
+                if (Emails[0].ToString() == Email)
+                    return false;
+            }
+            Emails.Close();
+            return true;
         }
     }
 }
