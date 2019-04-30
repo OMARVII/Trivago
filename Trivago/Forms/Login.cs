@@ -13,7 +13,7 @@ namespace Trivago.Forms
 {
     public partial class Login : Form
     {
-        public static string userID;
+        public static string userID = "1";
         OracleConnection conn;
         string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
         public Login()
@@ -49,6 +49,11 @@ namespace Trivago.Forms
             this.Hide();
             temp.ShowDialog();
             this.Close();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

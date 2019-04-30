@@ -57,7 +57,19 @@ open RoomIDs for
 select ID 
 from room;
 end;
-
+-------------------------------------
+create or replace procedure generateFeedbackID(tempid out number)
+as
+begin
+select max(id) into tempid from feedback;
+end;
+--------------------------------------
+create or replace procedure AddFeedBack(FeedBack_ID in number ,UserID in number , Feedback_text in VARCHAR2 , Feedback_date in date,Hotel_ID in number)
+as
+begin
+insert into feedback values (feedback_id , feedback_text, feedback_date );
+insert into user_hotel_feedback values (userid , hotel_id , feedback_id);
+end;
 ####################################
 HAZEM:
 ####################################

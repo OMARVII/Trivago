@@ -198,6 +198,12 @@
     <Compile Include="Forms\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UserFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserFeedback.Designer.cs">
+      <DependentUpon>UserFeedback.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ViewHotels.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -266,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserFeedback.resx">
+      <DependentUpon>UserFeedback.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewHotels.resx">
       <DependentUpon>ViewHotels.cs</DependentUpon>
