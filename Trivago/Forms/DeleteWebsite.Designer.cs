@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeleteWebsite));
             this.delete = new Bunifu.Framework.UI.BunifuThinButton2();
             this.website = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.websiteN = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.SuspendLayout();
             // 
             // delete
@@ -51,10 +52,10 @@
             this.delete.IdleFillColor = System.Drawing.Color.White;
             this.delete.IdleForecolor = System.Drawing.Color.Purple;
             this.delete.IdleLineColor = System.Drawing.Color.Purple;
-            this.delete.Location = new System.Drawing.Point(78, 173);
+            this.delete.Location = new System.Drawing.Point(96, 189);
             this.delete.Margin = new System.Windows.Forms.Padding(5);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(181, 41);
+            this.delete.Size = new System.Drawing.Size(155, 41);
             this.delete.TabIndex = 2;
             this.delete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.delete.Click += new System.EventHandler(this.delete_Click);
@@ -83,18 +84,43 @@
             this.website.ItemForeColor = System.Drawing.Color.Purple;
             this.website.ItemHeight = 26;
             this.website.ItemHighLightColor = System.Drawing.Color.Thistle;
-            this.website.Location = new System.Drawing.Point(62, 118);
+            this.website.Location = new System.Drawing.Point(67, 79);
             this.website.Name = "website";
-            this.website.Size = new System.Drawing.Size(217, 32);
+            this.website.Size = new System.Drawing.Size(227, 32);
             this.website.TabIndex = 3;
             this.website.Text = "Website ID";
             this.website.SelectedIndexChanged += new System.EventHandler(this.website_SelectedIndexChanged);
+            // 
+            // websiteN
+            // 
+            this.websiteN.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.websiteN.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.websiteN.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.websiteN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.websiteN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.websiteN.ForeColor = System.Drawing.Color.Purple;
+            this.websiteN.HintForeColor = System.Drawing.Color.Purple;
+            this.websiteN.HintText = "website name";
+            this.websiteN.isPassword = false;
+            this.websiteN.LineFocusedColor = System.Drawing.Color.Purple;
+            this.websiteN.LineIdleColor = System.Drawing.Color.Purple;
+            this.websiteN.LineMouseHoverColor = System.Drawing.Color.Purple;
+            this.websiteN.LineThickness = 4;
+            this.websiteN.Location = new System.Drawing.Point(91, 129);
+            this.websiteN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.websiteN.MaxLength = 32767;
+            this.websiteN.Name = "websiteN";
+            this.websiteN.Size = new System.Drawing.Size(172, 41);
+            this.websiteN.TabIndex = 5;
+            this.websiteN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.websiteN.OnValueChanged += new System.EventHandler(this.websiteN_OnValueChanged);
             // 
             // DeleteWebsite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 347);
+            this.Controls.Add(this.websiteN);
             this.Controls.Add(this.website);
             this.Controls.Add(this.delete);
             this.Name = "DeleteWebsite";
@@ -107,5 +133,6 @@
 
         private Bunifu.Framework.UI.BunifuThinButton2 delete;
         private Bunifu.UI.WinForms.BunifuDropdown website;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox websiteN;
     }
 }

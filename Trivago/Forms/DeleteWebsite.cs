@@ -37,14 +37,28 @@ namespace Trivago.Forms
             OracleDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                website.Items.Add(dr[0]);
+                website.Items.Add(dr[0]);                
             }
+            
             dr.Close();
+
+
 
         }
         private void website_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "select name from website where id=:websiteid ";
+            cmd.Parameters.Add("websitid",website.SelectedItem.ToString());
+            cmd.CommandType = CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                websiteN.Text = dr["name"].ToString();
+            }
+            
+
         }
 
         private void delete_Click(object sender, EventArgs e)
@@ -60,6 +74,11 @@ namespace Trivago.Forms
                 MessageBox.Show("Website is successfully deleted !");
                 loadWebsites();
             }
+        }
+
+        private void websiteN_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
