@@ -41,23 +41,41 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
-      <HintPath>..\..\..\bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
-    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
-      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+      <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition">
+      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
-      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+      <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
-      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+      <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.Drawer">
+      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.Drawer.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\Bunifu\Bunifu_UI_v1.5.3.dll</HintPath>
@@ -69,15 +87,19 @@
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Oracle.DataAccess.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\app\Alaa\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -87,13 +109,28 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\HelperClass.cs" />
+    <Compile Include="CrystalReports\ViewCustomersReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewCustomersReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CrystalReports\ViewHotelsReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ViewHotelsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReports\ViewWebsiteReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewWebsiteReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Form1.cs">
@@ -132,6 +169,12 @@
     <Compile Include="Forms\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CustomerReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerReportViewer.Designer.cs">
+      <DependentUpon>CustomerReportViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DeleteHotel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,29 +199,11 @@
     <Compile Include="Forms\EditHotel.Designer.cs">
       <DependentUpon>EditHotel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\EditRoom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EditRoom.Designer.cs">
-      <DependentUpon>EditRoom.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\EditWebsite.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\EditWebsite.Designer.cs">
       <DependentUpon>EditWebsite.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\HotelsReportViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\HotelsReportViewer.Designer.cs">
-      <DependentUpon>HotelsReportViewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\LoadingScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\LoadingScreen.Designer.cs">
-      <DependentUpon>LoadingScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
@@ -216,11 +241,37 @@
     <Compile Include="Forms\ReserveRoom.Designer.cs">
       <DependentUpon>ReserveRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ViewCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewCustomers.Designer.cs">
+      <DependentUpon>ViewCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReports\ViewCustomersReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ViewCustomersReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Forms\ViewWebsite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewWebsite.Designer.cs">
+      <DependentUpon>ViewWebsite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WebsiteCrystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WebsiteCrystal.Designer.cs">
+      <DependentUpon>WebsiteCrystal.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CrystalReports\ViewHotelsReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ViewHotelsReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReports\ViewWebsiteReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ViewWebsiteReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -240,6 +291,9 @@
     <EmbeddedResource Include="Forms\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerReportViewer.resx">
+      <DependentUpon>CustomerReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DeleteHotel.resx">
       <DependentUpon>DeleteHotel.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,17 +306,8 @@
     <EmbeddedResource Include="Forms\EditHotel.resx">
       <DependentUpon>EditHotel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EditRoom.resx">
-      <DependentUpon>EditRoom.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditWebsite.resx">
       <DependentUpon>EditWebsite.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\HotelsReportViewer.resx">
-      <DependentUpon>HotelsReportViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LoadingScreen.resx">
-      <DependentUpon>LoadingScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -281,6 +326,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReserveRoom.resx">
       <DependentUpon>ReserveRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewCustomers.resx">
+      <DependentUpon>ViewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewWebsite.resx">
+      <DependentUpon>ViewWebsite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WebsiteCrystal.resx">
+      <DependentUpon>WebsiteCrystal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -309,6 +363,7 @@
     <None Include="Resources\trivago_logo_new.png" />
     <None Include="Resources\trivago-png-material-design-icon-trivago-8020.png" />
     <None Include="Resources\maxresdefault.jpg" />
+    <Content Include="Resources\X-Circle.png" />
     <Content Include="Scripts\Data.txt" />
     <Content Include="Scripts\Procedures.txt" />
     <Content Include="Scripts\Tables.txt" />
