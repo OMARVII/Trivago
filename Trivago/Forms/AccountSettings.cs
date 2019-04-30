@@ -118,7 +118,7 @@ namespace Trivago.Forms
             cmd.Parameters.Add("nfirstname", first.Text);
             cmd.Parameters.Add("nlastname", last.Text);
             cmd.Parameters.Add("nemail", email.Text);
-            cmd.Parameters.Add("nmobile", email.Text);
+            cmd.Parameters.Add("nmobile", mobile.Text);
             cmd.Parameters.Add("npassword", password.Text);
             if (f.Checked)
                 cmd.Parameters.Add("gender", 'f');
