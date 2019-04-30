@@ -247,8 +247,6 @@
     <Compile Include="Forms\WebsiteCrystal.Designer.cs">
       <DependentUpon>WebsiteCrystal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CrystalReports\ViewHotelsReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ViewHotelsReport.cs</LastGenOutput>
