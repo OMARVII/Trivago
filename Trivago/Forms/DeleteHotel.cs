@@ -52,7 +52,16 @@ namespace Trivago.Forms
 
         private void bunifuDropdown1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "select name from hotel where id=:hotelid ";
+            cmd.Parameters.Add("hotelid", hotels.SelectedItem.ToString());
+            cmd.CommandType = CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                hotelN.Text = dr["name"].ToString();
+            }
         }
         void delLocation()
         {
@@ -103,6 +112,16 @@ namespace Trivago.Forms
             delRoom();
             delFeedback();
             delHotel();
+        }
+
+        private void hotelN_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hotelN_OnValueChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

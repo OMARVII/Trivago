@@ -223,6 +223,12 @@
     <Compile Include="Forms\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ReserveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReserveRoom.Designer.cs">
+      <DependentUpon>ReserveRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ViewCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReserveRoom.resx">
+      <DependentUpon>ReserveRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewCustomers.resx">
       <DependentUpon>ViewCustomers.cs</DependentUpon>

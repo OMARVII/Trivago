@@ -17,7 +17,7 @@ namespace Trivago.Forms
     public partial class ViewWebsite : Form
     {   
         string constr = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
-        ViewWebsiteReport generating;
+       
         public ViewWebsite()
         {
             InitializeComponent();
@@ -27,9 +27,7 @@ namespace Trivago.Forms
 
         private void view_Click(object sender, EventArgs e)
         {
-            ViewWebsiteTimer.Start();
-
-            pb2.Show();
+            
 
             pb2.Value = 0;
 
@@ -57,8 +55,7 @@ namespace Trivago.Forms
 
         private void generate_Click(object sender, EventArgs e)
         {
-            ViewWebsiteTimer.Start();
-            pb2.Show();
+           
             pb2.Value = 0;
 
             WebsiteCrystal crys = new WebsiteCrystal();
@@ -70,6 +67,11 @@ namespace Trivago.Forms
         private void crystalReportViewer1_Load(object sender, EventArgs e)
         {
           
+        }
+
+        private void pb2_progressChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
