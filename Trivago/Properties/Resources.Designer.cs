@@ -63,36 +63,6 @@ namespace Trivago.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background {
-            get {
-                object obj = ResourceManager.GetObject("background", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap buttonbg {
-            get {
-                object obj = ResourceManager.GetObject("buttonbg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap close2 {
-            get {
-                object obj = ResourceManager.GetObject("close2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap closeNavy {
             get {
                 object obj = ResourceManager.GetObject("closeNavy", resourceCulture);
@@ -156,16 +126,6 @@ namespace Trivago.Properties {
         internal static System.Drawing.Bitmap trivagoo {
             get {
                 object obj = ResourceManager.GetObject("trivagoo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap X_Circle {
-            get {
-                object obj = ResourceManager.GetObject("X-Circle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

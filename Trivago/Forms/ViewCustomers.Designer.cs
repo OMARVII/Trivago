@@ -52,7 +52,6 @@
             // 
             this.CloseBTN.BackColor = System.Drawing.Color.Transparent;
             this.CloseBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CloseBTN.Image = global::Trivago.Properties.Resources.X_Circle;
             this.CloseBTN.ImageActive = null;
             this.CloseBTN.Location = new System.Drawing.Point(596, 7);
             this.CloseBTN.Name = "CloseBTN";
