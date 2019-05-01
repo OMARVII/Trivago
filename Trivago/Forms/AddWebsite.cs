@@ -13,7 +13,7 @@ namespace Trivago.Forms
 {
     public partial class AddWebsite : Form
     {
-        string ordb = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
+        string ordb = "Data Source=orcl;User Id=HR;Password=HR;";
         OracleConnection conn;
         public AddWebsite()
         {

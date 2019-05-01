@@ -82,3 +82,9 @@ as
 begin
 delete from room where room.hotel_id = hid and room.id = rid;
 end;
+---------------------------------
+create or replace procedure updateWebsite(Wname VARCHAR2, wID number)
+as
+begin
+update website set name=:newwebsite where ID=:wID
+end;
