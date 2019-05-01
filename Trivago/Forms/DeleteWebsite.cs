@@ -18,7 +18,7 @@ namespace Trivago.Forms
     {
         OracleConnection conn;
         string str = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
-
+        string deletedID = "";
         public DeleteWebsite()
         {
           
@@ -26,6 +26,29 @@ namespace Trivago.Forms
             conn = new OracleConnection(str);
             conn.Open();
             loadWebsites();
+        }
+        Boolean validate()
+        {
+            if (website.SelectedIndex == -1 && deletedID != "")
+            {
+                MessageBox.Show("already deleted");
+                return true;
+            }
+            if (website.SelectedIndex == -1)
+            {
+                MessageBox.Show("Choose an id");
+                return true;
+            }
+            return false;
+        }
+        void delWebsiteInRoom()
+        {
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "delete from Room_In_Website where website_id =:websiteid";
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("websiteid", website.SelectedItem.ToString());
+            int r = cmd.ExecuteNonQuery();
         }
         void loadWebsites()
         {
@@ -63,6 +86,8 @@ namespace Trivago.Forms
 
         private void delete_Click(object sender, EventArgs e)
         {
+            if (validate()) return;
+            delWebsiteInRoom();
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
             cmd.CommandText = "delete from website where id=:websiteid";
@@ -77,6 +102,11 @@ namespace Trivago.Forms
         }
 
         private void websiteN_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteWebsite_Load(object sender, EventArgs e)
         {
 
         }

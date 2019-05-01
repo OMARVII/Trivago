@@ -24,7 +24,7 @@ namespace Trivago.Forms
        
             
         }
-
+        
         private void view_Click(object sender, EventArgs e)
         {
             

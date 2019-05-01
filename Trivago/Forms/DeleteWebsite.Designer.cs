@@ -125,6 +125,7 @@
             this.Controls.Add(this.delete);
             this.Name = "DeleteWebsite";
             this.Text = "DeleteWebsite";
+            this.Load += new System.EventHandler(this.DeleteWebsite_Load);
             this.ResumeLayout(false);
 
         }
