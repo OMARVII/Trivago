@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="SubmitButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAANkAAAAwCAYAAACc9d88AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAC2SURBVHhe7dMhEYBAAADBzwSFqAFlaAHxYPDIP7di1ekb
-        y3Fv63E/wHzfX+MvAPOYDGImg5jJIGYyiJkMYiaDmMkgZjKImQxiJoOYySBmMoiZDGImg5jJIGYyiJkM
-        YiaDmMkgZjKImQxiJoOYySBmMoiZDGImg5jJIGYyiJkMYiaDmMkgZjKImQxiJoOYySBmMoiZDGImg5jJ
-        IGYyiJkMYiaDmMkgZjKImQxiY92v8y8AE+zX+QIjsh+8qNGHzgAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAANQAAAAnCAYAAAB32GavAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACeSURBVHhe7dOxEcIwAMDADAKz5FjEyWYeNYHeDaDyi69U
+        a3vux/l4HRfwn89L2yoAvzEUhAwFIUNByFAQMhSEDAUhQ0HIUBAyFIQMBSFDQchQEDIUhAwFIUNByFAQ
+        MhSEDAUhQ0HIUBAyFIQMBSFDQchQEDIUhAwFIUNByFAQMhSEDAUhQ0HIUBAyFIQMBSFDQchQEHoPNeYq
+        AN8a8waBEeS85autuQAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>
