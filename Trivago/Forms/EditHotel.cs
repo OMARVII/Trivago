@@ -10,22 +10,36 @@ using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
 using Trivago.Classes;
+using System.Runtime.InteropServices;
 namespace Trivago.Forms
 {
     public partial class EditHotel : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+           (
+               int nLeftRect,     // x-coordinate of upper-left corner
+               int nTopRect,      // y-coordinate of upper-left corner
+               int nRightRect,    // x-coordinate of lower-right corner
+               int nBottomRect,   // y-coordinate of lower-right corner
+               int nWidthEllipse, // height of ellipse
+               int nHeightEllipse // width of ellipse
+           );
         OracleConnection EditHotelConnection;
         string ordb = "Data Source=orcl;User Id=HR;Password=HR;";
         string oldEmail, oldPhoneNumber;
         public EditHotel()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
+            EditHotelConnection = new OracleConnection(ordb);
+            EditHotelConnection.Open();
         }
 
         private void EditHotel_Load(object sender, EventArgs e)
         {
-            EditHotelConnection = new OracleConnection(ordb);
-            EditHotelConnection.Open();
             LoadHotelNames();
         }
         private void LoadHotelNames()
@@ -103,18 +117,22 @@ namespace Trivago.Forms
         {
             if (!ValidNewHotelName())
             {
+                NewNameError.SetError(HotelName, "Please Enter A Valid Name");
                 return false;
             }
             if (!ValidEmail(HotelEmail.Text))
             {
+                NewEmailError.SetError(HotelEmail, "Please Enter A Valid Email");
                 return false;
             }
             if (!ValidPhoneNumber(HotelNumber.Text))
             {
+                NewNumberError.SetError(HotelNumber, "Please Enter A Valid Phone Number");
                 return false;
             }
             if (!HelperClass.ValidRating(HotelRating.Value))
             {
+                RatingError.SetError(HotelRating, "Please Insert Hotel Rating");
                 return false;
             }
             return true;
@@ -161,6 +179,13 @@ namespace Trivago.Forms
                 HotelNameReader.Close();
             }
                 return true;
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            EditHotelConnection.Close();
+            this.Close();
+
         }
 
         private void EditHotel_FormClosed(object sender, FormClosedEventArgs e)
