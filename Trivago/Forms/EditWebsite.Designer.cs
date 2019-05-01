@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditWebsite));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.newNameBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.UpdateBTN = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.websiteDropDown = new Bunifu.UI.WinForms.BunifuDropdown();
@@ -60,6 +60,7 @@
             this.newNameBox.Size = new System.Drawing.Size(252, 33);
             this.newNameBox.TabIndex = 6;
             this.newNameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.newNameBox.OnValueChanged += new System.EventHandler(this.newNameBox_OnValueChanged);
             // 
             // UpdateBTN
             // 
@@ -83,13 +84,13 @@
             this.UpdateBTN.IdleIconRightImage = null;
             this.UpdateBTN.Location = new System.Drawing.Point(104, 301);
             this.UpdateBTN.Name = "UpdateBTN";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.BorderRadius = 1;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.UpdateBTN.onHoverState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 1;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.UpdateBTN.onHoverState = stateProperties2;
             this.UpdateBTN.Size = new System.Drawing.Size(252, 45);
             this.UpdateBTN.TabIndex = 8;
             this.UpdateBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,9 +137,9 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(23, 30);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(126, 25);
+            this.bunifuLabel1.Size = new System.Drawing.Size(123, 25);
             this.bunifuLabel1.TabIndex = 11;
-            this.bunifuLabel1.Text = "Delete Room";
+            this.bunifuLabel1.Text = "Edit Website";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 

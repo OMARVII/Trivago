@@ -26,7 +26,7 @@ namespace Trivago.Forms
                int nHeightEllipse // width of ellipse
            );
         OracleConnection EditHotelConnection;
-        string ordb = "Data Source=orcl;User Id=HR;Password=HR;";
+        string ordb = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
         string oldEmail, oldPhoneNumber;
         public EditHotel()
         {

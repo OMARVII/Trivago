@@ -50,12 +50,12 @@ select name
 from website;
 end;
 ------------------------------------
-create or replace procedure getRoomIDS(RoomIDs out sys_refcursor)
+create or replace procedure getRoomIDS(hotelid in number,RoomIDs out sys_refcursor)
 as
 begin
 open RoomIDs for
 select ID 
-from room;
+from room where hotel_id= hotelid;
 end;
 -------------------------------------
 create or replace procedure generateFeedbackID(tempid out number)
@@ -73,6 +73,21 @@ end;
 ####################################
 HAZEM:
 ####################################
+create or replace procedure reserveRoom ( newID in number, hotelid in number , roomid in NUMBER , reserveFROM in date, reserveTO in date)
+as
+begin
+insert into room_reservation(id, room_id,hotel_id, reserved_from, reserved_to)
+values(newID, roomid, hotelid, reservefrom, reserveto);
+end;
+---------------------------------------------
+create or replace
+procedure getHotelIdAndName(HotelIdAndNames out sys_refcursor)
+as
+begin
+open HotelIdAndNames for
+select id ,name 
+from Hotel;
+end;
 
 ####################################
 OMAR:
@@ -81,4 +96,10 @@ create or replace procedure deleteRoom (hID number, rID number)
 as
 begin
 delete from room where room.hotel_id = hid and room.id = rid;
+end;
+---------------------------------
+create or replace procedure updateWebsite(Wname VARCHAR2, wID number)
+as
+begin
+update website set name=:newwebsite where ID=:wID
 end;
