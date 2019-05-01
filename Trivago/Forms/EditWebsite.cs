@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -66,5 +66,11 @@ namespace Trivago.Forms
         {
 
         }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
