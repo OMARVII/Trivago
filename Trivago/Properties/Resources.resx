@@ -121,8 +121,8 @@
   <data name="trivago_logo_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trivago_logo_new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maxresdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxresdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="closeNavy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeNavy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trivago-png-material-design-icon-trivago-8020" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trivago-png-material-design-icon-trivago-8020.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,7 +136,10 @@
   <data name="navy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\navy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="closeNavy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closeNavy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maxresdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxresdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trivagoo 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trivagoo 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
