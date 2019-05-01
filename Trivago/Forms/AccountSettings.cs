@@ -9,10 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
+using System.Runtime.InteropServices;
 namespace Trivago.Forms
 {
     public partial class AccountSettings : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+           (
+               int nLeftRect,     // x-coordinate of upper-left corner
+               int nTopRect,      // y-coordinate of upper-left corner
+               int nRightRect,    // x-coordinate of lower-right corner
+               int nBottomRect,   // y-coordinate of lower-right corner
+               int nWidthEllipse, // height of ellipse
+               int nHeightEllipse // width of ellipse
+           );
         OracleConnection conn;
         string connST = "Data Source=ORCL;User Id=HR;Password=hr;";
         public AccountSettings()
@@ -21,6 +32,9 @@ namespace Trivago.Forms
             conn = new OracleConnection(connST);
             conn.Open();
             loadUser();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            
         }
         void loadUser()
         {
@@ -47,8 +61,11 @@ namespace Trivago.Forms
                     m.Checked = true;
                     f.Checked = false;
                 }
-                else { f.Checked = true; m.Checked = false; }
-       
+                else { f.Checked = true; m.Checked = false;
+                    
+                }
+
+                bunifuLabel2.Text = "Welcome " + first.Text+"!";
             }
             dr.Close();
         }
@@ -142,6 +159,16 @@ namespace Trivago.Forms
         }
 
         private void dateofbirth_onValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AccountSettings_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel2_Click(object sender, EventArgs e)
         {
 
         }
