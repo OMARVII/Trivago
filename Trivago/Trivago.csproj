@@ -38,8 +38,9 @@
     <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
     </Reference>
-    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
-      <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton, Version=1.10.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Project\Trivago\Trivago\Bunifu\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
@@ -73,6 +74,9 @@
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
       <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.Drawer">
       <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.Drawer.dll</HintPath>
@@ -168,6 +172,12 @@
     </Compile>
     <Compile Include="Forms\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Agreement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Agreement.Designer.cs">
+      <DependentUpon>Agreement.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CustomerReportViewer.cs">
       <SubType>Form</SubType>
@@ -279,6 +289,9 @@
     <EmbeddedResource Include="Forms\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Agreement.resx">
+      <DependentUpon>Agreement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerReportViewer.resx">
       <DependentUpon>CustomerReportViewer.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,6 +358,15 @@
     <None Include="Resources\trivago_logo_new.png" />
     <None Include="Resources\trivago-png-material-design-icon-trivago-8020.png" />
     <None Include="Resources\maxresdefault.jpg" />
+    <Content Include="Resources\background.png" />
+    <Content Include="Resources\buttonbg.png" />
+    <Content Include="Resources\close2.png" />
+    <None Include="Resources\closeW.png" />
+    <None Include="Resources\closeNavy.png" />
+    <Content Include="Resources\logo-boot.png" />
+    <None Include="Resources\trivagoo.png" />
+    <None Include="Resources\navy.png" />
+    <Content Include="Resources\trivagoo 2.png" />
     <Content Include="Resources\X-Circle.png" />
     <Content Include="Scripts\Data.txt" />
     <Content Include="Scripts\Procedures.txt" />
