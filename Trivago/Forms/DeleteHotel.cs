@@ -10,20 +10,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
-
+using System.Runtime.InteropServices;
 
 namespace Trivago.Forms
 {
     public partial class DeleteHotel : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // height of ellipse
+            int nHeightEllipse // width of ellipse
+        );
         OracleConnection conn;
         string str = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
-       
+        string deletedID = "";
+
 
         public DeleteHotel()
         {
 
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             conn = new OracleConnection(str);
             conn.Open();
             loadHotels();
@@ -44,7 +57,20 @@ namespace Trivago.Forms
             dr.Close();
 
         }
-
+        Boolean validate()
+        {
+            if (hotels.SelectedIndex == -1 && deletedID != "")
+            {
+                MessageBox.Show("already deleted");
+                return true;
+            }
+            if (hotels.SelectedIndex == -1)
+            {
+                MessageBox.Show("Choose an id");
+                return true;
+            }
+            return false;
+        }
         private void DeleteHotel_Load(object sender, EventArgs e)
         {
 
@@ -62,6 +88,15 @@ namespace Trivago.Forms
             {
                 hotelN.Text = dr["name"].ToString();
             }
+        }
+        void delRoomInWebsite()
+        {
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "delete from Room_In_Website where hotel_id =:hotelid";
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("hotelid", hotels.SelectedItem.ToString());
+            int r = cmd.ExecuteNonQuery();
         }
         void delLocation()
         {
@@ -103,15 +138,22 @@ namespace Trivago.Forms
             if (r > 0)
             {
                 MessageBox.Show("hotel is deleted !");
+                deletedID = hotels.SelectedItem.ToString();
                 loadHotels();
+               
             }
         }
         private void delete_Click(object sender, EventArgs e)
         {
-            delLocation();
-            delRoom();
-            delFeedback();
-            delHotel();
+            if (validate()) return;
+            delRoomInWebsite();
+                delLocation();
+                delRoom();
+                delHotel();
+
+           
+
+
         }
 
         private void hotelN_OnValueChanged(object sender, EventArgs e)
@@ -122,6 +164,16 @@ namespace Trivago.Forms
         private void hotelN_OnValueChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Trivago.Forms
 {
     public partial class ViewWebsite : Form
     {   
-        string constr = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
+        string constr = "Data Source=orcl;User Id=HR;Password=HR;";
        
         public ViewWebsite()
         {
@@ -24,7 +24,7 @@ namespace Trivago.Forms
        
             
         }
-
+        
         private void view_Click(object sender, EventArgs e)
         {
             

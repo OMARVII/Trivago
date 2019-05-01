@@ -16,6 +16,7 @@ namespace Trivago.Forms
     {
         OracleConnection conn;
         string connST = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
+        string deletedID="";
         public Admin()
         {
 
@@ -24,14 +25,13 @@ namespace Trivago.Forms
             conn.Open();
 
             view();
-       
         }
         void view()
         {
             id.Items.Clear();
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "select id from Users where is_admin!='t' ";
+            cmd.CommandText = "select id from Users where is_admin!='t' order by id ";
             cmd.CommandType = CommandType.Text;
             OracleDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -40,25 +40,56 @@ namespace Trivago.Forms
             }
             dr.Close();
         }
-        private void Admin_Load(object sender, EventArgs e)
+        Boolean multiple()
+        {
+            if (deletedID == "") deletedID = id.SelectedItem.ToString();
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "select * from Users where is_admin='t' and id=:userid";
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("userid", deletedID);
+            OracleDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                MessageBox.Show("User is already an admin!");
+                return true;
+            }
+            return false;
+        }
+        Boolean validate()
+        {
+            if (id.SelectedIndex == -1)
+            {
+                MessageBox.Show("Choose an id");
+                return true;
+            }
+            return false;
+        }
+            private void Admin_Load(object sender, EventArgs e)
         {
 
         }
 
         private void submit_Click(object sender, EventArgs e)
         {
-            OracleCommand cmd = new OracleCommand();
-            cmd.Connection = conn;
-            cmd.CommandText = "update users set is_admin = 't' where id=:userid";
-            cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("userid", id.SelectedItem.ToString());
-            int r = cmd.ExecuteNonQuery();
-            if (r > 0)
+           if (validate()) return;
+           if (multiple()) return;
+            else
             {
-                MessageBox.Show("This user is an admin now !");
-                view();
+                OracleCommand cmd = new OracleCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "update users set is_admin = 't' where id=:userid";
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add("userid", id.SelectedItem.ToString());
+                int r = cmd.ExecuteNonQuery();
+                if (r > 0)
+                {
+                    MessageBox.Show("This user is an admin now !");
+                    deletedID = id.SelectedItem.ToString();
+                    view();
+                }
             }
-
+           
             
         }
 
@@ -66,7 +97,7 @@ namespace Trivago.Forms
         {
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "select email, gender, date_of_birth, first_name, last_name, mobile from Users where id=:userid";
+            cmd.CommandText = "select email, gender, date_of_birth, first_name, last_name, mobile from Users where id=:userid ";
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Add("userid", id.SelectedItem.ToString());
 
@@ -90,6 +121,11 @@ namespace Trivago.Forms
 
 
 
+
+        }
+
+        private void second_OnValueChanged(object sender, EventArgs e)
+        {
 
         }
     }

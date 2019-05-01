@@ -220,6 +220,7 @@
             this.second.Size = new System.Drawing.Size(124, 39);
             this.second.TabIndex = 18;
             this.second.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.second.OnValueChanged += new System.EventHandler(this.second_OnValueChanged);
             // 
             // email
             // 
