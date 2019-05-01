@@ -10,16 +10,30 @@ using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
 using Trivago.Classes;
+using System.Runtime.InteropServices;
+
 namespace Trivago.Forms
 {
     public partial class EditRoom : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // height of ellipse
+            int nHeightEllipse // width of ellipse
+        );
         OracleConnection EditRoomConnection;
         string ordb = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
         int HotelID;
         public EditRoom()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
         private void EditRoom_Load(object sender, EventArgs e)
@@ -109,6 +123,12 @@ namespace Trivago.Forms
             if (HotelNameDropDown.SelectedIndex == -1 || RoomIdDropDown.SelectedIndex == -1 || RoomTypeDropDown.SelectedIndex == -1)
                 return false;
             return true;
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            EditRoomConnection.Close();
         }
     }
 }

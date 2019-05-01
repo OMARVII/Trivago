@@ -597,6 +597,7 @@
             this.Controls.Add(this.first);
             this.DoubleBuffered = true;
             this.Name = "Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);

@@ -35,9 +35,12 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(-12, 425);
+            this.progressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(173)))));
+            this.progressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(173)))));
+            this.progressBar1.Location = new System.Drawing.Point(111, 452);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(1131, 23);
+            this.progressBar1.Size = new System.Drawing.Size(758, 10);
             this.progressBar1.TabIndex = 0;
             // 
             // timer1
@@ -48,13 +51,17 @@
             // 
             // LoadingScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Trivago.Properties.Resources.trivago_logo_new;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1131, 515);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.BackgroundImage = global::Trivago.Properties.Resources.trivagoo_2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(929, 631);
             this.Controls.Add(this.progressBar1);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoadingScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoadingScreen";
             this.Load += new System.EventHandler(this.LoadingScreen_Load);
             this.ResumeLayout(false);
