@@ -9,11 +9,24 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
+using System.Runtime.InteropServices;
+
 
 namespace Trivago.Forms
 {
     public partial class Admin : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+           (
+               int nLeftRect,     // x-coordinate of upper-left corner
+               int nTopRect,      // y-coordinate of upper-left corner
+               int nRightRect,    // x-coordinate of lower-right corner
+               int nBottomRect,   // y-coordinate of lower-right corner
+               int nWidthEllipse, // height of ellipse
+               int nHeightEllipse // width of ellipse
+           );
         OracleConnection conn;
         string connST = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
         string deletedID="";
@@ -23,8 +36,12 @@ namespace Trivago.Forms
             InitializeComponent();
             conn = new OracleConnection(connST);
             conn.Open();
-
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             view();
+
+           
+
         }
         void view()
         {
@@ -72,24 +89,7 @@ namespace Trivago.Forms
 
         private void submit_Click(object sender, EventArgs e)
         {
-           if (validate()) return;
-           if (multiple()) return;
-            else
-            {
-                OracleCommand cmd = new OracleCommand();
-                cmd.Connection = conn;
-                cmd.CommandText = "update users set is_admin = 't' where id=:userid";
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.Add("userid", id.SelectedItem.ToString());
-                int r = cmd.ExecuteNonQuery();
-                if (r > 0)
-                {
-                    MessageBox.Show("This user is an admin now !");
-                    deletedID = id.SelectedItem.ToString();
-                    view();
-                }
-            }
-           
+          
             
         }
 
@@ -128,5 +128,83 @@ namespace Trivago.Forms
         {
 
         }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            if (validate()) return;
+            if (multiple()) return;
+            else
+            {
+                OracleCommand cmd = new OracleCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "update users set is_admin = 't' where id=:userid";
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add("userid", id.SelectedItem.ToString());
+                int r = cmd.ExecuteNonQuery();
+                if (r > 0)
+                {
+                    MessageBox.Show("This user is an admin now !");
+                    deletedID = id.SelectedItem.ToString();
+                    view();
+                }
+            }
+
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void addAdmin_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void websiteoffer_Click(object sender, EventArgs e)
+        {
+            makewebsiteForm a = new makewebsiteForm();
+            conn.Close();
+            a.Show();
+            this.Hide();
+            
+        }
+
+        private void viewbtn_Click(object sender, EventArgs e)
+        {
+            viewForm a = new viewForm();
+            conn.Close();
+            a.Show();
+            this.Hide();
+
+        }
+
+        private void addbtn_Click(object sender, EventArgs e)
+        {
+            addForm a = new addForm();
+            conn.Close();
+            a.Show();
+            this.Hide();
+
+        }
+
+        private void editbtn_Click(object sender, EventArgs e)
+        {
+            editForm a = new editForm();
+            conn.Close();
+            a.Show();
+            this.Hide();
+
+        }
+
+        private void delbtn_Click(object sender, EventArgs e)
+        {
+            delForm a = new delForm();
+            conn.Close();
+            a.Show();
+            this.Hide();
+
+        }
+
     }
 }

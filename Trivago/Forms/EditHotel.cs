@@ -15,7 +15,7 @@ namespace Trivago.Forms
     public partial class EditHotel : Form
     {
         OracleConnection EditHotelConnection;
-        string ordb = "Data Source=orcl;User Id=HR;Password=HR;";
+        string ordb = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
         string oldEmail, oldPhoneNumber;
         public EditHotel()
         {

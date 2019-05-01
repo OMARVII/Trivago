@@ -120,21 +120,20 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TypeCheckBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADISURBVDhPtZQhDsIwGEYrkUiOwQ0QrASJxJG1CCQSuWus
-        FRwFyTE4AhI5uqYE8ZYA38JL/nR5zd5+NfNXdovzxFXh4G1slKmrcEyNWcnl4NTbcE+X3bgJj70N8xwt
-        G3a+ird0Dm7yaZyN13R2dRVPOVou+q81WQigASGABoQAGhACaEAIoAEhgAaEABoQAmhACKABIYAGhAAa
-        EAJoQAigASGAxks4Gy7l+ecp776j/Y+1iNHjVu0mR3v8Mq6THNzi23G23RpjzBMbo4A6v08enQAAAABJ
-        RU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVDhPrZIhDgIxEEUrkUiOwQ0QdAgSiSPbIpBI5F5j
+        ZwRHQXIMjoBEdttmCCS/YSDhJz/dvL7OmHV/y25xngTPh0jSW+08H7M/06f18TQS3/Nl+r782BPP6wDd
+        nKKXWz6bW98bSK75TJ2XUx2gF2VyX4ER8AEYAR+AEfABGAEfgBHwARgBH4AR8AEYAR+AEfCfIBBf9Ptj
+        1XsNKP+0gp8aVsOmDiiJS1ln2NzYaqBh65xzIz/HDJo+nbRvAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="AddButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAANIAAAAtCAYAAADbXTWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACvSURBVHhe7dOxEUVQAADBVxMN/TZoRheUx8gF/Llwg40u
-        vjGtx29ejxP4z/3QeArAN0aCgJEgYCQIGAkCRoKAkSBgJAgYCQJGgoCRIGAkCBgJAkaCgJEgYCQIGAkC
-        RoKAkSBgJAgYCQJGgoCRIGAkCBgJAkaCgJEgYCQIGAkCRoKAkSBgJAgYCQJGgoCRIGAkCBgJAkaCgJEg
-        YCQIGAkCRoKAkSAw5mXfngLw0rJvF+GsHaN7MppHAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAlCAYAAACziFDNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACOSURBVHhe7dKxFUBQAMDAPxMLWYNlbMF4PL2WNFdclTZj
+        2s5l3s4L/vI8N94CfM14JIxHwngkjEfCeCSMR8J4JIxHwngkjEfCeCSMR8J4JIxHwngkjEfCeCSMR8J4
+        JIxHwngkjEfCeCSMR8J4JIxHwngkjEfCeCSMR8J4JIxHwngkjEdizOuxvwX4zHrsN5eUgek0mN9JAAAA
+        AElFTkSuQmCC
 </value>
   </data>
 </root>

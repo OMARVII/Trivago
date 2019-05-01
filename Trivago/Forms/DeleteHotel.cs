@@ -170,5 +170,10 @@ namespace Trivago.Forms
         {
 
         }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

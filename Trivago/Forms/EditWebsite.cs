@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +14,7 @@ namespace Trivago.Forms
     public partial class EditWebsite : Form
     {
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=hr;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         public EditWebsite()
         {
             InitializeComponent();
@@ -61,5 +61,16 @@ namespace Trivago.Forms
             }
             else MessageBox.Show("Something Wrong!");
         }
+
+        private void EditWebsite_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

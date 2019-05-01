@@ -9,10 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
+using System.Runtime.InteropServices;
 namespace Trivago.Forms
 {
     public partial class DeleteRoom : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+           (
+               int nLeftRect,     // x-coordinate of upper-left corner
+               int nTopRect,      // y-coordinate of upper-left corner
+               int nRightRect,    // x-coordinate of lower-right corner
+               int nBottomRect,   // y-coordinate of lower-right corner
+               int nWidthEllipse, // height of ellipse
+               int nHeightEllipse // width of ellipse
+           );
         OracleConnection conn;
         string connST = "Data Source=ORCL;User Id=HR;Password=hr;";
         public DeleteRoom()
@@ -21,6 +32,8 @@ namespace Trivago.Forms
             conn = new OracleConnection(connST);
             conn.Open();
             init();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
         void init()
         {
@@ -51,9 +64,19 @@ namespace Trivago.Forms
             }
             dr.Close();
         }
-
+        void delWebsiteInRoom()
+        {
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "delete from Room_In_Website where Room_Number =:roomid and hotel_id =:hotelid";
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("roomid", roomDropDown.SelectedItem.ToString());
+            cmd.Parameters.Add("hotelid", hotelDropDown.SelectedItem.ToString());
+            int r = cmd.ExecuteNonQuery();
+        }
         private void DeleteBTN_Click(object sender, EventArgs e)
         {
+            delWebsiteInRoom();
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
             cmd.CommandText = "deleteRoom";
@@ -66,6 +89,21 @@ namespace Trivago.Forms
                 MessageBox.Show("Room Successfully Deleted!");
             }
             else MessageBox.Show("Something Wrong!");
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteRoom_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
