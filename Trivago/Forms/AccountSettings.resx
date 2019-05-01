@@ -120,11 +120,12 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="updateBTN.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAKAAAAAtCAYAAAAp4WArAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAClSURBVHhe7dKhEcJAAADB74yhExyTqlJaJt8IBP+WnFmx
-        6uyNx/t4PbfzA3f7vTdWAe5iQFIGJGVAUgYkZUBSBiRlQFIGJGVAUgYkZUBSBiRlQFIGJGVAUgYkZUBS
-        BiRlQFIGJGVAUgYkZUBSBiRlQFIGJGVAUgYkZUBSBiRlQFIGJGVAUgYkZUBSBiRlQFIGJGVAUgYkZUBS
-        BiR1DTj3VYD/m/sXy0trYp1ckwAAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAANUAAAA3CAYAAACbzA8KAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADLSURBVHhe7dOhEcJAAADB74yhExyTqlJaJt8IBP8qnFyx
+        6vSNx/t4PbfzA/zv99NYBeA+U0HMVBAzFcRMBTFTQcxUEDMVxEwFMVNBzFQQMxXETAUxU0HMVBAzFcRM
+        BTFTQcxUEDMVxEwFMVNBzFQQMxXETAUxU0HMVBAzFcRMBTFTQcxUEDMVxEwFMVNBzFQQMxXETAUxU0HM
+        VBAzFcRMBTFTQcxUEDMVxEwFMVNBzFQQMxXETAUxU0HMVBAzFcRMBbFrqrmvAnDH3L9KUTXjXfjFiwAA
+        AABJRU5ErkJggg==
 </value>
   </data>
 </root>

@@ -56,23 +56,21 @@ namespace Trivago.Forms
             {
                 StreetError.SetError(StreetNameTextBox, "Please Enter the Hotel Street");
             }
-            if (HotelDescription.Text == "")
-            {
-                DescriptionError.SetError(HotelDescription, "Please Enter the Hotel Description");
-            }
+
+
             if (!ValidHotelName(HotelName.Text))
             {
                 HotelNameError.SetError(HotelName, "This Hotel Name Already Exists");
                 Result = true;
             }
-            if (! HelperClass.ValidEmail(HotelEmail.Text))
+            if (!HelperClass.ValidEmail(HotelEmail.Text) || !HelperClass.UniqueHotelEmail(HotelEmail.Text,AddHotelConnection) )
             {
-                HotelEmailError.SetError(HotelEmail, "This Email Is Not Valid");
+                HotelEmailError.SetError(HotelEmail, "This Email Is Not Valid or Already Exists");
                 Result = true;
             }
-            if (!HelperClass.ValidPhoneNumber(HotelContactNumber.Text))
+            if (!HelperClass.ValidPhoneNumber(HotelContactNumber.Text) || !HelperClass.UniqueHotelNumber(HotelContactNumber.Text,AddHotelConnection))
             {
-                NumberError.SetError(HotelContactNumber, "The Number Format You Entered Wrong, Correct Form 12 numbers");
+                NumberError.SetError(HotelContactNumber, "The Number Format You Entered Wrong, Correct Form 12 numbers Or Already Exists");
                 Result = true;
             }
             if (!HelperClass.ValidRating(HotelRating.Value))
@@ -83,6 +81,7 @@ namespace Trivago.Forms
             return Result;
 
         }
+      
         private bool ValidHotelName(string HotelName)
         {
             if (HotelName == "")

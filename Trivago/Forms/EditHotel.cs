@@ -9,12 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
+using Trivago.Classes;
 namespace Trivago.Forms
 {
     public partial class EditHotel : Form
     {
         OracleConnection EditHotelConnection;
         string ordb = "Data Source=orcl;User Id=HR;Password=HR;";
+        string oldEmail, oldPhoneNumber;
         public EditHotel()
         {
             InitializeComponent();
@@ -46,6 +48,7 @@ namespace Trivago.Forms
         }
         private void SetAttributes()
         {
+            
             OracleCommand GetHotelAttributes = new OracleCommand();
             GetHotelAttributes.Connection = EditHotelConnection;
             GetHotelAttributes.CommandText = "select * from hotel where name = :hotelname";
@@ -60,6 +63,8 @@ namespace Trivago.Forms
                 HotelNumber.Text = HotelAttributesReader["contact_number"].ToString();
                 HotelRating.Value = Convert.ToInt32(HotelAttributesReader["Rating"].ToString());
             }
+            oldEmail = HotelEmail.Text;
+            oldPhoneNumber = HotelNumber.Text;
             HotelAttributesReader.Close();
         }
 
@@ -100,12 +105,45 @@ namespace Trivago.Forms
             {
                 return false;
             }
-               // hot ba2et al validation men al validation class !!!!
+            if (!ValidEmail(HotelEmail.Text))
+            {
+                return false;
+            }
+            if (!ValidPhoneNumber(HotelNumber.Text))
+            {
+                return false;
+            }
+            if (!HelperClass.ValidRating(HotelRating.Value))
+            {
+                return false;
+            }
+            return true;
+        }
+        private bool ValidEmail(string Email)
+        {
+            if (Email != oldEmail)
+            {
+                if (HelperClass.UniqueHotelNumber(Email,EditHotelConnection))
+                    return true;
+                return false;
+            }
+                return true;
+        }
+        private bool ValidPhoneNumber(string PhoneNumber)
+        {
+            if (PhoneNumber != oldPhoneNumber)
+            {
+                if (HelperClass.UniqueHotelNumber(PhoneNumber, EditHotelConnection))
+                    return true;
+                return false;
+            }
             return true;
         }
         private bool ValidNewHotelName()
         {
-            if (HotelName.Text != HotelNameDropDown.SelectedItem.ToString())
+            if (HotelName.Text == "")
+                return false;
+           else if (HotelName.Text != HotelNameDropDown.SelectedItem.ToString() )
             {
                 OracleCommand HotelNames = new OracleCommand();
                 HotelNames.Connection = EditHotelConnection;
