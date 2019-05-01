@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReserveRoom));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.SearchTextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.DisplayPanel = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
@@ -49,7 +48,6 @@
             this.HotelName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.RoomTypeLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.RoomTypeDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.viewOffersButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.reserveFrom = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.reserveTo = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.reserveFromLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -99,12 +97,12 @@
             this.DisplayPanel.BorderColor = System.Drawing.Color.Gainsboro;
             this.DisplayPanel.Controls.Add(this.tempPanel);
             this.DisplayPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DisplayPanel.Location = new System.Drawing.Point(0, 208);
+            this.DisplayPanel.Location = new System.Drawing.Point(0, 95);
             this.DisplayPanel.Name = "DisplayPanel";
             this.DisplayPanel.PanelColor = System.Drawing.Color.Empty;
             this.DisplayPanel.ShadowDept = 2;
             this.DisplayPanel.ShadowTopLeftVisible = false;
-            this.DisplayPanel.Size = new System.Drawing.Size(1285, 405);
+            this.DisplayPanel.Size = new System.Drawing.Size(1285, 518);
             this.DisplayPanel.TabIndex = 2;
             this.DisplayPanel.Tag = "main";
             // 
@@ -159,13 +157,13 @@
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.Location = new System.Drawing.Point(3, 79);
             this.bunifuButton1.Name = "bunifuButton1";
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties7.BorderRadius = 1;
-            stateProperties7.BorderThickness = 1;
-            stateProperties7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties7.IconLeftImage = null;
-            stateProperties7.IconRightImage = null;
-            this.bunifuButton1.onHoverState = stateProperties7;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.BorderRadius = 1;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.bunifuButton1.onHoverState = stateProperties1;
             this.bunifuButton1.Size = new System.Drawing.Size(315, 46);
             this.bunifuButton1.TabIndex = 8;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -307,39 +305,6 @@
             this.RoomTypeDropdown.Text = null;
             this.RoomTypeDropdown.SelectedIndexChanged += new System.EventHandler(this.RoomTypeDropdown_SelectedIndexChanged);
             // 
-            // viewOffersButton
-            // 
-            this.viewOffersButton.BackColor = System.Drawing.Color.Transparent;
-            this.viewOffersButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("viewOffersButton.BackgroundImage")));
-            this.viewOffersButton.ButtonText = "View Offers";
-            this.viewOffersButton.ButtonTextMarginLeft = 0;
-            this.viewOffersButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.viewOffersButton.DisabledFillColor = System.Drawing.Color.Gray;
-            this.viewOffersButton.DisabledForecolor = System.Drawing.Color.White;
-            this.viewOffersButton.ForeColor = System.Drawing.Color.White;
-            this.viewOffersButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.viewOffersButton.IconPadding = 10;
-            this.viewOffersButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.viewOffersButton.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.viewOffersButton.IdleBorderRadius = 1;
-            this.viewOffersButton.IdleBorderThickness = 0;
-            this.viewOffersButton.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.viewOffersButton.IdleIconLeftImage = null;
-            this.viewOffersButton.IdleIconRightImage = null;
-            this.viewOffersButton.Location = new System.Drawing.Point(10, 86);
-            this.viewOffersButton.Name = "viewOffersButton";
-            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties8.BorderRadius = 1;
-            stateProperties8.BorderThickness = 1;
-            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties8.IconLeftImage = null;
-            stateProperties8.IconRightImage = null;
-            this.viewOffersButton.onHoverState = stateProperties8;
-            this.viewOffersButton.Size = new System.Drawing.Size(210, 45);
-            this.viewOffersButton.TabIndex = 6;
-            this.viewOffersButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.viewOffersButton.Click += new System.EventHandler(this.viewOffersButton_Click);
-            // 
             // reserveFrom
             // 
             this.reserveFrom.BorderRadius = 1;
@@ -410,7 +375,6 @@
             this.Controls.Add(this.reserveFromLabel);
             this.Controls.Add(this.reserveTo);
             this.Controls.Add(this.reserveFrom);
-            this.Controls.Add(this.viewOffersButton);
             this.Controls.Add(this.RoomTypeDropdown);
             this.Controls.Add(this.RoomTypeLabel);
             this.Controls.Add(this.DisplayPanel);
@@ -439,7 +403,6 @@
         private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel tempPanel;
         private Bunifu.Framework.UI.BunifuCustomLabel HotelName;
         private Bunifu.Framework.UI.BunifuRating HotelRating;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton viewOffersButton;
         private Bunifu.Framework.UI.BunifuCustomLabel RoomPrice;
         private Bunifu.Framework.UI.BunifuCustomLabel HotelLocation;
         private Bunifu.Framework.UI.BunifuCustomLabel RoomType;
