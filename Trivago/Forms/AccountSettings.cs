@@ -173,9 +173,5 @@ namespace Trivago.Forms
 
         }
 
-        private void registerr_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
