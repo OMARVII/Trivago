@@ -14,9 +14,10 @@ namespace Trivago.Forms
     
     public partial class AddRoom : Form
     {
+        
         //Add multiply rooms?
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         public AddRoom()
         {
             InitializeComponent();

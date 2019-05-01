@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditWebsite));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.websiteDropDown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.newNameBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.UpdateBTN = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -111,13 +111,13 @@
             this.UpdateBTN.IdleIconRightImage = null;
             this.UpdateBTN.Location = new System.Drawing.Point(33, 171);
             this.UpdateBTN.Name = "UpdateBTN";
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.BorderRadius = 1;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.UpdateBTN.onHoverState = stateProperties2;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.BorderRadius = 1;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.UpdateBTN.onHoverState = stateProperties1;
             this.UpdateBTN.Size = new System.Drawing.Size(214, 45);
             this.UpdateBTN.TabIndex = 7;
             this.UpdateBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -133,6 +133,7 @@
             this.Controls.Add(this.websiteDropDown);
             this.Name = "EditWebsite";
             this.Text = "EditWebsite";
+            this.Load += new System.EventHandler(this.EditWebsite_Load);
             this.ResumeLayout(false);
 
         }

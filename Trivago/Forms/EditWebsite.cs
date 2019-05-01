@@ -14,7 +14,7 @@ namespace Trivago.Forms
     public partial class EditWebsite : Form
     {
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=hr;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         public EditWebsite()
         {
             InitializeComponent();
@@ -60,6 +60,11 @@ namespace Trivago.Forms
                 loadWebsites();
             }
             else MessageBox.Show("Something Wrong!");
+        }
+
+        private void EditWebsite_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
