@@ -45,8 +45,6 @@ create table Room
 (
 ID Number not null ,
 Type varchar2(10) not NULL ,
-Reserved_To date not null,
-Reserved_From date not null,
 
 User_ID number , 
 FOREIGN key (User_ID) REFERENCES Users(ID),
@@ -102,5 +100,17 @@ FOREIGN KEY (Website_ID) REFERENCES Website(ID),
 
 primary key (Website_ID,Hotel_ID,Room_Number)
 
+);
+*/
+
+/*
+create Table Room_Reservation (
+ID number not null,
+Reserved_From date not null, 
+Reserved_To date not null ,
+Hotel_ID number NOT NULL, 
+Room_ID number not NULL,
+foreign key (Room_ID,Hotel_ID) references Room(ID , HOTEL_ID),
+primary key(ID,Hotel_ID,Room_ID)
 );
 */
