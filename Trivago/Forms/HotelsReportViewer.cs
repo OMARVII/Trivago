@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trivago.CrystalReports;
+using CrystalDecisions.Shared;
+
 namespace Trivago.Forms
 {
     public partial class HotelsReportViewer : Form
@@ -20,6 +22,7 @@ namespace Trivago.Forms
         private void HotelsReportViewer_Load(object sender, EventArgs e)
         {
             ViewHotelsReport NewReport = new ViewHotelsReport();
+            NewReport.SetParameterValue(0, Forms.ViewHotels.CrystalReportRatingParameter);
             ViewHotels.ReportSource = NewReport;
         }
     }

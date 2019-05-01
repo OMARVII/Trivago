@@ -15,6 +15,7 @@ namespace Trivago.Forms
 {
     public partial class ViewHotels : Form
     {
+        public static int CrystalReportRatingParameter;
         bool FirstTime = true;
         OracleCommandBuilder commandBuilder;
         DataSet dataset;
@@ -80,6 +81,7 @@ namespace Trivago.Forms
 
         private void ReportButton_Click(object sender, EventArgs e)
         {
+            CrystalReportRatingParameter =Convert.ToInt32(HotelRating.Text);
             HotelsReportViewer Report = new HotelsReportViewer();
             Thread Loading = new Thread( new ThreadStart(runSplash));
             Loading.Start();
