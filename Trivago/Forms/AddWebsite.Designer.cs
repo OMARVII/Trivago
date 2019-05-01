@@ -1,4 +1,4 @@
-﻿namespace Trivago.Forms
+namespace Trivago.Forms
 {
     partial class AddWebsite
     {

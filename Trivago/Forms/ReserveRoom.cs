@@ -108,7 +108,56 @@ namespace Trivago.Forms
                 
             }
         }
+        int numberOfTimeIntersect(OracleDataReader dr)
+        {
+            int ret = 0;
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection =conn;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText =
+                @"select count(*) from room_reservation rr
+where 
+rr.hotel_id = :hotelID 
+AND 
+rr.room_id = :roomID 
+AND
+    (
+      ( :newFrom >= rr.reserved_from AND :newFrom<=rr.reserved_to)
+    OR
+      ( :newTo >= rr.reserved_from AND :newTo <= rr.reserved_to)
+    )
+";
 
+            cmd.Parameters.Add("hotelID", dr["hotelid"].ToString());
+            cmd.Parameters.Add("roomID", dr["roomid"].ToString());
+            cmd.Parameters.Add("newFrom", reserveFrom.Value.ToString("dd-MMM-yy"));
+            cmd.Parameters.Add("newFrom", reserveFrom.Value.ToString("dd-MMM-yy"));
+            cmd.Parameters.Add("newTo", reserveTo.Value.ToString("dd-MMM-yy"));
+            cmd.Parameters.Add("newTo", reserveTo.Value.ToString("dd-MMM-yy"));
+            OracleDataReader dr2 = cmd.ExecuteReader();
+
+            dr2.Read();
+            ret = int.Parse(dr2[0].ToString());
+            return ret;
+        }
+        string getNextReservationID()
+        {
+            string ret = "";
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select max(ID) from room_reservation";
+            OracleDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            if (dr[0].ToString() != null)
+            {
+                ret = dr[0].ToString();
+                ret = (int.Parse(ret) + 1).ToString();
+            }
+            else
+                ret = "1";
+            return ret;
+        }
         private void reserveButton_Click(object sender, EventArgs e)
         {
             string fullTag = ((Control)sender).Tag.ToString();
@@ -118,7 +167,7 @@ namespace Trivago.Forms
             cmd.Connection = conn;
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "reserveRoom";
-
+            cmd.Parameters.Add("newID", getNextReservationID());
             cmd.Parameters.Add("hotelid", hotelID.ToString());
             cmd.Parameters.Add("roomid", roomID.ToString());
             cmd.Parameters.Add("reserveFROM", reserveFrom.Value.ToString("dd-MMM-yy"));
@@ -166,27 +215,19 @@ namespace Trivago.Forms
         }
         void fillPanelByX( string x)
         {
-            string cmdSTR = @"select DISTINCT w.name as websitename,w.id as websiteid,h.id as hotelid , h.name as hotelname, h.rating as hotelrate , r.id as roomid, r.type as roomtype, riw.price as price , l.country as country, l.city as city, l.street as street , r.reserved_from as rfrom , r.reserved_to as rto
+            string cmdSTR = @"select DISTINCT w.name as websitename,w.id as websiteid,h.id as hotelid , h.name as hotelname, h.rating as hotelrate , r.id as roomid, r.type as roomtype, riw.price as price , l.country as country, l.city as city, l.street as street
 from website w , room r, hotel h , room_in_website riw, location l where
 " + x+@" LIKE :toFind
 AND
-riw.hotel_id = l.hotel_id
-AND
-r.hotel_id = l.hotel_id
-AND
 h.id = l.hotel_id
+AND
+r.hotel_id = h.id
 AND
 r.type = :type
 AND
+h.id = riw.hotel_id
+AND
 r.id = riw.room_number
-AND
-w.id = riw.website_id
-AND
-(
-(:newFrom>=r.reserved_to)
-OR
-(:newTo<=r.reserved_from)
-)
 ";
             
             OracleCommand cmd = new OracleCommand();
@@ -195,8 +236,6 @@ OR
             cmd.CommandText = cmdSTR;
             cmd.Parameters.Add("toFind",'%'+ SearchTextbox.Text+'%');
             cmd.Parameters.Add("type", RoomTypeDropdown.SelectedItem.ToString());
-            cmd.Parameters.Add("newFrom", reserveFrom.Value.ToString("dd-MMM-yy"));
-            cmd.Parameters.Add("newTo", reserveTo.Value.ToString("dd-MMM-yy"));
             OracleDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
@@ -207,6 +246,8 @@ OR
                 else
                     alreadyAddedOffer[Tuple.Create(dr["websiteid"].ToString(), tuple)] = true;
 
+                if (numberOfTimeIntersect(dr)!=0)
+                    continue;
                 if (!alreadyAddedPanels.ContainsKey(tuple))
                     addControlToPanel(dr);
                 else
@@ -320,8 +361,11 @@ OR
 
         private void reserveFrom_ValueChanged(object sender, EventArgs e)
         {
+            if (reserveFrom.Value < DateTime.Now)
+                reserveFrom.Value = DateTime.Now;
             if (reserveFrom.Value >= reserveTo.Value)
                 reserveTo.Value = reserveFrom.Value.AddDays(1);
+
             fillDisplayPanel();
         }
 

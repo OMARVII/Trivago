@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -124,6 +124,7 @@
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB9SURBVHhe7dMBCcAwEATBSo2zOP10C3WRGTg4A/ucc1aD
         m60vBLieECBCgAgBIgSIECBCgAgBIgSIECBCgAgBIgSIECBCgAgBIgSIECBCgAgBIgSIECBCgAgBIgSI
         ECBCgAgBIgSIECBCgAgBIgSIECBCgDwzs/8PV5qZ/QKsYLxWlmWmPAAAAABJRU5ErkJggg==
+
 </value>
   </data>
   <metadata name="AddWebsiteTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -131,5 +132,8 @@
   </metadata>
   <metadata name="WebsiteNameError.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>455, 22</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
 </root>
