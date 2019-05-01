@@ -15,7 +15,7 @@ namespace Trivago.Forms
     {
         public static string userID = "1";
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         public Login()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace Trivago.Forms
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            string cmdst = "select * from Users where EMAIL=:email AND PASSWORD=:password";
+            string cmdst = "select * from Users where EMAIL=:email AND PASSWORD=:password ";
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
             cmd.CommandText = cmdst;
@@ -38,18 +38,43 @@ namespace Trivago.Forms
             cmd.Parameters.Add("email", EmailTxtBox.Text);
             cmd.Parameters.Add("password", PasswordTxtBox.Text);
             OracleDataReader rd = cmd.ExecuteReader();
-            if (rd.Read())
-            {
-                MessageBox.Show("wooow You have Logged in");
-                userID = rd["id"].ToString();
-            }
-            else
-                MessageBox.Show("Nooo wrong wrong wrong");
-            AddWebsite temp = new AddWebsite();
-            this.Hide();
-            temp.ShowDialog();
-            this.Close();
-        }
+
+           
+            
+                if (rd.Read())
+                {
+                
+                    MessageBox.Show(" You Have Logged In Successfully");
+                    userID = rd["id"].ToString();
+                if (rd["is_admin"].ToString() == "t")
+                {
+                    conn.Close();
+                    Admin temp = new Admin();
+                    this.Hide();
+                    temp.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    conn.Close();
+                    ReserveRoom temp = new ReserveRoom();
+                    this.Hide();
+                    temp.ShowDialog();
+                    this.Close();
+                }
+        
+                }
+                else
+                    MessageBox.Show("Wrong email or password");
+            
+
+          
+
+
+
+        
+
+    }
 
         private void Login_Load(object sender, EventArgs e)
         {

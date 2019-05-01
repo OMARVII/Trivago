@@ -43,9 +43,10 @@ namespace Trivago.Forms
 
         private void addAdmin_Click(object sender, EventArgs e)
         {
-            Admin a = new Admin();
-            a.Show();
             this.Hide();
+            Admin a = new Admin();
+            a.ShowDialog();
+            this.Close();
         }
 
         private void websiteoffer_Click(object sender, EventArgs e)
@@ -55,33 +56,38 @@ namespace Trivago.Forms
 
         private void viewbtn_Click(object sender, EventArgs e)
         {
-            viewForm a = new viewForm();
-            a.Show();
             this.Hide();
+            viewForm a = new viewForm();
+            a.ShowDialog();
+            this.Close();
 
         }
 
         private void addbtn_Click(object sender, EventArgs e)
         {
-            addForm a = new addForm();
-            a.Show();
             this.Hide();
+            addForm a = new addForm();
+            a.ShowDialog();
+            this.Close();
+
 
         }
 
         private void editbtn_Click(object sender, EventArgs e)
         {
-            editForm a = new editForm();
-            a.Show();
             this.Hide();
+            editForm a = new editForm();
+            a.ShowDialog();
+            this.Close();
 
         }
 
         private void delbtn_Click(object sender, EventArgs e)
         {
-            delForm a = new delForm();
-            a.Show();
             this.Hide();
+            delForm a = new delForm();
+            a.ShowDialog();
+            this.Close();
 
         }
 
@@ -97,9 +103,10 @@ namespace Trivago.Forms
 
         private void makeoffers_Click(object sender, EventArgs e)
         {
-            MakeWebsitesOffers m = new MakeWebsitesOffers();
-            m.Show();
             this.Hide();
+            MakeWebsitesOffers a = new MakeWebsitesOffers();
+            a.ShowDialog();
+            this.Close();
         }
     }
 }

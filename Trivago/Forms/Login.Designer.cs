@@ -41,7 +41,7 @@
             this.EmailTxtBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.EmailTxtBox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.EmailTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EmailTxtBox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.EmailTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.EmailTxtBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.EmailTxtBox.HintForeColor = System.Drawing.Color.Empty;
             this.EmailTxtBox.HintText = "Enter Your Email";
@@ -50,11 +50,10 @@
             this.EmailTxtBox.LineIdleColor = System.Drawing.Color.Gray;
             this.EmailTxtBox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.EmailTxtBox.LineThickness = 3;
-            this.EmailTxtBox.Location = new System.Drawing.Point(130, 91);
-            this.EmailTxtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.EmailTxtBox.Location = new System.Drawing.Point(98, 74);
             this.EmailTxtBox.MaxLength = 32767;
             this.EmailTxtBox.Name = "EmailTxtBox";
-            this.EmailTxtBox.Size = new System.Drawing.Size(379, 33);
+            this.EmailTxtBox.Size = new System.Drawing.Size(284, 27);
             this.EmailTxtBox.TabIndex = 0;
             this.EmailTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -64,7 +63,7 @@
             this.PasswordTxtBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.PasswordTxtBox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.PasswordTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PasswordTxtBox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.PasswordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.PasswordTxtBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PasswordTxtBox.HintForeColor = System.Drawing.Color.Empty;
             this.PasswordTxtBox.HintText = "Enter Your Password";
@@ -73,11 +72,10 @@
             this.PasswordTxtBox.LineIdleColor = System.Drawing.Color.Gray;
             this.PasswordTxtBox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.PasswordTxtBox.LineThickness = 3;
-            this.PasswordTxtBox.Location = new System.Drawing.Point(130, 155);
-            this.PasswordTxtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.PasswordTxtBox.Location = new System.Drawing.Point(98, 126);
             this.PasswordTxtBox.MaxLength = 32767;
             this.PasswordTxtBox.Name = "PasswordTxtBox";
-            this.PasswordTxtBox.Size = new System.Drawing.Size(379, 33);
+            this.PasswordTxtBox.Size = new System.Drawing.Size(284, 27);
             this.PasswordTxtBox.TabIndex = 1;
             this.PasswordTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -100,7 +98,8 @@
             this.LoginBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.LoginBtn.IdleIconLeftImage = null;
             this.LoginBtn.IdleIconRightImage = null;
-            this.LoginBtn.Location = new System.Drawing.Point(180, 228);
+            this.LoginBtn.Location = new System.Drawing.Point(135, 185);
+            this.LoginBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LoginBtn.Name = "LoginBtn";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             stateProperties1.BorderRadius = 1;
@@ -109,21 +108,22 @@
             stateProperties1.IconLeftImage = null;
             stateProperties1.IconRightImage = null;
             this.LoginBtn.onHoverState = stateProperties1;
-            this.LoginBtn.Size = new System.Drawing.Size(210, 45);
+            this.LoginBtn.Size = new System.Drawing.Size(158, 37);
             this.LoginBtn.TabIndex = 2;
             this.LoginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 352);
+            this.ClientSize = new System.Drawing.Size(468, 286);
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.PasswordTxtBox);
             this.Controls.Add(this.EmailTxtBox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
-            this.Text = "Login";
+            this.Text = " ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
