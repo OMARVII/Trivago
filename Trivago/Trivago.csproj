@@ -45,13 +45,16 @@
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
-      <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition">
-      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
@@ -60,22 +63,22 @@
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
-      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
-      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
       <HintPath>..\..\..\Bunifu\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
-      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.Drawer">
-      <HintPath>\\mac\Home\Desktop\Bunifu\Bunifu.UI.WinForms.Drawer.dll</HintPath>
+      <HintPath>..\..\..\..\..\bunifu\Bunifu.UI.WinForms.Drawer.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\Bunifu\Bunifu_UI_v1.5.3.dll</HintPath>
