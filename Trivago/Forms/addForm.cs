@@ -43,23 +43,30 @@ namespace Trivago.Forms
 
         private void addAdmin_Click(object sender, EventArgs e)
         {
-            Admin a = new Admin();
-            a.Show();
+         ;
             this.Hide();
+            Admin a = new Admin();
+
+            a.ShowDialog();
+            this.Close();
         }
 
         private void websiteoffer_Click(object sender, EventArgs e)
         {
-            makewebsiteForm a = new makewebsiteForm();
-            a.Show();
             this.Hide();
+            makewebsiteForm a = new makewebsiteForm();
+
+            a.ShowDialog();
+            this.Close();
         }
 
         private void viewbtn_Click(object sender, EventArgs e)
         {
-            viewForm a = new viewForm();
-            a.Show();
             this.Hide();
+            viewForm a = new viewForm();
+
+            a.ShowDialog();
+            this.Close();
 
         }
 
@@ -71,17 +78,22 @@ namespace Trivago.Forms
 
         private void editbtn_Click(object sender, EventArgs e)
         {
-            editForm a = new editForm();
-            a.Show();
             this.Hide();
+            editForm a = new editForm();
+
+            a.ShowDialog();
+            this.Close();
 
         }
 
         private void delbtn_Click(object sender, EventArgs e)
         {
-            delForm a = new delForm();
-            a.Show();
             this.Hide();
+            delForm a = new delForm();
+
+            a.ShowDialog();
+            this.Close();
+
 
         }
 
@@ -92,25 +104,29 @@ namespace Trivago.Forms
 
         private void addroom_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("ana saleem");
+            this.Hide();
             AddRoom a = new AddRoom();
-            a.Show();
+            a.ShowDialog();
             this.Close();
             
         }
 
         private void addhotels_Click(object sender, EventArgs e)
         {
-            AddHotel b = new AddHotel();
-            b.Show();
+            this.Hide();
+            AddHotel a = new AddHotel();
+            a.ShowDialog();
             this.Close();
+
         }
 
         private void addweb_Click(object sender, EventArgs e)
         {
-            AddWebsite c = new AddWebsite();
-            c.Show();
             this.Hide();
+            AddWebsite a = new AddWebsite();
+            a.ShowDialog();
+            this.Close();
+
         }
     }
 }

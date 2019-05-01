@@ -43,16 +43,18 @@ namespace Trivago.Forms
 
         private void addAdmin_Click(object sender, EventArgs e)
         {
-            Admin a = new Admin();
-            a.Show();
             this.Hide();
+            Admin a = new Admin();
+            a.ShowDialog();
+            this.Close();
         }
 
         private void websiteoffer_Click(object sender, EventArgs e)
         {
-            makewebsiteForm a = new makewebsiteForm();
-            a.Show();
             this.Hide();
+            makewebsiteForm a = new makewebsiteForm();
+            a.ShowDialog();
+            this.Close();
         }
 
         private void viewbtn_Click(object sender, EventArgs e)
@@ -63,25 +65,28 @@ namespace Trivago.Forms
 
         private void addbtn_Click(object sender, EventArgs e)
         {
-            addForm a = new addForm();
-            a.Show();
             this.Hide();
+            addForm a = new addForm();
+            a.ShowDialog();
+            this.Close();
 
         }
 
         private void editbtn_Click(object sender, EventArgs e)
         {
-            editForm a = new editForm();
-            a.Show();
             this.Hide();
+            editForm a = new editForm();
+            a.ShowDialog();
+            this.Close();
 
         }
 
         private void delbtn_Click(object sender, EventArgs e)
         {
-            delForm a = new delForm();
-            a.Show();
             this.Hide();
+            delForm a = new delForm();
+            a.ShowDialog();
+            this.Close();
 
         }
 
@@ -92,23 +97,26 @@ namespace Trivago.Forms
 
         private void viewcust_Click(object sender, EventArgs e)
         {
-            ViewCustomers viewC = new ViewCustomers();
-            viewC.Show();
             this.Hide();
+            ViewCustomers a = new ViewCustomers();
+            a.ShowDialog();
+            this.Close();
         }
 
         private void viewweb_Click(object sender, EventArgs e)
         {
-            ViewWebsite v = new ViewWebsite();
-            v.Show();
             this.Hide();
+            ViewWebsite a = new ViewWebsite();
+            a.ShowDialog();
+            this.Close();
         }
 
         private void viewhotels_Click(object sender, EventArgs e)
         {
-            ViewHotels v = new ViewHotels();
-            v.Show();
             this.Hide();
+            ViewHotels a = new ViewHotels();
+            a.ShowDialog();
+            this.Close();
         }
     }
 }

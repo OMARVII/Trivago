@@ -60,6 +60,7 @@
             this.RoomsDataGrid.RowTemplate.Height = 24;
             this.RoomsDataGrid.Size = new System.Drawing.Size(1239, 339);
             this.RoomsDataGrid.TabIndex = 2;
+            this.RoomsDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RoomsDataGrid_CellContentClick);
             // 
             // RadioBox
             // 
@@ -113,7 +114,7 @@
             this.AnyLabel.ForeColor = System.Drawing.Color.White;
             this.AnyLabel.Location = new System.Drawing.Point(307, 22);
             this.AnyLabel.Name = "AnyLabel";
-            this.AnyLabel.Size = new System.Drawing.Size(32, 17);
+            this.AnyLabel.Size = new System.Drawing.Size(25, 13);
             this.AnyLabel.TabIndex = 9;
             this.AnyLabel.Text = "Any";
             // 
@@ -164,10 +165,11 @@
             // QuadLabel
             // 
             this.QuadLabel.AutoSize = true;
+
             this.QuadLabel.ForeColor = System.Drawing.Color.White;
             this.QuadLabel.Location = new System.Drawing.Point(238, 22);
             this.QuadLabel.Name = "QuadLabel";
-            this.QuadLabel.Size = new System.Drawing.Size(43, 17);
+            this.QuadLabel.Size = new System.Drawing.Size(33, 13);
             this.QuadLabel.TabIndex = 4;
             this.QuadLabel.Text = "Quad";
             // 
@@ -177,7 +179,7 @@
             this.TripleLabel.ForeColor = System.Drawing.Color.White;
             this.TripleLabel.Location = new System.Drawing.Point(164, 22);
             this.TripleLabel.Name = "TripleLabel";
-            this.TripleLabel.Size = new System.Drawing.Size(44, 17);
+            this.TripleLabel.Size = new System.Drawing.Size(33, 13);
             this.TripleLabel.TabIndex = 3;
             this.TripleLabel.Text = "Triple";
             // 
@@ -187,7 +189,7 @@
             this.DoubleLabel.ForeColor = System.Drawing.Color.White;
             this.DoubleLabel.Location = new System.Drawing.Point(87, 22);
             this.DoubleLabel.Name = "DoubleLabel";
-            this.DoubleLabel.Size = new System.Drawing.Size(53, 17);
+            this.DoubleLabel.Size = new System.Drawing.Size(41, 13);
             this.DoubleLabel.TabIndex = 2;
             this.DoubleLabel.Text = "Double";
             // 
@@ -197,7 +199,7 @@
             this.SingleLabel.ForeColor = System.Drawing.Color.White;
             this.SingleLabel.Location = new System.Drawing.Point(15, 22);
             this.SingleLabel.Name = "SingleLabel";
-            this.SingleLabel.Size = new System.Drawing.Size(47, 17);
+            this.SingleLabel.Size = new System.Drawing.Size(36, 13);
             this.SingleLabel.TabIndex = 1;
             this.SingleLabel.Text = "Single";
             // 
@@ -303,7 +305,7 @@
             // 
             // ViewHotels
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(1239, 777);

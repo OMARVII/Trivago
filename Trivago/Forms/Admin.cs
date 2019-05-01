@@ -163,46 +163,58 @@ namespace Trivago.Forms
 
         private void websiteoffer_Click(object sender, EventArgs e)
         {
-            makewebsiteForm a = new makewebsiteForm();
             conn.Close();
-            a.Show();
             this.Hide();
+            makewebsiteForm a = new makewebsiteForm();
+
+            a.ShowDialog();
+            this.Close();
             
+
         }
 
         private void viewbtn_Click(object sender, EventArgs e)
         {
-            viewForm a = new viewForm();
             conn.Close();
-            a.Show();
             this.Hide();
+            viewForm a = new viewForm();
+
+            a.ShowDialog();
+            this.Close();
 
         }
 
         private void addbtn_Click(object sender, EventArgs e)
         {
-            addForm a = new addForm();
             conn.Close();
-            a.Show();
             this.Hide();
+            addForm a = new addForm();
+
+            a.ShowDialog();
+            this.Close();
 
         }
 
         private void editbtn_Click(object sender, EventArgs e)
         {
-            editForm a = new editForm();
             conn.Close();
-            a.Show();
             this.Hide();
+            editForm a = new editForm();
+
+            a.ShowDialog();
+            this.Close();
 
         }
 
         private void delbtn_Click(object sender, EventArgs e)
         {
-            delForm a = new delForm();
             conn.Close();
-            a.Show();
             this.Hide();
+            delForm a = new delForm();
+            
+            a.ShowDialog();
+            this.Close();
+           
 
         }
 

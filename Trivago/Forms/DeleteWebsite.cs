@@ -27,7 +27,7 @@ namespace Trivago.Forms
                int nHeightEllipse // width of ellipse
            );
         OracleConnection conn;
-        string str = "Data Source=orcl;User Id=HR;Password=hr;";
+        string str = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
         string deletedID = "";
         public DeleteWebsite()
         {
