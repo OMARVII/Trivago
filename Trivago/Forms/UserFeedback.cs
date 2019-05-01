@@ -10,22 +10,35 @@ using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
 using Trivago.Classes;
+using System.Runtime.InteropServices;
 namespace Trivago.Forms
 {
     public partial class UserFeedback : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+           (
+               int nLeftRect,     // x-coordinate of upper-left corner
+               int nTopRect,      // y-coordinate of upper-left corner
+               int nRightRect,    // x-coordinate of lower-right corner
+               int nBottomRect,   // y-coordinate of lower-right corner
+               int nWidthEllipse, // height of ellipse
+               int nHeightEllipse // width of ellipse
+           );
         OracleConnection FeedBackConnection;
         string ordb = "Data Source=orcl;User Id=HR;Password=HR;";
         public UserFeedback()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            FeedBackConnection = new OracleConnection(ordb);
+            FeedBackConnection.Open();
         }
 
         private void UserFeedback_Load(object sender, EventArgs e)
         {
             FeedBackDate.Text = DateTime.Now.ToShortDateString();
-            FeedBackConnection = new OracleConnection(ordb);
-            FeedBackConnection.Open();
             FillHotelNames();
         }
         private void FillHotelNames()
@@ -58,13 +71,18 @@ namespace Trivago.Forms
         }
         private bool ValidInput()
         {
+            bool ret = true;
             if (HotelNames.SelectedIndex == -1)
             {
-                return false;
+                HotelNameError.SetError(HotelNames, "Please Select An Hotel");
+                ret = false;
             }
-            if (FeedbackText.Text == "")
-                return false;
-            return true;
+            if (FeedbackText.Text == "" || FeedbackText.Text.Length < 3)
+            {
+                FeedbackError.SetError(FeedbackText, "Please Enter A Strong FeedBack");
+                ret = false;
+            }
+            return ret;
         }
         private void AddFeedBack(int FeedBack_ID , int User_ID,int Hotel_ID)
         {
@@ -98,6 +116,12 @@ namespace Trivago.Forms
                 FeedBackID = 1;
             }
             return FeedBackID;
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            FeedBackConnection.Close();
+            this.Close();
         }
     }
 }

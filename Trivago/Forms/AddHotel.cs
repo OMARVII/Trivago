@@ -10,27 +10,55 @@ using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
 using Trivago.Classes;
+using System.Runtime.InteropServices;
 namespace Trivago.Forms
 {
     public partial class AddHotel : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+           (
+               int nLeftRect,     // x-coordinate of upper-left corner
+               int nTopRect,      // y-coordinate of upper-left corner
+               int nRightRect,    // x-coordinate of lower-right corner
+               int nBottomRect,   // y-coordinate of lower-right corner
+               int nWidthEllipse, // height of ellipse
+               int nHeightEllipse // width of ellipse
+           );
         OracleConnection AddHotelConnection;
         string ordb = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
         public AddHotel()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            AddHotelConnection = new OracleConnection(ordb);
+            AddHotelConnection.Open();
         }
         private void AddHotel_Load(object sender, EventArgs e)
         {
-            AddHotelConnection = new OracleConnection(ordb);
-            AddHotelConnection.Open();
+            LoadUserLabel();   
+        }
+        private void LoadUserLabel()
+        {
+            OracleCommand getUserName = new OracleCommand();
+            getUserName.Connection = AddHotelConnection;
+            getUserName.CommandText = "select first_name from users where id = :userid";
+            getUserName.CommandType = CommandType.Text;
+            getUserName.Parameters.Add("userid", Convert.ToInt32(Forms.Login.userID));
+            OracleDataReader UserName = getUserName.ExecuteReader();
+            if (UserName.Read())
+            {
+                WelcomeLabel.Text = "Welcome " + UserName[0].ToString() + "!";
+            }
+            UserName.Close();
         }
         private void AddHotelButton_Click(object sender, EventArgs e)
         {
             bool Result = CheckErrors();
             if (!Result)
             {
-                AddHotelToDatabase(HotelName.Text ,getHotelID() , HotelEmail.Text ,HotelContactNumber.Text,HotelDescription.Text,HotelRating.Value,CountryNameTextBox.Text,CityNameTextBox.Text,StreetNameTextBox.Text);
+                AddHotelToDatabase(HotelName.Text ,getHotelID() , HotelEmail.Text ,HotelContactNumber.Text,HotelDescription.Text,HotelRating.Value,HotelCountry.Text,HotelCity.Text,HotelStreet.Text);
                 MessageBox.Show("Hotel Added Successfully :)");
                 ClearFields();
                 ClearErrors();
@@ -39,25 +67,22 @@ namespace Trivago.Forms
             {
                 MessageBox.Show("Check the errors :)");
             }
-
         }
         private bool CheckErrors()
         {
             bool Result = false;
-            if (CityNameTextBox.Text == "")
+            if (HotelCity.Text == "")
             {
-                CityError.SetError(CityNameTextBox, "Please Enter the Hotel City");
+                CityError.SetError(HotelCity, "Please Enter the Hotel City");
             }
-            if (CountryNameTextBox.Text == "")
+            if (HotelCountry.Text == "")
             {
-                CountryError.SetError(CountryNameTextBox, "Please Enter the Hotel Country");
+                CountryError.SetError(HotelCountry, "Please Enter the Hotel Country");
             }
-            if (StreetNameTextBox.Text == "")
+            if (HotelStreet.Text == "")
             {
-                StreetError.SetError(StreetNameTextBox, "Please Enter the Hotel Street");
+                StreetError.SetError(HotelStreet, "Please Enter the Hotel Street");
             }
-
-
             if (!ValidHotelName(HotelName.Text))
             {
                 HotelNameError.SetError(HotelName, "This Hotel Name Already Exists");
@@ -75,13 +100,12 @@ namespace Trivago.Forms
             }
             if (!HelperClass.ValidRating(HotelRating.Value))
             {
-                HotelRatingError.SetError(RatingLabel, "Please Enter Rating For The Hotel");
+                HotelRatingError.SetError(HotelRating, "Please Enter Rating For The Hotel");
                 Result = true;
             }
             return Result;
 
         }
-      
         private bool ValidHotelName(string HotelName)
         {
             if (HotelName == "")
@@ -103,10 +127,6 @@ namespace Trivago.Forms
             datareader.Close();
             return true;
         }
-        
-        
-        
-        
         private int getHotelID()
         {
             int HotelID;
@@ -150,9 +170,9 @@ namespace Trivago.Forms
             HotelEmail.Text = "";
             HotelDescription.Text ="";
             HotelRating.Value = 0;
-            CountryNameTextBox.Text = "";
-            CityNameTextBox.Text = "";
-            StreetNameTextBox.Text = "";
+            HotelCountry.Text = "";
+            HotelCity.Text = "";
+            HotelStreet.Text = "";
             HotelContactNumber.Text = "";
         }
         private void ClearErrors()
@@ -165,6 +185,13 @@ namespace Trivago.Forms
             CountryError.Dispose();
             StreetError.Dispose();
             CityError.Dispose();
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            if(AddHotelConnection.State == ConnectionState.Open)
+                AddHotelConnection.Close();
+            Application.Exit();
         }
     }
 }

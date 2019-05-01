@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountSettings));
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.registerr = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.updateBTN = new Bunifu.Framework.UI.BunifuFlatButton();
             this.close = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -69,43 +69,41 @@
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // registerr
-            // 
-            this.registerr.Active = false;
-            this.registerr.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.registerr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.registerr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.registerr.BorderRadius = 0;
-            this.registerr.ButtonText = "Sign Up";
-            this.registerr.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.registerr.DisabledColor = System.Drawing.Color.Gray;
-            this.registerr.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerr.Iconcolor = System.Drawing.Color.Transparent;
-            this.registerr.Iconimage = null;
-            this.registerr.Iconimage_right = null;
-            this.registerr.Iconimage_right_Selected = null;
-            this.registerr.Iconimage_Selected = null;
-            this.registerr.IconMarginLeft = 0;
-            this.registerr.IconMarginRight = 0;
-            this.registerr.IconRightVisible = true;
-            this.registerr.IconRightZoom = 0D;
-            this.registerr.IconVisible = true;
-            this.registerr.IconZoom = 90D;
-            this.registerr.IsTab = false;
-            this.registerr.Location = new System.Drawing.Point(607, 519);
-            this.registerr.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.registerr.Name = "registerr";
-            this.registerr.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.registerr.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.registerr.OnHoverTextColor = System.Drawing.Color.White;
-            this.registerr.selected = false;
-            this.registerr.Size = new System.Drawing.Size(146, 48);
-            this.registerr.TabIndex = 57;
-            this.registerr.Text = "Sign Up";
-            this.registerr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.registerr.Textcolor = System.Drawing.Color.White;
-            this.registerr.TextFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerr.Click += new System.EventHandler(this.registerr_Click);
+            this.updateBTN.Active = false;
+            this.updateBTN.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.updateBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.updateBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.updateBTN.BorderRadius = 0;
+            this.updateBTN.ButtonText = "Update";
+            this.updateBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.updateBTN.DisabledColor = System.Drawing.Color.Gray;
+            this.updateBTN.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBTN.Iconcolor = System.Drawing.Color.Transparent;
+            this.updateBTN.Iconimage = null;
+            this.updateBTN.Iconimage_right = null;
+            this.updateBTN.Iconimage_right_Selected = null;
+            this.updateBTN.Iconimage_Selected = null;
+            this.updateBTN.IconMarginLeft = 0;
+            this.updateBTN.IconMarginRight = 0;
+            this.updateBTN.IconRightVisible = true;
+            this.updateBTN.IconRightZoom = 0D;
+            this.updateBTN.IconVisible = true;
+            this.updateBTN.IconZoom = 90D;
+            this.updateBTN.IsTab = false;
+            this.updateBTN.Location = new System.Drawing.Point(607, 519);
+            this.updateBTN.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.updateBTN.Name = "updateBTN";
+            this.updateBTN.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.updateBTN.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.updateBTN.OnHoverTextColor = System.Drawing.Color.White;
+            this.updateBTN.selected = false;
+            this.updateBTN.Size = new System.Drawing.Size(146, 48);
+            this.updateBTN.TabIndex = 57;
+            this.updateBTN.Text = "Update";
+            this.updateBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.updateBTN.Textcolor = System.Drawing.Color.White;
+            this.updateBTN.TextFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBTN.Click += new System.EventHandler(this.updateBTN_Click);
             // 
             // close
             // 
@@ -121,7 +119,7 @@
             this.close.LabelPosition = 41;
             this.close.LabelText = "";
             this.close.Location = new System.Drawing.Point(857, -5);
-            this.close.Margin = new System.Windows.Forms.Padding(6);
+            this.close.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(66, 107);
             this.close.TabIndex = 54;
@@ -140,7 +138,7 @@
             this.bunifuTileButton1.LabelPosition = 41;
             this.bunifuTileButton1.LabelText = "";
             this.bunifuTileButton1.Location = new System.Drawing.Point(782, 561);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(150, 296);
             this.bunifuTileButton1.TabIndex = 53;
@@ -259,6 +257,7 @@
             this.dateofbirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dateofbirth.FormatCustom = null;
             this.dateofbirth.Location = new System.Drawing.Point(563, 367);
+            this.dateofbirth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateofbirth.Name = "dateofbirth";
             this.dateofbirth.Size = new System.Drawing.Size(287, 36);
             this.dateofbirth.TabIndex = 43;
@@ -293,7 +292,7 @@
             this.mobile.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.mobile.LineThickness = 3;
             this.mobile.Location = new System.Drawing.Point(562, 297);
-            this.mobile.Margin = new System.Windows.Forms.Padding(4);
+            this.mobile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mobile.MaxLength = 32767;
             this.mobile.Name = "mobile";
             this.mobile.Size = new System.Drawing.Size(288, 33);
@@ -317,7 +316,7 @@
             this.password.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.password.LineThickness = 3;
             this.password.Location = new System.Drawing.Point(562, 218);
-            this.password.Margin = new System.Windows.Forms.Padding(4);
+            this.password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.password.MaxLength = 32767;
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(288, 33);
@@ -341,7 +340,7 @@
             this.email.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.email.LineThickness = 3;
             this.email.Location = new System.Drawing.Point(562, 144);
-            this.email.Margin = new System.Windows.Forms.Padding(4);
+            this.email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.email.MaxLength = 32767;
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(288, 38);
@@ -365,7 +364,7 @@
             this.last.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.last.LineThickness = 3;
             this.last.Location = new System.Drawing.Point(719, 85);
-            this.last.Margin = new System.Windows.Forms.Padding(4);
+            this.last.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.last.MaxLength = 32767;
             this.last.Name = "last";
             this.last.Size = new System.Drawing.Size(131, 32);
@@ -389,7 +388,7 @@
             this.first.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.first.LineThickness = 3;
             this.first.Location = new System.Drawing.Point(562, 85);
-            this.first.Margin = new System.Windows.Forms.Padding(4);
+            this.first.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.first.MaxLength = 32767;
             this.first.Name = "first";
             this.first.Size = new System.Drawing.Size(136, 32);
@@ -426,7 +425,7 @@
             this.bunifuTileButton2.LabelPosition = 41;
             this.bunifuTileButton2.LabelText = "";
             this.bunifuTileButton2.Location = new System.Drawing.Point(209, 309);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bunifuTileButton2.Name = "bunifuTileButton2";
             this.bunifuTileButton2.Size = new System.Drawing.Size(164, 204);
             this.bunifuTileButton2.TabIndex = 59;
@@ -459,7 +458,7 @@
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.bunifuTileButton2);
             this.Controls.Add(this.bunifuLabel2);
-            this.Controls.Add(this.registerr);
+            this.Controls.Add(this.updateBTN);
             this.Controls.Add(this.close);
             this.Controls.Add(this.bunifuTileButton1);
             this.Controls.Add(this.bunifuCustomLabel8);
@@ -490,7 +489,7 @@
 
         #endregion
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.Framework.UI.BunifuFlatButton registerr;
+        private Bunifu.Framework.UI.BunifuFlatButton updateBTN;
         private Bunifu.Framework.UI.BunifuTileButton close;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;

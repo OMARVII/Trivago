@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -169,11 +169,6 @@ namespace Trivago.Forms
         }
 
         private void bunifuLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void registerr_Click(object sender, EventArgs e)
         {
 
         }

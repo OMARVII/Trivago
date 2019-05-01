@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
 using Trivago.CrystalReports;
+using Trivago.Classes;
 namespace Trivago.Forms
 {
     public partial class ViewHotels : Form
@@ -27,10 +28,9 @@ namespace Trivago.Forms
 
         private void ViewHotels_Load(object sender, EventArgs e)
         {
-        
             RoomsDataGrid.Hide();
             dataset = new DataSet();
-            string ViewHotelsCommand = "select * from hotel";
+            string ViewHotelsCommand = "select id as ID ,name as Name , email as Email , contact_number as Phone_Number , rating as Rating ,description as Description from hotel";
             OracleDataAdapter hotelAdapter = new OracleDataAdapter(ViewHotelsCommand,ordb);
             hotelAdapter.Fill(dataset, "Hotels");
             HotelDataGrid.DataSource = dataset.Tables[0];
@@ -38,9 +38,7 @@ namespace Trivago.Forms
 
         private void LoadButton_Click(object sender, EventArgs e)
         {
-            
             RoomsDataGrid.Show();
-
             string ViewRoomsCommand = "select * from room ";
             string Type = "";
             if (SingleRadio.Checked)
@@ -52,10 +50,7 @@ namespace Trivago.Forms
             else if (QuadRadio.Checked)
                 Type = "where type = 'QUAD'";
             ViewRoomsCommand += Type;
-
-
             OracleDataAdapter roomAdapter = new OracleDataAdapter(ViewRoomsCommand, ordb);
-           
             if (FirstTime)
             {
                 roomAdapter.Fill(dataset, "rooms");
@@ -76,26 +71,28 @@ namespace Trivago.Forms
             BindingSource BS_RoomsChild = new BindingSource(BS_Hotel, "Hotel_ID");
             HotelDataGrid.DataSource = BS_Hotel;
             RoomsDataGrid.DataSource = BS_RoomsChild;
-
         }
 
         private void ReportButton_Click(object sender, EventArgs e)
         {
-            CrystalReportRatingParameter =Convert.ToInt32(HotelRating.Text);
-            HotelsReportViewer Report = new HotelsReportViewer();
-            Thread Loading = new Thread( new ThreadStart(runSplash));
-            Loading.Start();
-            
-            Report.ShowDialog();
-            Loading.Abort();
-
-
+            if (HotelRating.Text == "" || !HelperClass.ValidRating(Convert.ToInt32(HotelRating.Text)))
+            {
+                HotelRatingError.SetError(HotelRating, "Please Enter Valid Rating");
+            }
+            else
+            {
+                CrystalReportRatingParameter = Convert.ToInt32(HotelRating.Text);
+                HotelsReportViewer Report = new HotelsReportViewer();
+                Thread Loading = new Thread(new ThreadStart(runSplash));
+                Loading.Start();
+                Report.ShowDialog();
+                Loading.Abort();
+            }
         }
         private void runSplash()
         {
             Application.Run(new LoadingScreen());
             Thread.Sleep(5000);
-            
         }
 
         private void RoomsDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
