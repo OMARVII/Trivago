@@ -97,6 +97,7 @@ namespace Trivago.Forms
                 reserveButton.Tag =  getButtonHotelIdFromControl(hotelOffer)+' ' + getButtonRoomIdFromControl(hotelOffer) ;
                 reserveButton.Click += new EventHandler(reserveButton_Click);
                 reserveButton.Dock = DockStyle.Top;
+                reserveButton.ButtonText = "Reserve";
                 //reserveButton.Size = new Size(305, 125);
                 //reserveButton.AutoSize = true;
                 
@@ -149,7 +150,7 @@ AND
             cmd.CommandText = "select max(ID) from room_reservation";
             OracleDataReader dr = cmd.ExecuteReader();
             dr.Read();
-            if (dr[0].ToString() != null)
+            if (dr[0].ToString() != "")
             {
                 ret = dr[0].ToString();
                 ret = (int.Parse(ret) + 1).ToString();
@@ -172,7 +173,7 @@ AND
             cmd.Parameters.Add("roomid", roomID.ToString());
             cmd.Parameters.Add("reserveFROM", reserveFrom.Value.ToString("dd-MMM-yy"));
             cmd.Parameters.Add("reserveTO", reserveTo.Value.ToString("dd-MMM-yy"));
-
+            cmd.Parameters.Add("userID", Login.userID);
             int r = cmd.ExecuteNonQuery();
             if (r == 0)
             {
@@ -228,6 +229,8 @@ AND
 h.id = riw.hotel_id
 AND
 r.id = riw.room_number
+AND
+w.id = riw.website_id
 ";
             
             OracleCommand cmd = new OracleCommand();
