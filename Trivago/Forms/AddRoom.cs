@@ -17,7 +17,7 @@ namespace Trivago.Forms
         
         //Add multiply rooms?
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
         public AddRoom()
         {
             InitializeComponent();
@@ -90,7 +90,7 @@ namespace Trivago.Forms
             cmd.Connection = conn;
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = 
-                "insert into room (ID , TYPE,User_id,Hotel_id) values(:id,:type,NULL,:hotelid)";
+                "insert into room (ID , TYPE,Hotel_id) values(:id,:type,:hotelid)";
             cmd.Parameters.Add("id", RoomIDTextBox.Text);
             cmd.Parameters.Add("type", RoomTypeDropdown.SelectedItem.ToString());
             cmd.Parameters.Add("hotelid", getSelectedHotelID());

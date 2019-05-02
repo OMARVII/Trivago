@@ -125,8 +125,16 @@ namespace Trivago.Forms
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("id", OracleDbType.Int32, ParameterDirection.Output);
             cmd.ExecuteNonQuery();
-            userID = Convert.ToInt32(cmd.Parameters["id"].Value.ToString());
-            userID += 1;
+            try
+            {
+                userID = Convert.ToInt32(cmd.Parameters["id"].Value.ToString());
+                userID += 1;
+            }
+            catch 
+            {
+
+                userID = 1;
+            }
             return userID;
         }
         private void registerr_Click(object sender, EventArgs e)
