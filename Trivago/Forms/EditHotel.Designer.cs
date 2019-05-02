@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditHotel));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.HotelRating = new Bunifu.Framework.UI.BunifuRating();
             this.HotelNameDropDown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.HotelName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -217,13 +217,13 @@
             this.SubmitButton.Location = new System.Drawing.Point(238, 477);
             this.SubmitButton.Margin = new System.Windows.Forms.Padding(4);
             this.SubmitButton.Name = "SubmitButton";
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties3.BorderRadius = 1;
-            stateProperties3.BorderThickness = 1;
-            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties3.IconLeftImage = null;
-            stateProperties3.IconRightImage = null;
-            this.SubmitButton.onHoverState = stateProperties3;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.BorderRadius = 1;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.SubmitButton.onHoverState = stateProperties1;
             this.SubmitButton.Size = new System.Drawing.Size(336, 55);
             this.SubmitButton.TabIndex = 20;
             this.SubmitButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -399,6 +399,7 @@
             this.Controls.Add(this.HotelNameDropDown);
             this.Controls.Add(this.HotelRating);
             this.Name = "EditHotel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditHotel";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditHotel_FormClosed);
             this.Load += new System.EventHandler(this.EditHotel_Load);

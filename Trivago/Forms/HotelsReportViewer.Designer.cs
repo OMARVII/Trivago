@@ -49,6 +49,7 @@
             this.ClientSize = new System.Drawing.Size(1119, 551);
             this.Controls.Add(this.ViewHotels);
             this.Name = "HotelsReportViewer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HotelsReportViewer";
             this.Load += new System.EventHandler(this.HotelsReportViewer_Load);
             this.ResumeLayout(false);

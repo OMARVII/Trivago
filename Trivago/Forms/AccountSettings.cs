@@ -25,7 +25,7 @@ namespace Trivago.Forms
                int nHeightEllipse // width of ellipse
            );
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
         public AccountSettings()
         {
             InitializeComponent();
@@ -171,6 +171,12 @@ namespace Trivago.Forms
         private void bunifuLabel2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            conn.Close();
+            Application.Exit();
         }
     }
 }

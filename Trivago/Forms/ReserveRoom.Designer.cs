@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReserveRoom));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.SearchTextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.DisplayPanel = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             this.tempPanel = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -48,10 +47,12 @@
             this.HotelName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.RoomTypeLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.RoomTypeDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.reserveFrom = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.reserveTo = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.reserveFromLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.reserveToLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.AccountSettingsIcon = new Bunifu.Framework.UI.BunifuTileButton();
+            this.reserveTo = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.reserveFrom = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.DisplayPanel.SuspendLayout();
             this.tempPanel.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
@@ -135,38 +136,6 @@
             this.bunifuShadowPanel2.ShadowTopLeftVisible = false;
             this.bunifuShadowPanel2.Size = new System.Drawing.Size(321, 128);
             this.bunifuShadowPanel2.TabIndex = 8;
-            // 
-            // bunifuButton1
-            // 
-            this.bunifuButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
-            this.bunifuButton1.ButtonText = "Bunifu Button";
-            this.bunifuButton1.ButtonTextMarginLeft = 0;
-            this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.bunifuButton1.DisabledFillColor = System.Drawing.Color.Gray;
-            this.bunifuButton1.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton1.IconPadding = 10;
-            this.bunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton1.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.bunifuButton1.IdleBorderRadius = 1;
-            this.bunifuButton1.IdleBorderThickness = 0;
-            this.bunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.bunifuButton1.IdleIconLeftImage = null;
-            this.bunifuButton1.IdleIconRightImage = null;
-            this.bunifuButton1.Location = new System.Drawing.Point(3, 79);
-            this.bunifuButton1.Name = "bunifuButton1";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.BorderRadius = 1;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.bunifuButton1.onHoverState = stateProperties1;
-            this.bunifuButton1.Size = new System.Drawing.Size(315, 46);
-            this.bunifuButton1.TabIndex = 8;
-            this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuShadowPanel1
             // 
@@ -305,26 +274,43 @@
             this.RoomTypeDropdown.Text = null;
             this.RoomTypeDropdown.SelectedIndexChanged += new System.EventHandler(this.RoomTypeDropdown_SelectedIndexChanged);
             // 
-            // reserveFrom
+            // reserveFromLabel
             // 
-            this.reserveFrom.BorderRadius = 1;
-            this.reserveFrom.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
-            this.reserveFrom.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.reserveFrom.DisabledColor = System.Drawing.Color.Gray;
-            this.reserveFrom.DisplayWeekNumbers = false;
-            this.reserveFrom.DPHeight = 0;
-            this.reserveFrom.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.reserveFrom.FillDatePicker = false;
-            this.reserveFrom.ForeColor = System.Drawing.Color.Purple;
-            this.reserveFrom.Icon = ((System.Drawing.Image)(resources.GetObject("reserveFrom.Icon")));
-            this.reserveFrom.IconColor = System.Drawing.Color.Purple;
-            this.reserveFrom.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.reserveFrom.Location = new System.Drawing.Point(433, 29);
-            this.reserveFrom.MinimumSize = new System.Drawing.Size(217, 32);
-            this.reserveFrom.Name = "reserveFrom";
-            this.reserveFrom.Size = new System.Drawing.Size(217, 32);
-            this.reserveFrom.TabIndex = 7;
-            this.reserveFrom.ValueChanged += new System.EventHandler(this.reserveFrom_ValueChanged);
+            this.reserveFromLabel.AutoSize = true;
+            this.reserveFromLabel.Location = new System.Drawing.Point(430, 9);
+            this.reserveFromLabel.Name = "reserveFromLabel";
+            this.reserveFromLabel.Size = new System.Drawing.Size(105, 17);
+            this.reserveFromLabel.TabIndex = 9;
+            this.reserveFromLabel.Text = "Reserve From :";
+            // 
+            // reserveToLabel
+            // 
+            this.reserveToLabel.AutoSize = true;
+            this.reserveToLabel.Location = new System.Drawing.Point(705, 9);
+            this.reserveToLabel.Name = "reserveToLabel";
+            this.reserveToLabel.Size = new System.Drawing.Size(90, 17);
+            this.reserveToLabel.TabIndex = 10;
+            this.reserveToLabel.Text = "Reserve To :";
+            // 
+            // AccountSettingsIcon
+            // 
+            this.AccountSettingsIcon.BackColor = System.Drawing.Color.Transparent;
+            this.AccountSettingsIcon.color = System.Drawing.Color.Transparent;
+            this.AccountSettingsIcon.colorActive = System.Drawing.Color.Transparent;
+            this.AccountSettingsIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AccountSettingsIcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.AccountSettingsIcon.ForeColor = System.Drawing.Color.White;
+            this.AccountSettingsIcon.Image = global::Trivago.Properties.Resources.navy1;
+            this.AccountSettingsIcon.ImagePosition = 20;
+            this.AccountSettingsIcon.ImageZoom = 50;
+            this.AccountSettingsIcon.LabelPosition = 41;
+            this.AccountSettingsIcon.LabelText = "";
+            this.AccountSettingsIcon.Location = new System.Drawing.Point(1211, -13);
+            this.AccountSettingsIcon.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.AccountSettingsIcon.Name = "AccountSettingsIcon";
+            this.AccountSettingsIcon.Size = new System.Drawing.Size(88, 132);
+            this.AccountSettingsIcon.TabIndex = 21;
+            this.AccountSettingsIcon.Click += new System.EventHandler(this.AccountSettingsIcon_Click);
             // 
             // reserveTo
             // 
@@ -348,29 +334,65 @@
             this.reserveTo.Value = new System.DateTime(2019, 5, 31, 0, 0, 0, 0);
             this.reserveTo.ValueChanged += new System.EventHandler(this.reserveTo_ValueChanged);
             // 
-            // reserveFromLabel
+            // reserveFrom
             // 
-            this.reserveFromLabel.AutoSize = true;
-            this.reserveFromLabel.Location = new System.Drawing.Point(430, 9);
-            this.reserveFromLabel.Name = "reserveFromLabel";
-            this.reserveFromLabel.Size = new System.Drawing.Size(105, 17);
-            this.reserveFromLabel.TabIndex = 9;
-            this.reserveFromLabel.Text = "Reserve From :";
+            this.reserveFrom.BorderRadius = 1;
+            this.reserveFrom.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
+            this.reserveFrom.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.reserveFrom.DisabledColor = System.Drawing.Color.Gray;
+            this.reserveFrom.DisplayWeekNumbers = false;
+            this.reserveFrom.DPHeight = 0;
+            this.reserveFrom.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.reserveFrom.FillDatePicker = false;
+            this.reserveFrom.ForeColor = System.Drawing.Color.Purple;
+            this.reserveFrom.Icon = ((System.Drawing.Image)(resources.GetObject("reserveFrom.Icon")));
+            this.reserveFrom.IconColor = System.Drawing.Color.Purple;
+            this.reserveFrom.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.reserveFrom.Location = new System.Drawing.Point(433, 29);
+            this.reserveFrom.MinimumSize = new System.Drawing.Size(217, 32);
+            this.reserveFrom.Name = "reserveFrom";
+            this.reserveFrom.Size = new System.Drawing.Size(217, 32);
+            this.reserveFrom.TabIndex = 7;
+            this.reserveFrom.ValueChanged += new System.EventHandler(this.reserveFrom_ValueChanged);
             // 
-            // reserveToLabel
+            // bunifuButton1
             // 
-            this.reserveToLabel.AutoSize = true;
-            this.reserveToLabel.Location = new System.Drawing.Point(705, 9);
-            this.reserveToLabel.Name = "reserveToLabel";
-            this.reserveToLabel.Size = new System.Drawing.Size(90, 17);
-            this.reserveToLabel.TabIndex = 10;
-            this.reserveToLabel.Text = "Reserve To :";
+            this.bunifuButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
+            this.bunifuButton1.ButtonText = "Bunifu Button";
+            this.bunifuButton1.ButtonTextMarginLeft = 0;
+            this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.bunifuButton1.DisabledFillColor = System.Drawing.Color.Gray;
+            this.bunifuButton1.DisabledForecolor = System.Drawing.Color.White;
+            this.bunifuButton1.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton1.IconPadding = 10;
+            this.bunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton1.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.bunifuButton1.IdleBorderRadius = 1;
+            this.bunifuButton1.IdleBorderThickness = 0;
+            this.bunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.bunifuButton1.IdleIconLeftImage = null;
+            this.bunifuButton1.IdleIconRightImage = null;
+            this.bunifuButton1.Location = new System.Drawing.Point(3, 79);
+            this.bunifuButton1.Name = "bunifuButton1";
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 1;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.bunifuButton1.onHoverState = stateProperties2;
+            this.bunifuButton1.Size = new System.Drawing.Size(315, 46);
+            this.bunifuButton1.TabIndex = 8;
+            this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ReserveRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1285, 613);
+            this.Controls.Add(this.AccountSettingsIcon);
             this.Controls.Add(this.reserveToLabel);
             this.Controls.Add(this.reserveFromLabel);
             this.Controls.Add(this.reserveTo);
@@ -381,6 +403,7 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.SearchTextbox);
             this.Name = "ReserveRoom";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReserveRoom";
             this.DisplayPanel.ResumeLayout(false);
             this.tempPanel.ResumeLayout(false);
@@ -417,5 +440,6 @@
         private Bunifu.UI.WinForms.BunifuDatePicker reserveTo;
         private Bunifu.Framework.UI.BunifuCustomLabel reserveFromLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel reserveToLabel;
+        private Bunifu.Framework.UI.BunifuTileButton AccountSettingsIcon;
     }
 }
