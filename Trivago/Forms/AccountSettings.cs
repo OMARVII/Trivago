@@ -25,7 +25,7 @@ namespace Trivago.Forms
                int nHeightEllipse // width of ellipse
            );
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
         public AccountSettings()
         {
             InitializeComponent();

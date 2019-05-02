@@ -68,7 +68,7 @@
             this.hotelDropDown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.hotelDropDown.Location = new System.Drawing.Point(113, 135);
             this.hotelDropDown.Name = "hotelDropDown";
-            this.hotelDropDown.Size = new System.Drawing.Size(252, 32);
+            this.hotelDropDown.Size = new System.Drawing.Size(335, 32);
             this.hotelDropDown.TabIndex = 4;
             this.hotelDropDown.Text = "Select Hotel ID";
             this.hotelDropDown.SelectedIndexChanged += new System.EventHandler(this.hotelDropDown_SelectedIndexChanged);
@@ -101,7 +101,7 @@
             this.roomDropDown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.roomDropDown.Location = new System.Drawing.Point(113, 211);
             this.roomDropDown.Name = "roomDropDown";
-            this.roomDropDown.Size = new System.Drawing.Size(252, 32);
+            this.roomDropDown.Size = new System.Drawing.Size(335, 32);
             this.roomDropDown.TabIndex = 5;
             this.roomDropDown.Text = "Select Room ID";
             // 
@@ -134,7 +134,7 @@
             stateProperties1.IconLeftImage = null;
             stateProperties1.IconRightImage = null;
             this.DeleteBTN.onHoverState = stateProperties1;
-            this.DeleteBTN.Size = new System.Drawing.Size(252, 45);
+            this.DeleteBTN.Size = new System.Drawing.Size(336, 55);
             this.DeleteBTN.TabIndex = 3;
             this.DeleteBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.DeleteBTN.Click += new System.EventHandler(this.DeleteBTN_Click);
@@ -143,12 +143,12 @@
             // 
             this.bunifuPictureBox1.AllowFocused = false;
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.BorderRadius = 25;
             this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.closeW;
             this.bunifuPictureBox1.IsCircle = true;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(410, 12);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(51, 51);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 6;
             this.bunifuPictureBox1.TabStop = false;
@@ -164,7 +164,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(32, 69);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(126, 25);
+            this.bunifuLabel1.Size = new System.Drawing.Size(157, 31);
             this.bunifuLabel1.TabIndex = 7;
             this.bunifuLabel1.Text = "Delete Room";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -189,7 +189,7 @@
             // 
             // DeleteRoom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(460, 411);
@@ -200,6 +200,7 @@
             this.Controls.Add(this.hotelDropDown);
             this.Controls.Add(this.DeleteBTN);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DeleteRoom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeleteRoom";

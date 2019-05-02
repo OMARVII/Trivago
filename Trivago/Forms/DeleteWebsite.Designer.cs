@@ -49,7 +49,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(21, 62);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(147, 25);
+            this.bunifuLabel1.Size = new System.Drawing.Size(182, 31);
             this.bunifuLabel1.TabIndex = 16;
             this.bunifuLabel1.Text = "Delete Website";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -60,12 +60,13 @@
             // 
             this.bunifuPictureBox1.AllowFocused = false;
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.BorderRadius = 25;
             this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.closeW;
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(407, 16);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(543, 20);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(51, 51);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 15;
             this.bunifuPictureBox1.TabStop = false;
@@ -98,9 +99,10 @@
             this.website.ItemForeColor = System.Drawing.Color.White;
             this.website.ItemHeight = 26;
             this.website.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
-            this.website.Location = new System.Drawing.Point(108, 131);
+            this.website.Location = new System.Drawing.Point(144, 161);
+            this.website.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.website.Name = "website";
-            this.website.Size = new System.Drawing.Size(252, 32);
+            this.website.Size = new System.Drawing.Size(335, 32);
             this.website.TabIndex = 14;
             this.website.Text = "Select Website Name";
             this.website.SelectedIndexChanged += new System.EventHandler(this.website_SelectedIndexChanged);
@@ -125,7 +127,8 @@
             this.delete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(65)))), ((int)(((byte)(95)))));
             this.delete.IdleIconLeftImage = null;
             this.delete.IdleIconRightImage = null;
-            this.delete.Location = new System.Drawing.Point(108, 297);
+            this.delete.Location = new System.Drawing.Point(144, 366);
+            this.delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.delete.Name = "delete";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             stateProperties1.BorderRadius = 1;
@@ -154,11 +157,11 @@
             this.websiteN.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.websiteN.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.websiteN.LineThickness = 3;
-            this.websiteN.Location = new System.Drawing.Point(108, 209);
-            this.websiteN.Margin = new System.Windows.Forms.Padding(4);
+            this.websiteN.Location = new System.Drawing.Point(144, 257);
+            this.websiteN.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.websiteN.MaxLength = 32767;
             this.websiteN.Name = "websiteN";
-            this.websiteN.Size = new System.Drawing.Size(252, 33);
+            this.websiteN.Size = new System.Drawing.Size(336, 41);
             this.websiteN.TabIndex = 12;
             this.websiteN.Text = "Enter New Name";
             this.websiteN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -182,7 +185,7 @@
             // 
             // DeleteWebsite
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(460, 411);
@@ -192,8 +195,9 @@
             this.Controls.Add(this.website);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.websiteN);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DeleteWebsite";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeleteWebsite";
             this.Load += new System.EventHandler(this.DeleteWebsite_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();

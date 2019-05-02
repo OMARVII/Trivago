@@ -44,7 +44,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(12, 24);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(130, 25);
+            this.bunifuLabel1.Size = new System.Drawing.Size(162, 31);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "Terms of Use";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -61,7 +61,7 @@
             this.bunifuLabel2.Location = new System.Drawing.Point(12, 61);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(900, 536);
+            this.bunifuLabel2.Size = new System.Drawing.Size(900, 872);
             this.bunifuLabel2.TabIndex = 1;
             this.bunifuLabel2.Text = resources.GetString("bunifuLabel2.Text");
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -109,7 +109,7 @@
             // 
             // Agreement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(929, 631);
@@ -120,6 +120,7 @@
             this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Agreement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agreement";
             this.Load += new System.EventHandler(this.Agreement_Load);
             this.ResumeLayout(false);

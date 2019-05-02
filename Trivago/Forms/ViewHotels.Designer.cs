@@ -180,11 +180,11 @@
             this.HotelRating.LineIdleColor = System.Drawing.Color.Gray;
             this.HotelRating.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.HotelRating.LineThickness = 3;
-            this.HotelRating.Location = new System.Drawing.Point(712, 22);
-            this.HotelRating.Margin = new System.Windows.Forms.Padding(4);
+            this.HotelRating.Location = new System.Drawing.Point(949, 27);
+            this.HotelRating.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.HotelRating.MaxLength = 32767;
             this.HotelRating.Name = "HotelRating";
-            this.HotelRating.Size = new System.Drawing.Size(262, 33);
+            this.HotelRating.Size = new System.Drawing.Size(349, 41);
             this.HotelRating.TabIndex = 10;
             this.HotelRating.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -192,53 +192,58 @@
             // 
             this.AnyLabel.AutoSize = true;
             this.AnyLabel.ForeColor = System.Drawing.Color.White;
-            this.AnyLabel.Location = new System.Drawing.Point(307, 22);
+            this.AnyLabel.Location = new System.Drawing.Point(409, 27);
+            this.AnyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AnyLabel.Name = "AnyLabel";
-            this.AnyLabel.Size = new System.Drawing.Size(25, 13);
+            this.AnyLabel.Size = new System.Drawing.Size(32, 17);
             this.AnyLabel.TabIndex = 9;
             this.AnyLabel.Text = "Any";
             // 
             // AnyRadio
             // 
             this.AnyRadio.Checked = false;
-            this.AnyRadio.Location = new System.Drawing.Point(310, 52);
+            this.AnyRadio.Location = new System.Drawing.Point(413, 64);
+            this.AnyRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AnyRadio.Name = "AnyRadio";
             this.AnyRadio.OutlineColor = System.Drawing.Color.White;
             this.AnyRadio.RadioColor = System.Drawing.Color.White;
-            this.AnyRadio.Size = new System.Drawing.Size(25, 25);
+            this.AnyRadio.Size = new System.Drawing.Size(33, 31);
             this.AnyRadio.TabIndex = 8;
             this.AnyRadio.Text = null;
             // 
             // QuadRadio
             // 
             this.QuadRadio.Checked = false;
-            this.QuadRadio.Location = new System.Drawing.Point(241, 52);
+            this.QuadRadio.Location = new System.Drawing.Point(321, 64);
+            this.QuadRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.QuadRadio.Name = "QuadRadio";
             this.QuadRadio.OutlineColor = System.Drawing.Color.White;
             this.QuadRadio.RadioColor = System.Drawing.Color.White;
-            this.QuadRadio.Size = new System.Drawing.Size(25, 25);
+            this.QuadRadio.Size = new System.Drawing.Size(33, 31);
             this.QuadRadio.TabIndex = 7;
             this.QuadRadio.Text = null;
             // 
             // TripleRadio
             // 
             this.TripleRadio.Checked = false;
-            this.TripleRadio.Location = new System.Drawing.Point(167, 52);
+            this.TripleRadio.Location = new System.Drawing.Point(223, 64);
+            this.TripleRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TripleRadio.Name = "TripleRadio";
             this.TripleRadio.OutlineColor = System.Drawing.Color.White;
             this.TripleRadio.RadioColor = System.Drawing.Color.White;
-            this.TripleRadio.Size = new System.Drawing.Size(25, 25);
+            this.TripleRadio.Size = new System.Drawing.Size(33, 31);
             this.TripleRadio.TabIndex = 6;
             this.TripleRadio.Text = null;
             // 
             // DoubleRadio
             // 
             this.DoubleRadio.Checked = false;
-            this.DoubleRadio.Location = new System.Drawing.Point(100, 52);
+            this.DoubleRadio.Location = new System.Drawing.Point(133, 64);
+            this.DoubleRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DoubleRadio.Name = "DoubleRadio";
             this.DoubleRadio.OutlineColor = System.Drawing.Color.White;
             this.DoubleRadio.RadioColor = System.Drawing.Color.White;
-            this.DoubleRadio.Size = new System.Drawing.Size(25, 25);
+            this.DoubleRadio.Size = new System.Drawing.Size(33, 31);
             this.DoubleRadio.TabIndex = 5;
             this.DoubleRadio.Text = null;
             // 
@@ -246,9 +251,10 @@
             // 
             this.QuadLabel.AutoSize = true;
             this.QuadLabel.ForeColor = System.Drawing.Color.White;
-            this.QuadLabel.Location = new System.Drawing.Point(238, 22);
+            this.QuadLabel.Location = new System.Drawing.Point(317, 27);
+            this.QuadLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.QuadLabel.Name = "QuadLabel";
-            this.QuadLabel.Size = new System.Drawing.Size(33, 13);
+            this.QuadLabel.Size = new System.Drawing.Size(43, 17);
             this.QuadLabel.TabIndex = 4;
             this.QuadLabel.Text = "Quad";
             // 
@@ -256,9 +262,10 @@
             // 
             this.TripleLabel.AutoSize = true;
             this.TripleLabel.ForeColor = System.Drawing.Color.White;
-            this.TripleLabel.Location = new System.Drawing.Point(164, 22);
+            this.TripleLabel.Location = new System.Drawing.Point(219, 27);
+            this.TripleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TripleLabel.Name = "TripleLabel";
-            this.TripleLabel.Size = new System.Drawing.Size(33, 13);
+            this.TripleLabel.Size = new System.Drawing.Size(44, 17);
             this.TripleLabel.TabIndex = 3;
             this.TripleLabel.Text = "Triple";
             // 
@@ -266,9 +273,10 @@
             // 
             this.DoubleLabel.AutoSize = true;
             this.DoubleLabel.ForeColor = System.Drawing.Color.White;
-            this.DoubleLabel.Location = new System.Drawing.Point(87, 22);
+            this.DoubleLabel.Location = new System.Drawing.Point(116, 27);
+            this.DoubleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DoubleLabel.Name = "DoubleLabel";
-            this.DoubleLabel.Size = new System.Drawing.Size(41, 13);
+            this.DoubleLabel.Size = new System.Drawing.Size(53, 17);
             this.DoubleLabel.TabIndex = 2;
             this.DoubleLabel.Text = "Double";
             // 
@@ -276,20 +284,22 @@
             // 
             this.SingleLabel.AutoSize = true;
             this.SingleLabel.ForeColor = System.Drawing.Color.White;
-            this.SingleLabel.Location = new System.Drawing.Point(15, 22);
+            this.SingleLabel.Location = new System.Drawing.Point(20, 27);
+            this.SingleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SingleLabel.Name = "SingleLabel";
-            this.SingleLabel.Size = new System.Drawing.Size(36, 13);
+            this.SingleLabel.Size = new System.Drawing.Size(47, 17);
             this.SingleLabel.TabIndex = 1;
             this.SingleLabel.Text = "Single";
             // 
             // SingleRadio
             // 
             this.SingleRadio.Checked = true;
-            this.SingleRadio.Location = new System.Drawing.Point(27, 52);
+            this.SingleRadio.Location = new System.Drawing.Point(36, 64);
+            this.SingleRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SingleRadio.Name = "SingleRadio";
             this.SingleRadio.OutlineColor = System.Drawing.Color.White;
             this.SingleRadio.RadioColor = System.Drawing.Color.White;
-            this.SingleRadio.Size = new System.Drawing.Size(25, 25);
+            this.SingleRadio.Size = new System.Drawing.Size(33, 31);
             this.SingleRadio.TabIndex = 0;
             this.SingleRadio.Text = null;
             // 
@@ -341,7 +351,7 @@
             // 
             // ViewHotels
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(644, 594);
@@ -350,6 +360,7 @@
             this.Controls.Add(this.HotelDataGrid);
             this.Controls.Add(this.RadioBox);
             this.Controls.Add(this.RoomsDataGrid);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ViewHotels";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewHotels";
