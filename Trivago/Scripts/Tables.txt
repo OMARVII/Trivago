@@ -1,16 +1,17 @@
 ﻿/*drop table User;
-drop table Hotel;
-drop table Website;
-drop table Room;
-drop table FeedBack;
+drop table Location;
+drop table Room_Reservation;
 drop table User_Hotel_FeedBack;
 drop table Room_In_Website;
-drop table Location;
+drop table Room;
+drop table Hotel;
+drop table Website;
+drop table FeedBack;
+drop table users;
 */
 
 
-/*
-create table Hotel
+/*create table Hotel
 (
 ID Number primary Key ,
 Email varchar2(30) Not NULL,
@@ -19,7 +20,6 @@ Rating Number Not Null,
 Name varchar2(30) Not Null,
 Description varchar2(200)
 );
-
 
 create table Users
 (
@@ -33,8 +33,7 @@ create table Users
   Password varchar2(20) not null,
   Is_Admin CHAR(1) not null
 );
-*/
-/*
+
 create table Website
 (
   ID Number primary key , 
@@ -45,9 +44,6 @@ create table Room
 (
 ID Number not null ,
 Type varchar2(10) not NULL ,
-
-User_ID number , 
-FOREIGN key (User_ID) REFERENCES Users(ID),
 
 Hotel_ID Number not NULL,
 FOREIGN key (Hotel_ID) REFERENCES Hotel(ID),
@@ -75,23 +71,24 @@ create table User_Hotel_FeedBack
 	
 );
 
-
 create table Location
 (
 Street varchar2(30) not null,
 City varchar2(30) not null ,
 Country varchar2(30) not null,
 Hotel_ID number not null,
-FOREIGN KEY (Hotel_ID) REFERENCES Hotel(ID)
+FOREIGN KEY (Hotel_ID) REFERENCES Hotel(ID),
+primary key (Hotel_ID)
+	
 );
-*/
-/*
 create table Room_In_Website
 (
 Price Number not null,
 
 Room_Number number not null,
+
 Hotel_ID number not null,
+
 FOREIGN KEY (Room_Number , Hotel_ID) REFERENCES Room(ID , Hotel_ID),
 
 
@@ -101,16 +98,18 @@ FOREIGN KEY (Website_ID) REFERENCES Website(ID),
 primary key (Website_ID,Hotel_ID,Room_Number)
 
 );
-*/
 
-/*
 create Table Room_Reservation (
-ID number not null,
+ID number Primary key ,
+
 Reserved_From date not null, 
 Reserved_To date not null ,
 Hotel_ID number NOT NULL, 
 Room_ID number not NULL,
-foreign key (Room_ID,Hotel_ID) references Room(ID , HOTEL_ID),
-primary key(ID,Hotel_ID,Room_ID)
+User_ID number not null,
+
+foreign key (User_ID) references Users(ID),
+foreign key (Room_ID,Hotel_ID) references Room(ID , HOTEL_ID)
 );
+
 */

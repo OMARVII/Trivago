@@ -20,7 +20,7 @@ namespace Trivago.Forms
         bool FirstTime = true;
         OracleCommandBuilder commandBuilder;
         DataSet dataset;
-        string ordb = "Data Source=orcl;User Id=HR;Password=HR;";
+        string ordb = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
         public ViewHotels()
         {
             InitializeComponent();
@@ -93,6 +93,11 @@ namespace Trivago.Forms
         {
             Application.Run(new LoadingScreen());
             Thread.Sleep(5000);
+        }
+
+        private void RoomsDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

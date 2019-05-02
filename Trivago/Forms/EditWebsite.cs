@@ -15,7 +15,7 @@ namespace Trivago.Forms
     public partial class EditWebsite : Form
     {
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=hr;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
            (

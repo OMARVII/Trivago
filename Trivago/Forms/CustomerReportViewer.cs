@@ -18,5 +18,10 @@ namespace Trivago.Forms
             ViewCustomersReport report = new ViewCustomersReport();
             crystalReportViewer1.ReportSource = report;
         }
+
+        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
