@@ -15,7 +15,7 @@ namespace Trivago.Forms
     public partial class MakeWebsitesOffers : Form
     {
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
 
         public MakeWebsitesOffers()
         {
@@ -243,5 +243,16 @@ namespace Trivago.Forms
         {
 
         }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            conn.Close();
+            this.Hide();
+            makewebsiteForm a = new makewebsiteForm();
+
+            a.ShowDialog();
+            this.Close();
+        }
+    
     }
 }

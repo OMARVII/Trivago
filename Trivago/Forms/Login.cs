@@ -26,7 +26,7 @@ namespace Trivago.Forms
            );
         public static string userID = "1";
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=hr;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         public Login()
         {
             InitializeComponent();

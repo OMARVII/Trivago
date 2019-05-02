@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.RoomsDataGrid = new System.Windows.Forms.DataGridView();
             this.RadioBox = new System.Windows.Forms.GroupBox();
+            this.LoadButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ReportButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.HotelRating = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.AnyLabel = new System.Windows.Forms.Label();
             this.AnyRadio = new Bunifu.UI.WinForms.BunifuRadioButton();
@@ -42,23 +44,25 @@
             this.DoubleLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SingleLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SingleRadio = new Bunifu.UI.WinForms.BunifuRadioButton();
-            this.ReportButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.LoadButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.HotelDataGrid = new System.Windows.Forms.DataGridView();
             this.HotelRatingError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.RoomsDataGrid)).BeginInit();
             this.RadioBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HotelDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelRatingError)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // RoomsDataGrid
             // 
             this.RoomsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.RoomsDataGrid.Location = new System.Drawing.Point(0, 443);
+            this.RoomsDataGrid.Location = new System.Drawing.Point(-1, 431);
             this.RoomsDataGrid.Name = "RoomsDataGrid";
             this.RoomsDataGrid.RowTemplate.Height = 24;
-            this.RoomsDataGrid.Size = new System.Drawing.Size(1239, 339);
+            this.RoomsDataGrid.Size = new System.Drawing.Size(641, 166);
             this.RoomsDataGrid.TabIndex = 2;
             this.RoomsDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RoomsDataGrid_CellContentClick);
             // 
@@ -78,12 +82,88 @@
             this.RadioBox.Controls.Add(this.SingleLabel);
             this.RadioBox.Controls.Add(this.SingleRadio);
             this.RadioBox.ForeColor = System.Drawing.Color.White;
-            this.RadioBox.Location = new System.Drawing.Point(12, 280);
+            this.RadioBox.Location = new System.Drawing.Point(0, 274);
             this.RadioBox.Name = "RadioBox";
-            this.RadioBox.Size = new System.Drawing.Size(1227, 157);
+            this.RadioBox.Size = new System.Drawing.Size(640, 157);
             this.RadioBox.TabIndex = 3;
             this.RadioBox.TabStop = false;
             this.RadioBox.Text = "Room Type";
+            // 
+            // LoadButton
+            // 
+            this.LoadButton.Active = true;
+            this.LoadButton.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.LoadButton.BackColor = System.Drawing.Color.White;
+            this.LoadButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LoadButton.BorderRadius = 0;
+            this.LoadButton.ButtonText = "Load Room Type";
+            this.LoadButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoadButton.DisabledColor = System.Drawing.Color.Gray;
+            this.LoadButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoadButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.LoadButton.Iconimage = null;
+            this.LoadButton.Iconimage_right = null;
+            this.LoadButton.Iconimage_right_Selected = null;
+            this.LoadButton.Iconimage_Selected = null;
+            this.LoadButton.IconMarginLeft = 0;
+            this.LoadButton.IconMarginRight = 0;
+            this.LoadButton.IconRightVisible = true;
+            this.LoadButton.IconRightZoom = 0D;
+            this.LoadButton.IconVisible = true;
+            this.LoadButton.IconZoom = 90D;
+            this.LoadButton.IsTab = false;
+            this.LoadButton.Location = new System.Drawing.Point(43, 94);
+            this.LoadButton.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.LoadButton.Name = "LoadButton";
+            this.LoadButton.Normalcolor = System.Drawing.Color.White;
+            this.LoadButton.OnHovercolor = System.Drawing.Color.White;
+            this.LoadButton.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.LoadButton.selected = true;
+            this.LoadButton.Size = new System.Drawing.Size(262, 55);
+            this.LoadButton.TabIndex = 32;
+            this.LoadButton.Text = "Load Room Type";
+            this.LoadButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LoadButton.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.LoadButton.TextFont = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
+            // 
+            // ReportButton
+            // 
+            this.ReportButton.Active = true;
+            this.ReportButton.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.ReportButton.BackColor = System.Drawing.Color.White;
+            this.ReportButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ReportButton.BorderRadius = 0;
+            this.ReportButton.ButtonText = "Generate Report";
+            this.ReportButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ReportButton.DisabledColor = System.Drawing.Color.Gray;
+            this.ReportButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.ReportButton.Iconimage = null;
+            this.ReportButton.Iconimage_right = null;
+            this.ReportButton.Iconimage_right_Selected = null;
+            this.ReportButton.Iconimage_Selected = null;
+            this.ReportButton.IconMarginLeft = 0;
+            this.ReportButton.IconMarginRight = 0;
+            this.ReportButton.IconRightVisible = true;
+            this.ReportButton.IconRightZoom = 0D;
+            this.ReportButton.IconVisible = true;
+            this.ReportButton.IconZoom = 90D;
+            this.ReportButton.IsTab = false;
+            this.ReportButton.Location = new System.Drawing.Point(904, 94);
+            this.ReportButton.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.ReportButton.Name = "ReportButton";
+            this.ReportButton.Normalcolor = System.Drawing.Color.White;
+            this.ReportButton.OnHovercolor = System.Drawing.Color.White;
+            this.ReportButton.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.ReportButton.selected = true;
+            this.ReportButton.Size = new System.Drawing.Size(262, 55);
+            this.ReportButton.TabIndex = 31;
+            this.ReportButton.Text = "Generate Report";
+            this.ReportButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ReportButton.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.ReportButton.TextFont = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportButton.Click += new System.EventHandler(this.ReportButton_Click);
             // 
             // HotelRating
             // 
@@ -91,7 +171,7 @@
             this.HotelRating.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.HotelRating.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.HotelRating.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.HotelRating.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.HotelRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.HotelRating.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.HotelRating.HintForeColor = System.Drawing.Color.White;
             this.HotelRating.HintText = "Insert Hotel Rating";
@@ -165,7 +245,6 @@
             // QuadLabel
             // 
             this.QuadLabel.AutoSize = true;
-
             this.QuadLabel.ForeColor = System.Drawing.Color.White;
             this.QuadLabel.Location = new System.Drawing.Point(238, 22);
             this.QuadLabel.Name = "QuadLabel";
@@ -214,105 +293,65 @@
             this.SingleRadio.TabIndex = 0;
             this.SingleRadio.Text = null;
             // 
-            // ReportButton
-            // 
-            this.ReportButton.Active = true;
-            this.ReportButton.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.ReportButton.BackColor = System.Drawing.Color.White;
-            this.ReportButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ReportButton.BorderRadius = 0;
-            this.ReportButton.ButtonText = "Generate Report";
-            this.ReportButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ReportButton.DisabledColor = System.Drawing.Color.Gray;
-            this.ReportButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReportButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.ReportButton.Iconimage = null;
-            this.ReportButton.Iconimage_right = null;
-            this.ReportButton.Iconimage_right_Selected = null;
-            this.ReportButton.Iconimage_Selected = null;
-            this.ReportButton.IconMarginLeft = 0;
-            this.ReportButton.IconMarginRight = 0;
-            this.ReportButton.IconRightVisible = true;
-            this.ReportButton.IconRightZoom = 0D;
-            this.ReportButton.IconVisible = true;
-            this.ReportButton.IconZoom = 90D;
-            this.ReportButton.IsTab = false;
-            this.ReportButton.Location = new System.Drawing.Point(904, 94);
-            this.ReportButton.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
-            this.ReportButton.Name = "ReportButton";
-            this.ReportButton.Normalcolor = System.Drawing.Color.White;
-            this.ReportButton.OnHovercolor = System.Drawing.Color.White;
-            this.ReportButton.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.ReportButton.selected = true;
-            this.ReportButton.Size = new System.Drawing.Size(262, 55);
-            this.ReportButton.TabIndex = 31;
-            this.ReportButton.Text = "Generate Report";
-            this.ReportButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ReportButton.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.ReportButton.TextFont = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReportButton.Click += new System.EventHandler(this.ReportButton_Click);
-            // 
-            // LoadButton
-            // 
-            this.LoadButton.Active = true;
-            this.LoadButton.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.LoadButton.BackColor = System.Drawing.Color.White;
-            this.LoadButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LoadButton.BorderRadius = 0;
-            this.LoadButton.ButtonText = "Load Room Type";
-            this.LoadButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LoadButton.DisabledColor = System.Drawing.Color.Gray;
-            this.LoadButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoadButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.LoadButton.Iconimage = null;
-            this.LoadButton.Iconimage_right = null;
-            this.LoadButton.Iconimage_right_Selected = null;
-            this.LoadButton.Iconimage_Selected = null;
-            this.LoadButton.IconMarginLeft = 0;
-            this.LoadButton.IconMarginRight = 0;
-            this.LoadButton.IconRightVisible = true;
-            this.LoadButton.IconRightZoom = 0D;
-            this.LoadButton.IconVisible = true;
-            this.LoadButton.IconZoom = 90D;
-            this.LoadButton.IsTab = false;
-            this.LoadButton.Location = new System.Drawing.Point(43, 94);
-            this.LoadButton.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
-            this.LoadButton.Name = "LoadButton";
-            this.LoadButton.Normalcolor = System.Drawing.Color.White;
-            this.LoadButton.OnHovercolor = System.Drawing.Color.White;
-            this.LoadButton.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.LoadButton.selected = true;
-            this.LoadButton.Size = new System.Drawing.Size(262, 55);
-            this.LoadButton.TabIndex = 32;
-            this.LoadButton.Text = "Load Room Type";
-            this.LoadButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LoadButton.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.LoadButton.TextFont = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
-            // 
             // HotelDataGrid
             // 
             this.HotelDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.HotelDataGrid.Location = new System.Drawing.Point(0, -3);
+            this.HotelDataGrid.Location = new System.Drawing.Point(2, 53);
             this.HotelDataGrid.Name = "HotelDataGrid";
             this.HotelDataGrid.RowTemplate.Height = 24;
-            this.HotelDataGrid.Size = new System.Drawing.Size(1239, 277);
+            this.HotelDataGrid.Size = new System.Drawing.Size(638, 220);
             this.HotelDataGrid.TabIndex = 33;
+            this.HotelDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HotelDataGrid_CellContentClick);
             // 
             // HotelRatingError
             // 
             this.HotelRatingError.ContainerControl = this;
+            // 
+            // bunifuPictureBox2
+            // 
+            this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox2.BorderRadius = 23;
+            this.bunifuPictureBox2.Image = global::Trivago.Properties.Resources.bk;
+            this.bunifuPictureBox2.IsCircle = true;
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(2, 9);
+            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(46, 46);
+            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox2.TabIndex = 73;
+            this.bunifuPictureBox2.TabStop = false;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox2.Click += new System.EventHandler(this.bunifuPictureBox2_Click);
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.closeW;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(594, 9);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 74;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // ViewHotels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(1239, 777);
+            this.ClientSize = new System.Drawing.Size(644, 594);
+            this.Controls.Add(this.bunifuPictureBox1);
+            this.Controls.Add(this.bunifuPictureBox2);
             this.Controls.Add(this.HotelDataGrid);
             this.Controls.Add(this.RadioBox);
             this.Controls.Add(this.RoomsDataGrid);
             this.Name = "ViewHotels";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewHotels";
             this.Load += new System.EventHandler(this.ViewHotels_Load);
             ((System.ComponentModel.ISupportInitialize)(this.RoomsDataGrid)).EndInit();
@@ -320,6 +359,8 @@
             this.RadioBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HotelDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelRatingError)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,5 +383,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton LoadButton;
         private System.Windows.Forms.DataGridView HotelDataGrid;
         private System.Windows.Forms.ErrorProvider HotelRatingError;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
     }
 }

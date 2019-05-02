@@ -93,7 +93,7 @@
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Oracle.DataAccess.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\app\Alaa\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -451,6 +451,7 @@
     <None Include="Resources\trivago-png-material-design-icon-trivago-8020.png" />
     <None Include="Resources\maxresdefault.jpg" />
     <Content Include="Resources\background.png" />
+    <None Include="Resources\bk.png" />
     <Content Include="Resources\buttonbg.png" />
     <Content Include="Resources\close2.png" />
     <None Include="Resources\closeW.png" />
@@ -459,6 +460,7 @@
     <Content Include="Resources\logo-boot.png" />
     <None Include="Resources\trivagoo.png" />
     <None Include="Resources\navy.png" />
+    <None Include="Resources\setnavy.png" />
     <Content Include="Resources\trivagoo 2.png" />
     <Content Include="Resources\X-Circle.png" />
     <Content Include="Scripts\Data.txt" />

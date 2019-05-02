@@ -25,7 +25,7 @@ namespace Trivago.Forms
                int nHeightEllipse // width of ellipse
            );
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=hr;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         public DeleteRoom()
         {
             InitializeComponent();
@@ -103,6 +103,14 @@ namespace Trivago.Forms
 
         private void bunifuPictureBox1_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void bunifuPictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            delForm a = new delForm();
+            a.ShowDialog();
             this.Close();
         }
     }

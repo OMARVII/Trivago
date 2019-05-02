@@ -30,15 +30,17 @@ namespace Trivago.Forms
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddWebsite));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.AddWebsiteProgressBar = new Bunifu.Framework.UI.BunifuProgressBar();
             this.AddWesbsiteButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AddWebsiteTimer = new System.Windows.Forms.Timer(this.components);
             this.WebsiteNameError = new System.Windows.Forms.ErrorProvider(this.components);
             this.WebsiteNameTextBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.WebsiteNameError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // AddWebsiteProgressBar
@@ -46,7 +48,7 @@ namespace Trivago.Forms
             this.AddWebsiteProgressBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.AddWebsiteProgressBar.BorderRadius = 5;
             this.AddWebsiteProgressBar.Location = new System.Drawing.Point(51, 18);
-            this.AddWebsiteProgressBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddWebsiteProgressBar.Margin = new System.Windows.Forms.Padding(4);
             this.AddWebsiteProgressBar.MaximumValue = 100;
             this.AddWebsiteProgressBar.Name = "AddWebsiteProgressBar";
             this.AddWebsiteProgressBar.ProgressColor = System.Drawing.Color.White;
@@ -75,15 +77,15 @@ namespace Trivago.Forms
             this.AddWesbsiteButton.IdleIconLeftImage = null;
             this.AddWesbsiteButton.IdleIconRightImage = null;
             this.AddWesbsiteButton.Location = new System.Drawing.Point(407, 560);
-            this.AddWesbsiteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddWesbsiteButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddWesbsiteButton.Name = "AddWesbsiteButton";
-            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties5.BorderRadius = 1;
-            stateProperties5.BorderThickness = 1;
-            stateProperties5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties5.IconLeftImage = null;
-            stateProperties5.IconRightImage = null;
-            this.AddWesbsiteButton.onHoverState = stateProperties5;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.BorderRadius = 1;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.AddWesbsiteButton.onHoverState = stateProperties1;
             this.AddWesbsiteButton.Size = new System.Drawing.Size(194, 37);
             this.AddWesbsiteButton.TabIndex = 6;
             this.AddWesbsiteButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,6 +138,22 @@ namespace Trivago.Forms
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
+            // bunifuPictureBox2
+            // 
+            this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox2.BorderRadius = 22;
+            this.bunifuPictureBox2.Image = global::Trivago.Properties.Resources.bk;
+            this.bunifuPictureBox2.IsCircle = true;
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(12, 5);
+            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(44, 44);
+            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox2.TabIndex = 71;
+            this.bunifuPictureBox2.TabStop = false;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox2.Click += new System.EventHandler(this.bunifuPictureBox2_Click);
+            // 
             // AddWebsite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,17 +162,20 @@ namespace Trivago.Forms
             this.BackgroundImage = global::Trivago.Properties.Resources.trivagoo_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(929, 631);
+            this.Controls.Add(this.bunifuPictureBox2);
             this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.WebsiteNameTextBox);
             this.Controls.Add(this.AddWebsiteProgressBar);
             this.Controls.Add(this.AddWesbsiteButton);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddWebsite";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddWebsite";
             this.Load += new System.EventHandler(this.AddWebsite_Load);
             ((System.ComponentModel.ISupportInitialize)(this.WebsiteNameError)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -167,5 +188,6 @@ namespace Trivago.Forms
         private System.Windows.Forms.ErrorProvider WebsiteNameError;
         private Bunifu.Framework.UI.BunifuMaterialTextbox WebsiteNameTextBox;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
     }
 }

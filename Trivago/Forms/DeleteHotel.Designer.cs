@@ -36,7 +36,9 @@
             this.hotels = new Bunifu.UI.WinForms.BunifuDropdown();
             this.delete = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.hotelN = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuTileButton2
@@ -64,7 +66,7 @@
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Verdana", 14.25F);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(41, 36);
+            this.bunifuLabel1.Location = new System.Drawing.Point(38, 80);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(121, 25);
@@ -180,6 +182,22 @@
             this.hotelN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.hotelN.OnValueChanged += new System.EventHandler(this.hotelN_OnValueChanged);
             // 
+            // bunifuPictureBox2
+            // 
+            this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox2.BorderRadius = 19;
+            this.bunifuPictureBox2.Image = global::Trivago.Properties.Resources.bk;
+            this.bunifuPictureBox2.IsCircle = true;
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(12, 22);
+            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox2.TabIndex = 69;
+            this.bunifuPictureBox2.TabStop = false;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox2.Click += new System.EventHandler(this.bunifuPictureBox2_Click);
+            // 
             // DeleteHotel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,6 +205,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(476, 450);
+            this.Controls.Add(this.bunifuPictureBox2);
             this.Controls.Add(this.hotels);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.hotelN);
@@ -200,6 +219,7 @@
             this.Text = "DeleteHotel";
             this.Load += new System.EventHandler(this.DeleteHotel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +232,6 @@
         private Bunifu.UI.WinForms.BunifuDropdown hotels;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton delete;
         private Bunifu.Framework.UI.BunifuMaterialTextbox hotelN;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
     }
 }

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MakeWebsitesOffers));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.AvaliableWebsitesDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.TypeCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.AvaliablHotelsDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.RoomsOfHotelDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
@@ -43,11 +42,14 @@
             this.HotelPanel = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             this.HotelLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.PriceTextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.AddButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.WebsiteLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.AddButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.TypeCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.SingleRoomPanel.SuspendLayout();
             this.RoomsTypePanel.SuspendLayout();
             this.HotelPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // AvaliableWebsitesDropdown
@@ -74,66 +76,11 @@
             this.AvaliableWebsitesDropdown.ItemHeight = 26;
             this.AvaliableWebsitesDropdown.ItemHighLightColor = System.Drawing.Color.Thistle;
             this.AvaliableWebsitesDropdown.Location = new System.Drawing.Point(9, 24);
-            this.AvaliableWebsitesDropdown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AvaliableWebsitesDropdown.Margin = new System.Windows.Forms.Padding(2);
             this.AvaliableWebsitesDropdown.Name = "AvaliableWebsitesDropdown";
             this.AvaliableWebsitesDropdown.Size = new System.Drawing.Size(164, 32);
             this.AvaliableWebsitesDropdown.TabIndex = 0;
             this.AvaliableWebsitesDropdown.Text = null;
-            // 
-            // TypeCheckBox
-            // 
-            this.TypeCheckBox.AllowBindingControlAnimation = true;
-            this.TypeCheckBox.AllowBindingControlColorChanges = false;
-            this.TypeCheckBox.AllowBindingControlLocation = true;
-            this.TypeCheckBox.AllowCheckBoxAnimation = false;
-            this.TypeCheckBox.AllowCheckmarkAnimation = true;
-            this.TypeCheckBox.AllowOnHoverStates = true;
-            this.TypeCheckBox.AutoCheck = true;
-            this.TypeCheckBox.BackColor = System.Drawing.Color.Transparent;
-            this.TypeCheckBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TypeCheckBox.BackgroundImage")));
-            this.TypeCheckBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.TypeCheckBox.BindingControl = null;
-            this.TypeCheckBox.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
-            this.TypeCheckBox.Checked = false;
-            this.TypeCheckBox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
-            this.TypeCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TypeCheckBox.CustomCheckmarkImage = null;
-            this.TypeCheckBox.Location = new System.Drawing.Point(11, 128);
-            this.TypeCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TypeCheckBox.MinimumSize = new System.Drawing.Size(13, 14);
-            this.TypeCheckBox.Name = "TypeCheckBox";
-            this.TypeCheckBox.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(69)))), ((int)(((byte)(155)))));
-            this.TypeCheckBox.OnCheck.BorderRadius = 2;
-            this.TypeCheckBox.OnCheck.BorderThickness = 2;
-            this.TypeCheckBox.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(69)))), ((int)(((byte)(155)))));
-            this.TypeCheckBox.OnCheck.CheckmarkColor = System.Drawing.Color.White;
-            this.TypeCheckBox.OnCheck.CheckmarkThickness = 2;
-            this.TypeCheckBox.OnDisable.BorderColor = System.Drawing.Color.LightGray;
-            this.TypeCheckBox.OnDisable.BorderRadius = 2;
-            this.TypeCheckBox.OnDisable.BorderThickness = 2;
-            this.TypeCheckBox.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.TypeCheckBox.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
-            this.TypeCheckBox.OnDisable.CheckmarkThickness = 2;
-            this.TypeCheckBox.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(131)))), ((int)(((byte)(188)))));
-            this.TypeCheckBox.OnHoverChecked.BorderRadius = 2;
-            this.TypeCheckBox.OnHoverChecked.BorderThickness = 2;
-            this.TypeCheckBox.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(131)))), ((int)(((byte)(188)))));
-            this.TypeCheckBox.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
-            this.TypeCheckBox.OnHoverChecked.CheckmarkThickness = 2;
-            this.TypeCheckBox.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(131)))), ((int)(((byte)(188)))));
-            this.TypeCheckBox.OnHoverUnchecked.BorderRadius = 2;
-            this.TypeCheckBox.OnHoverUnchecked.BorderThickness = 2;
-            this.TypeCheckBox.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.TypeCheckBox.OnUncheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(69)))), ((int)(((byte)(155)))));
-            this.TypeCheckBox.OnUncheck.BorderRadius = 2;
-            this.TypeCheckBox.OnUncheck.BorderThickness = 2;
-            this.TypeCheckBox.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.TypeCheckBox.Size = new System.Drawing.Size(16, 16);
-            this.TypeCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
-            this.TypeCheckBox.TabIndex = 1;
-            this.TypeCheckBox.ThreeState = false;
-            this.TypeCheckBox.ToolTipText = null;
-            this.TypeCheckBox.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.TypeCheckBox_CheckedChanged);
             // 
             // bunifuCustomLabel1
             // 
@@ -169,7 +116,7 @@
             this.AvaliablHotelsDropdown.ItemHeight = 26;
             this.AvaliablHotelsDropdown.ItemHighLightColor = System.Drawing.Color.Thistle;
             this.AvaliablHotelsDropdown.Location = new System.Drawing.Point(2, 24);
-            this.AvaliablHotelsDropdown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AvaliablHotelsDropdown.Margin = new System.Windows.Forms.Padding(2);
             this.AvaliablHotelsDropdown.Name = "AvaliablHotelsDropdown";
             this.AvaliablHotelsDropdown.Size = new System.Drawing.Size(164, 32);
             this.AvaliablHotelsDropdown.TabIndex = 3;
@@ -200,7 +147,7 @@
             this.RoomsOfHotelDropdown.ItemHeight = 26;
             this.RoomsOfHotelDropdown.ItemHighLightColor = System.Drawing.Color.Thistle;
             this.RoomsOfHotelDropdown.Location = new System.Drawing.Point(2, 25);
-            this.RoomsOfHotelDropdown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RoomsOfHotelDropdown.Margin = new System.Windows.Forms.Padding(2);
             this.RoomsOfHotelDropdown.Name = "RoomsOfHotelDropdown";
             this.RoomsOfHotelDropdown.Size = new System.Drawing.Size(164, 32);
             this.RoomsOfHotelDropdown.TabIndex = 6;
@@ -212,7 +159,7 @@
             this.SingleRoomPanel.Controls.Add(this.ChooseSingleRoomLabel);
             this.SingleRoomPanel.Controls.Add(this.RoomsOfHotelDropdown);
             this.SingleRoomPanel.Location = new System.Drawing.Point(11, 159);
-            this.SingleRoomPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SingleRoomPanel.Margin = new System.Windows.Forms.Padding(2);
             this.SingleRoomPanel.Name = "SingleRoomPanel";
             this.SingleRoomPanel.PanelColor = System.Drawing.Color.Empty;
             this.SingleRoomPanel.ShadowDept = 2;
@@ -236,7 +183,7 @@
             this.RoomsTypePanel.Controls.Add(this.ChooseAllRoomsLabel);
             this.RoomsTypePanel.Controls.Add(this.AvaliableRoomsTypeDropdown);
             this.RoomsTypePanel.Location = new System.Drawing.Point(11, 157);
-            this.RoomsTypePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RoomsTypePanel.Margin = new System.Windows.Forms.Padding(2);
             this.RoomsTypePanel.Name = "RoomsTypePanel";
             this.RoomsTypePanel.PanelColor = System.Drawing.Color.Empty;
             this.RoomsTypePanel.ShadowDept = 2;
@@ -279,7 +226,7 @@
             this.AvaliableRoomsTypeDropdown.ItemHeight = 26;
             this.AvaliableRoomsTypeDropdown.ItemHighLightColor = System.Drawing.Color.Thistle;
             this.AvaliableRoomsTypeDropdown.Location = new System.Drawing.Point(2, 25);
-            this.AvaliableRoomsTypeDropdown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AvaliableRoomsTypeDropdown.Margin = new System.Windows.Forms.Padding(2);
             this.AvaliableRoomsTypeDropdown.Name = "AvaliableRoomsTypeDropdown";
             this.AvaliableRoomsTypeDropdown.Size = new System.Drawing.Size(164, 32);
             this.AvaliableRoomsTypeDropdown.TabIndex = 6;
@@ -291,7 +238,7 @@
             this.HotelPanel.Controls.Add(this.HotelLabel);
             this.HotelPanel.Controls.Add(this.AvaliablHotelsDropdown);
             this.HotelPanel.Location = new System.Drawing.Point(9, 62);
-            this.HotelPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HotelPanel.Margin = new System.Windows.Forms.Padding(2);
             this.HotelPanel.Name = "HotelPanel";
             this.HotelPanel.PanelColor = System.Drawing.Color.Empty;
             this.HotelPanel.ShadowDept = 2;
@@ -325,11 +272,38 @@
             this.PriceTextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.PriceTextbox.LineThickness = 3;
             this.PriceTextbox.Location = new System.Drawing.Point(11, 263);
+            this.PriceTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.PriceTextbox.MaxLength = 32767;
             this.PriceTextbox.Name = "PriceTextbox";
             this.PriceTextbox.Size = new System.Drawing.Size(284, 27);
             this.PriceTextbox.TabIndex = 11;
             this.PriceTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // WebsiteLabel
+            // 
+            this.WebsiteLabel.AutoSize = true;
+            this.WebsiteLabel.Location = new System.Drawing.Point(10, 8);
+            this.WebsiteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.WebsiteLabel.Name = "WebsiteLabel";
+            this.WebsiteLabel.Size = new System.Drawing.Size(46, 13);
+            this.WebsiteLabel.TabIndex = 13;
+            this.WebsiteLabel.Text = "Website";
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.bk;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(281, 164);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 68;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // AddButton
             // 
@@ -351,7 +325,7 @@
             this.AddButton.IdleIconLeftImage = null;
             this.AddButton.IdleIconRightImage = null;
             this.AddButton.Location = new System.Drawing.Point(179, 319);
-            this.AddButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddButton.Name = "AddButton";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             stateProperties1.BorderRadius = 1;
@@ -365,21 +339,67 @@
             this.AddButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
-            // WebsiteLabel
+            // TypeCheckBox
             // 
-            this.WebsiteLabel.AutoSize = true;
-            this.WebsiteLabel.Location = new System.Drawing.Point(10, 8);
-            this.WebsiteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.WebsiteLabel.Name = "WebsiteLabel";
-            this.WebsiteLabel.Size = new System.Drawing.Size(46, 13);
-            this.WebsiteLabel.TabIndex = 13;
-            this.WebsiteLabel.Text = "Website";
+            this.TypeCheckBox.AllowBindingControlAnimation = true;
+            this.TypeCheckBox.AllowBindingControlColorChanges = false;
+            this.TypeCheckBox.AllowBindingControlLocation = true;
+            this.TypeCheckBox.AllowCheckBoxAnimation = false;
+            this.TypeCheckBox.AllowCheckmarkAnimation = true;
+            this.TypeCheckBox.AllowOnHoverStates = true;
+            this.TypeCheckBox.AutoCheck = true;
+            this.TypeCheckBox.BackColor = System.Drawing.Color.Transparent;
+            this.TypeCheckBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TypeCheckBox.BackgroundImage")));
+            this.TypeCheckBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.TypeCheckBox.BindingControl = null;
+            this.TypeCheckBox.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.TypeCheckBox.Checked = false;
+            this.TypeCheckBox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
+            this.TypeCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TypeCheckBox.CustomCheckmarkImage = null;
+            this.TypeCheckBox.Location = new System.Drawing.Point(11, 128);
+            this.TypeCheckBox.Margin = new System.Windows.Forms.Padding(2);
+            this.TypeCheckBox.MinimumSize = new System.Drawing.Size(13, 14);
+            this.TypeCheckBox.Name = "TypeCheckBox";
+            this.TypeCheckBox.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(69)))), ((int)(((byte)(155)))));
+            this.TypeCheckBox.OnCheck.BorderRadius = 2;
+            this.TypeCheckBox.OnCheck.BorderThickness = 2;
+            this.TypeCheckBox.OnCheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(69)))), ((int)(((byte)(155)))));
+            this.TypeCheckBox.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.TypeCheckBox.OnCheck.CheckmarkThickness = 2;
+            this.TypeCheckBox.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.TypeCheckBox.OnDisable.BorderRadius = 2;
+            this.TypeCheckBox.OnDisable.BorderThickness = 2;
+            this.TypeCheckBox.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.TypeCheckBox.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.TypeCheckBox.OnDisable.CheckmarkThickness = 2;
+            this.TypeCheckBox.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(131)))), ((int)(((byte)(188)))));
+            this.TypeCheckBox.OnHoverChecked.BorderRadius = 2;
+            this.TypeCheckBox.OnHoverChecked.BorderThickness = 2;
+            this.TypeCheckBox.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(131)))), ((int)(((byte)(188)))));
+            this.TypeCheckBox.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.TypeCheckBox.OnHoverChecked.CheckmarkThickness = 2;
+            this.TypeCheckBox.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(131)))), ((int)(((byte)(188)))));
+            this.TypeCheckBox.OnHoverUnchecked.BorderRadius = 2;
+            this.TypeCheckBox.OnHoverUnchecked.BorderThickness = 2;
+            this.TypeCheckBox.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.TypeCheckBox.OnUncheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(69)))), ((int)(((byte)(155)))));
+            this.TypeCheckBox.OnUncheck.BorderRadius = 2;
+            this.TypeCheckBox.OnUncheck.BorderThickness = 2;
+            this.TypeCheckBox.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.TypeCheckBox.Size = new System.Drawing.Size(16, 16);
+            this.TypeCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
+            this.TypeCheckBox.TabIndex = 1;
+            this.TypeCheckBox.ThreeState = false;
+            this.TypeCheckBox.ToolTipText = null;
+            this.TypeCheckBox.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.TypeCheckBox_CheckedChanged);
             // 
             // MakeWebsitesOffers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.WebsiteLabel);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.PriceTextbox);
@@ -389,7 +409,7 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.TypeCheckBox);
             this.Controls.Add(this.AvaliableWebsitesDropdown);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MakeWebsitesOffers";
             this.Text = "MakeWebsitesOffers";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MakeWebsitesOffers_FormClosing);
@@ -400,6 +420,7 @@
             this.RoomsTypePanel.PerformLayout();
             this.HotelPanel.ResumeLayout(false);
             this.HotelPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,5 +443,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel WebsiteLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel ChooseSingleRoomLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel ChooseAllRoomsLabel;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
     }
 }

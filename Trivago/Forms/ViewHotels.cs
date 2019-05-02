@@ -99,5 +99,24 @@ namespace Trivago.Forms
         {
 
         }
+
+        private void bunifuPictureBox2_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+            viewForm a = new viewForm();
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void HotelDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
