@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MakeWebsitesOffers));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.AvaliableWebsitesDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.AvaliablHotelsDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
@@ -45,15 +45,18 @@
             this.WebsiteLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.AddButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.TypeCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.SingleRoomPanel.SuspendLayout();
             this.RoomsTypePanel.SuspendLayout();
             this.HotelPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // AvaliableWebsitesDropdown
             // 
-            this.AvaliableWebsitesDropdown.BackColor = System.Drawing.SystemColors.Control;
+            this.AvaliableWebsitesDropdown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.AvaliableWebsitesDropdown.BorderRadius = 1;
+            this.AvaliableWebsitesDropdown.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.AvaliableWebsitesDropdown.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.AvaliableWebsitesDropdown.DisabledColor = System.Drawing.Color.Gray;
             this.AvaliableWebsitesDropdown.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -63,36 +66,39 @@
             this.AvaliableWebsitesDropdown.FillDropDown = false;
             this.AvaliableWebsitesDropdown.FillIndicator = false;
             this.AvaliableWebsitesDropdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AvaliableWebsitesDropdown.ForeColor = System.Drawing.Color.Purple;
+            this.AvaliableWebsitesDropdown.ForeColor = System.Drawing.Color.White;
             this.AvaliableWebsitesDropdown.FormattingEnabled = true;
             this.AvaliableWebsitesDropdown.Icon = null;
-            this.AvaliableWebsitesDropdown.IndicatorColor = System.Drawing.Color.Purple;
+            this.AvaliableWebsitesDropdown.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.AvaliableWebsitesDropdown.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.AvaliableWebsitesDropdown.ItemBackColor = System.Drawing.Color.White;
             this.AvaliableWebsitesDropdown.ItemBorderColor = System.Drawing.Color.White;
-            this.AvaliableWebsitesDropdown.ItemForeColor = System.Drawing.Color.Purple;
+            this.AvaliableWebsitesDropdown.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.AvaliableWebsitesDropdown.ItemHeight = 26;
-            this.AvaliableWebsitesDropdown.ItemHighLightColor = System.Drawing.Color.Thistle;
-            this.AvaliableWebsitesDropdown.Location = new System.Drawing.Point(12, 30);
-            this.AvaliableWebsitesDropdown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AvaliableWebsitesDropdown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
+            this.AvaliableWebsitesDropdown.Location = new System.Drawing.Point(9, 24);
+            this.AvaliableWebsitesDropdown.Margin = new System.Windows.Forms.Padding(2);
             this.AvaliableWebsitesDropdown.Name = "AvaliableWebsitesDropdown";
-            this.AvaliableWebsitesDropdown.Size = new System.Drawing.Size(217, 32);
+            this.AvaliableWebsitesDropdown.Size = new System.Drawing.Size(164, 32);
             this.AvaliableWebsitesDropdown.TabIndex = 0;
             this.AvaliableWebsitesDropdown.Text = null;
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(43, 158);
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(32, 128);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(246, 17);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(183, 13);
             this.bunifuCustomLabel1.TabIndex = 2;
             this.bunifuCustomLabel1.Text = "Apply for all rooms with the same type";
             // 
             // AvaliablHotelsDropdown
             // 
-            this.AvaliablHotelsDropdown.BackColor = System.Drawing.SystemColors.Control;
+            this.AvaliablHotelsDropdown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.AvaliablHotelsDropdown.BorderRadius = 1;
+            this.AvaliablHotelsDropdown.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.AvaliablHotelsDropdown.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.AvaliablHotelsDropdown.DisabledColor = System.Drawing.Color.Gray;
             this.AvaliablHotelsDropdown.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -102,20 +108,20 @@
             this.AvaliablHotelsDropdown.FillDropDown = false;
             this.AvaliablHotelsDropdown.FillIndicator = false;
             this.AvaliablHotelsDropdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AvaliablHotelsDropdown.ForeColor = System.Drawing.Color.Purple;
+            this.AvaliablHotelsDropdown.ForeColor = System.Drawing.Color.White;
             this.AvaliablHotelsDropdown.FormattingEnabled = true;
             this.AvaliablHotelsDropdown.Icon = null;
-            this.AvaliablHotelsDropdown.IndicatorColor = System.Drawing.Color.Purple;
+            this.AvaliablHotelsDropdown.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.AvaliablHotelsDropdown.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.AvaliablHotelsDropdown.ItemBackColor = System.Drawing.Color.White;
             this.AvaliablHotelsDropdown.ItemBorderColor = System.Drawing.Color.White;
-            this.AvaliablHotelsDropdown.ItemForeColor = System.Drawing.Color.Purple;
+            this.AvaliablHotelsDropdown.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.AvaliablHotelsDropdown.ItemHeight = 26;
-            this.AvaliablHotelsDropdown.ItemHighLightColor = System.Drawing.Color.Thistle;
-            this.AvaliablHotelsDropdown.Location = new System.Drawing.Point(3, 30);
-            this.AvaliablHotelsDropdown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AvaliablHotelsDropdown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
+            this.AvaliablHotelsDropdown.Location = new System.Drawing.Point(2, 24);
+            this.AvaliablHotelsDropdown.Margin = new System.Windows.Forms.Padding(2);
             this.AvaliablHotelsDropdown.Name = "AvaliablHotelsDropdown";
-            this.AvaliablHotelsDropdown.Size = new System.Drawing.Size(217, 32);
+            this.AvaliablHotelsDropdown.Size = new System.Drawing.Size(164, 32);
             this.AvaliablHotelsDropdown.TabIndex = 3;
             this.AvaliablHotelsDropdown.Text = null;
             this.AvaliablHotelsDropdown.SelectedIndexChanged += new System.EventHandler(this.AvaliablHotelsDropdown_SelectedIndexChanged);
@@ -143,10 +149,10 @@
             this.RoomsOfHotelDropdown.ItemForeColor = System.Drawing.Color.Purple;
             this.RoomsOfHotelDropdown.ItemHeight = 26;
             this.RoomsOfHotelDropdown.ItemHighLightColor = System.Drawing.Color.Thistle;
-            this.RoomsOfHotelDropdown.Location = new System.Drawing.Point(3, 31);
-            this.RoomsOfHotelDropdown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RoomsOfHotelDropdown.Location = new System.Drawing.Point(2, 25);
+            this.RoomsOfHotelDropdown.Margin = new System.Windows.Forms.Padding(2);
             this.RoomsOfHotelDropdown.Name = "RoomsOfHotelDropdown";
-            this.RoomsOfHotelDropdown.Size = new System.Drawing.Size(217, 32);
+            this.RoomsOfHotelDropdown.Size = new System.Drawing.Size(164, 32);
             this.RoomsOfHotelDropdown.TabIndex = 6;
             this.RoomsOfHotelDropdown.Text = null;
             // 
@@ -155,21 +161,22 @@
             this.SingleRoomPanel.BorderColor = System.Drawing.Color.Gainsboro;
             this.SingleRoomPanel.Controls.Add(this.ChooseSingleRoomLabel);
             this.SingleRoomPanel.Controls.Add(this.RoomsOfHotelDropdown);
-            this.SingleRoomPanel.Location = new System.Drawing.Point(15, 196);
-            this.SingleRoomPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SingleRoomPanel.Location = new System.Drawing.Point(11, 159);
+            this.SingleRoomPanel.Margin = new System.Windows.Forms.Padding(2);
             this.SingleRoomPanel.Name = "SingleRoomPanel";
             this.SingleRoomPanel.PanelColor = System.Drawing.Color.Empty;
             this.SingleRoomPanel.ShadowDept = 2;
             this.SingleRoomPanel.ShadowTopLeftVisible = false;
-            this.SingleRoomPanel.Size = new System.Drawing.Size(243, 103);
+            this.SingleRoomPanel.Size = new System.Drawing.Size(182, 84);
             this.SingleRoomPanel.TabIndex = 7;
             // 
             // ChooseSingleRoomLabel
             // 
             this.ChooseSingleRoomLabel.AutoSize = true;
-            this.ChooseSingleRoomLabel.Location = new System.Drawing.Point(3, 7);
+            this.ChooseSingleRoomLabel.Location = new System.Drawing.Point(2, 6);
+            this.ChooseSingleRoomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChooseSingleRoomLabel.Name = "ChooseSingleRoomLabel";
-            this.ChooseSingleRoomLabel.Size = new System.Drawing.Size(90, 17);
+            this.ChooseSingleRoomLabel.Size = new System.Drawing.Size(68, 13);
             this.ChooseSingleRoomLabel.TabIndex = 9;
             this.ChooseSingleRoomLabel.Text = "choose room";
             // 
@@ -178,29 +185,32 @@
             this.RoomsTypePanel.BorderColor = System.Drawing.Color.Gainsboro;
             this.RoomsTypePanel.Controls.Add(this.ChooseAllRoomsLabel);
             this.RoomsTypePanel.Controls.Add(this.AvaliableRoomsTypeDropdown);
-            this.RoomsTypePanel.Location = new System.Drawing.Point(15, 193);
-            this.RoomsTypePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RoomsTypePanel.Location = new System.Drawing.Point(11, 157);
+            this.RoomsTypePanel.Margin = new System.Windows.Forms.Padding(2);
             this.RoomsTypePanel.Name = "RoomsTypePanel";
             this.RoomsTypePanel.PanelColor = System.Drawing.Color.Empty;
             this.RoomsTypePanel.ShadowDept = 2;
             this.RoomsTypePanel.ShadowTopLeftVisible = false;
-            this.RoomsTypePanel.Size = new System.Drawing.Size(243, 103);
+            this.RoomsTypePanel.Size = new System.Drawing.Size(182, 84);
             this.RoomsTypePanel.TabIndex = 9;
             this.RoomsTypePanel.Visible = false;
             // 
             // ChooseAllRoomsLabel
             // 
             this.ChooseAllRoomsLabel.AutoSize = true;
-            this.ChooseAllRoomsLabel.Location = new System.Drawing.Point(3, 11);
+            this.ChooseAllRoomsLabel.ForeColor = System.Drawing.Color.White;
+            this.ChooseAllRoomsLabel.Location = new System.Drawing.Point(2, 9);
+            this.ChooseAllRoomsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChooseAllRoomsLabel.Name = "ChooseAllRoomsLabel";
-            this.ChooseAllRoomsLabel.Size = new System.Drawing.Size(85, 17);
+            this.ChooseAllRoomsLabel.Size = new System.Drawing.Size(65, 13);
             this.ChooseAllRoomsLabel.TabIndex = 10;
             this.ChooseAllRoomsLabel.Text = "choose type";
             // 
             // AvaliableRoomsTypeDropdown
             // 
-            this.AvaliableRoomsTypeDropdown.BackColor = System.Drawing.SystemColors.Control;
+            this.AvaliableRoomsTypeDropdown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.AvaliableRoomsTypeDropdown.BorderRadius = 1;
+            this.AvaliableRoomsTypeDropdown.Color = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.AvaliableRoomsTypeDropdown.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.AvaliableRoomsTypeDropdown.DisabledColor = System.Drawing.Color.Gray;
             this.AvaliableRoomsTypeDropdown.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -210,20 +220,20 @@
             this.AvaliableRoomsTypeDropdown.FillDropDown = false;
             this.AvaliableRoomsTypeDropdown.FillIndicator = false;
             this.AvaliableRoomsTypeDropdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AvaliableRoomsTypeDropdown.ForeColor = System.Drawing.Color.Purple;
+            this.AvaliableRoomsTypeDropdown.ForeColor = System.Drawing.Color.White;
             this.AvaliableRoomsTypeDropdown.FormattingEnabled = true;
             this.AvaliableRoomsTypeDropdown.Icon = null;
-            this.AvaliableRoomsTypeDropdown.IndicatorColor = System.Drawing.Color.Purple;
+            this.AvaliableRoomsTypeDropdown.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.AvaliableRoomsTypeDropdown.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.AvaliableRoomsTypeDropdown.ItemBackColor = System.Drawing.Color.White;
             this.AvaliableRoomsTypeDropdown.ItemBorderColor = System.Drawing.Color.White;
-            this.AvaliableRoomsTypeDropdown.ItemForeColor = System.Drawing.Color.Purple;
+            this.AvaliableRoomsTypeDropdown.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.AvaliableRoomsTypeDropdown.ItemHeight = 26;
-            this.AvaliableRoomsTypeDropdown.ItemHighLightColor = System.Drawing.Color.Thistle;
-            this.AvaliableRoomsTypeDropdown.Location = new System.Drawing.Point(3, 31);
-            this.AvaliableRoomsTypeDropdown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AvaliableRoomsTypeDropdown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
+            this.AvaliableRoomsTypeDropdown.Location = new System.Drawing.Point(2, 25);
+            this.AvaliableRoomsTypeDropdown.Margin = new System.Windows.Forms.Padding(2);
             this.AvaliableRoomsTypeDropdown.Name = "AvaliableRoomsTypeDropdown";
-            this.AvaliableRoomsTypeDropdown.Size = new System.Drawing.Size(217, 32);
+            this.AvaliableRoomsTypeDropdown.Size = new System.Drawing.Size(164, 32);
             this.AvaliableRoomsTypeDropdown.TabIndex = 6;
             this.AvaliableRoomsTypeDropdown.Text = null;
             // 
@@ -232,21 +242,23 @@
             this.HotelPanel.BorderColor = System.Drawing.Color.Gainsboro;
             this.HotelPanel.Controls.Add(this.HotelLabel);
             this.HotelPanel.Controls.Add(this.AvaliablHotelsDropdown);
-            this.HotelPanel.Location = new System.Drawing.Point(12, 76);
-            this.HotelPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HotelPanel.Location = new System.Drawing.Point(9, 62);
+            this.HotelPanel.Margin = new System.Windows.Forms.Padding(2);
             this.HotelPanel.Name = "HotelPanel";
             this.HotelPanel.PanelColor = System.Drawing.Color.Empty;
             this.HotelPanel.ShadowDept = 2;
             this.HotelPanel.ShadowTopLeftVisible = false;
-            this.HotelPanel.Size = new System.Drawing.Size(233, 75);
+            this.HotelPanel.Size = new System.Drawing.Size(175, 61);
             this.HotelPanel.TabIndex = 10;
             // 
             // HotelLabel
             // 
             this.HotelLabel.AutoSize = true;
-            this.HotelLabel.Location = new System.Drawing.Point(0, 9);
+            this.HotelLabel.ForeColor = System.Drawing.Color.White;
+            this.HotelLabel.Location = new System.Drawing.Point(0, 7);
+            this.HotelLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HotelLabel.Name = "HotelLabel";
-            this.HotelLabel.Size = new System.Drawing.Size(41, 17);
+            this.HotelLabel.Size = new System.Drawing.Size(32, 13);
             this.HotelLabel.TabIndex = 14;
             this.HotelLabel.Text = "Hotel";
             // 
@@ -257,7 +269,7 @@
             this.PriceTextbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.PriceTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PriceTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.PriceTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PriceTextbox.ForeColor = System.Drawing.Color.White;
             this.PriceTextbox.HintForeColor = System.Drawing.Color.Empty;
             this.PriceTextbox.HintText = "Enter The price";
             this.PriceTextbox.isPassword = false;
@@ -265,20 +277,22 @@
             this.PriceTextbox.LineIdleColor = System.Drawing.Color.Gray;
             this.PriceTextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.PriceTextbox.LineThickness = 3;
-            this.PriceTextbox.Location = new System.Drawing.Point(15, 324);
-            this.PriceTextbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PriceTextbox.Location = new System.Drawing.Point(11, 263);
+            this.PriceTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.PriceTextbox.MaxLength = 32767;
             this.PriceTextbox.Name = "PriceTextbox";
-            this.PriceTextbox.Size = new System.Drawing.Size(379, 33);
+            this.PriceTextbox.Size = new System.Drawing.Size(284, 27);
             this.PriceTextbox.TabIndex = 11;
             this.PriceTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // WebsiteLabel
             // 
             this.WebsiteLabel.AutoSize = true;
-            this.WebsiteLabel.Location = new System.Drawing.Point(13, 10);
+            this.WebsiteLabel.ForeColor = System.Drawing.Color.White;
+            this.WebsiteLabel.Location = new System.Drawing.Point(10, 8);
+            this.WebsiteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WebsiteLabel.Name = "WebsiteLabel";
-            this.WebsiteLabel.Size = new System.Drawing.Size(59, 17);
+            this.WebsiteLabel.Size = new System.Drawing.Size(46, 13);
             this.WebsiteLabel.TabIndex = 13;
             this.WebsiteLabel.Text = "Website";
             // 
@@ -295,23 +309,23 @@
             this.AddButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.AddButton.IconPadding = 10;
             this.AddButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.AddButton.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.AddButton.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(65)))), ((int)(((byte)(95)))));
             this.AddButton.IdleBorderRadius = 1;
             this.AddButton.IdleBorderThickness = 0;
-            this.AddButton.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.AddButton.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(65)))), ((int)(((byte)(95)))));
             this.AddButton.IdleIconLeftImage = null;
             this.AddButton.IdleIconRightImage = null;
-            this.AddButton.Location = new System.Drawing.Point(239, 393);
-            this.AddButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddButton.Location = new System.Drawing.Point(179, 319);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddButton.Name = "AddButton";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.BorderRadius = 1;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.AddButton.onHoverState = stateProperties1;
-            this.AddButton.Size = new System.Drawing.Size(211, 46);
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 1;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.AddButton.onHoverState = stateProperties2;
+            this.AddButton.Size = new System.Drawing.Size(158, 37);
             this.AddButton.TabIndex = 12;
             this.AddButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
@@ -334,9 +348,9 @@
             this.TypeCheckBox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.TypeCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TypeCheckBox.CustomCheckmarkImage = null;
-            this.TypeCheckBox.Location = new System.Drawing.Point(15, 158);
-            this.TypeCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TypeCheckBox.MinimumSize = new System.Drawing.Size(17, 17);
+            this.TypeCheckBox.Location = new System.Drawing.Point(11, 128);
+            this.TypeCheckBox.Margin = new System.Windows.Forms.Padding(2);
+            this.TypeCheckBox.MinimumSize = new System.Drawing.Size(13, 14);
             this.TypeCheckBox.Name = "TypeCheckBox";
             this.TypeCheckBox.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(69)))), ((int)(((byte)(155)))));
             this.TypeCheckBox.OnCheck.BorderRadius = 2;
@@ -364,18 +378,36 @@
             this.TypeCheckBox.OnUncheck.BorderRadius = 2;
             this.TypeCheckBox.OnUncheck.BorderThickness = 2;
             this.TypeCheckBox.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.TypeCheckBox.Size = new System.Drawing.Size(21, 21);
+            this.TypeCheckBox.Size = new System.Drawing.Size(16, 16);
             this.TypeCheckBox.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
             this.TypeCheckBox.TabIndex = 1;
             this.TypeCheckBox.ThreeState = false;
             this.TypeCheckBox.ToolTipText = null;
             this.TypeCheckBox.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.TypeCheckBox_CheckedChanged);
             // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.closeW;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(536, 18);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 14;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
+            // 
             // MakeWebsitesOffers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.WebsiteLabel);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.PriceTextbox);
@@ -385,7 +417,7 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.TypeCheckBox);
             this.Controls.Add(this.AvaliableWebsitesDropdown);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MakeWebsitesOffers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MakeWebsitesOffers";
@@ -397,6 +429,7 @@
             this.RoomsTypePanel.PerformLayout();
             this.HotelPanel.ResumeLayout(false);
             this.HotelPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,5 +452,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel WebsiteLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel ChooseSingleRoomLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel ChooseAllRoomsLabel;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
     }
 }
