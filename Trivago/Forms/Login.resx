@@ -120,12 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="LoginBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAVAAAAA3CAYAAABabhKPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADmSURBVHhe7dSxDcIwAADBDAKzRCziZDOPmkBvAfr6iqu+
-        /+25H+fjdVwA/O/zzm0VAPjNQAEiAwWIDBQgMlCAyEABIgMFiAwUIDJQgMhAASIDBYgMFCAyUIDIQAEi
-        AwWIDBQgMlCAyEABIgMFiAwUIDJQgMhAASIDBYgMFCAyUIDIQAEiAwWIDBQgMlCAyEABIgMFiAwUIDJQ
-        gMhAASIDBYgMFCAyUIDIQAEiAwWIDBQgMlCAyEABIgMFiAwUIDJQgMhAASIDBYgMFCAyUIDIQAEiAwWI
-        DBQgMlCA6D3QMVcBgG/GvAEMIvBTo+00GwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAlCAYAAACziFDNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACOSURBVHhe7dKxFUBQAMDAPxMLWYNlbMF4PL2WNFdclTZj
+        2s5l3s4L/vI8N94CfM14JIxHwngkjEfCeCSMR8J4JIxHwngkjEfCeCSMR8J4JIxHwngkjEfCeCSMR8J4
+        JIxHwngkjEfCeCSMR8J4JIxHwngkjEfCeCSMR8J4JIxHwngkjEdizOuxvwX4zHrsN5eUgek0mN9JAAAA
+        AElFTkSuQmCC
 </value>
   </data>
 </root>

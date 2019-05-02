@@ -125,5 +125,7 @@ namespace Trivago.Forms
         {
             this.Close();
         }
+
+
     }
 }

@@ -344,9 +344,7 @@ namespace Trivago.Forms
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
-        {
-           
-
+        { 
 
                 if (check() == true)
                 {
