@@ -420,6 +420,14 @@ w.id = riw.website_id
                 tempPanel_MouseLeave(((Control)sender).Parent, e);
             */
         }
-        
+
+        private void AccountSettingsIcon_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            conn.Close();
+            AccountSettings NewAccountSettingsForm = new AccountSettings();
+            NewAccountSettingsForm.ShowDialog();
+            this.Close();
+        }
     }
 }

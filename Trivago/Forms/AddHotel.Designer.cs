@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddHotel));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.HotelRating = new Bunifu.Framework.UI.BunifuRating();
             this.AddHotelButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.HotelNameError = new System.Windows.Forms.ErrorProvider(this.components);
@@ -104,13 +104,13 @@
             this.AddHotelButton.IdleIconRightImage = null;
             this.AddHotelButton.Location = new System.Drawing.Point(532, 569);
             this.AddHotelButton.Name = "AddHotelButton";
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.BorderRadius = 1;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.AddHotelButton.onHoverState = stateProperties2;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.BorderRadius = 1;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.AddHotelButton.onHoverState = stateProperties1;
             this.AddHotelButton.Size = new System.Drawing.Size(210, 45);
             this.AddHotelButton.TabIndex = 6;
             this.AddHotelButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -561,6 +561,7 @@
             this.Controls.Add(this.HotelRating);
             this.DoubleBuffered = true;
             this.Name = "AddHotel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddHotel";
             this.Load += new System.EventHandler(this.AddHotel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.HotelNameError)).EndInit();

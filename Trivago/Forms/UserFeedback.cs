@@ -123,5 +123,14 @@ namespace Trivago.Forms
             FeedBackConnection.Close();
             this.Close();
         }
+
+        private void AccountSettingsIcon_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FeedBackConnection.Close();
+            AccountSettings NewAccountSettingsForm = new AccountSettings();
+            NewAccountSettingsForm.ShowDialog();
+            this.Close();
+        }
     }
 }

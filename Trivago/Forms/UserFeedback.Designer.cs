@@ -44,6 +44,7 @@
             this.SubmitButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.HotelNameError = new System.Windows.Forms.ErrorProvider(this.components);
             this.FeedbackError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.AccountSettingsIcon = new Bunifu.Framework.UI.BunifuTileButton();
             ((System.ComponentModel.ISupportInitialize)(this.HotelNameError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FeedbackError)).BeginInit();
             this.SuspendLayout();
@@ -298,6 +299,26 @@
             // 
             this.FeedbackError.ContainerControl = this;
             // 
+            // AccountSettingsIcon
+            // 
+            this.AccountSettingsIcon.BackColor = System.Drawing.Color.Transparent;
+            this.AccountSettingsIcon.color = System.Drawing.Color.Transparent;
+            this.AccountSettingsIcon.colorActive = System.Drawing.Color.Transparent;
+            this.AccountSettingsIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AccountSettingsIcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.AccountSettingsIcon.ForeColor = System.Drawing.Color.White;
+            this.AccountSettingsIcon.Image = global::Trivago.Properties.Resources.navy1;
+            this.AccountSettingsIcon.ImagePosition = 20;
+            this.AccountSettingsIcon.ImageZoom = 50;
+            this.AccountSettingsIcon.LabelPosition = 41;
+            this.AccountSettingsIcon.LabelText = "";
+            this.AccountSettingsIcon.Location = new System.Drawing.Point(1088, -5);
+            this.AccountSettingsIcon.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.AccountSettingsIcon.Name = "AccountSettingsIcon";
+            this.AccountSettingsIcon.Size = new System.Drawing.Size(88, 132);
+            this.AccountSettingsIcon.TabIndex = 69;
+            this.AccountSettingsIcon.Click += new System.EventHandler(this.AccountSettingsIcon_Click);
+            // 
             // UserFeedback
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -305,6 +326,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.BackgroundImage = global::Trivago.Properties.Resources.navy;
             this.ClientSize = new System.Drawing.Size(1239, 777);
+            this.Controls.Add(this.AccountSettingsIcon);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.close);
             this.Controls.Add(this.bunifuTileButton1);
@@ -318,6 +340,7 @@
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.TitleLabel);
             this.Name = "UserFeedback";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserFeedback";
             this.Load += new System.EventHandler(this.UserFeedback_Load);
             ((System.ComponentModel.ISupportInitialize)(this.HotelNameError)).EndInit();
@@ -342,5 +365,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton SubmitButton;
         private System.Windows.Forms.ErrorProvider HotelNameError;
         private System.Windows.Forms.ErrorProvider FeedbackError;
+        private Bunifu.Framework.UI.BunifuTileButton AccountSettingsIcon;
     }
 }
