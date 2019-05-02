@@ -52,6 +52,7 @@
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
             this.SuspendLayout();
             // 
             // bunifuLabel1
@@ -60,8 +61,7 @@
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(35, 31);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel1.Location = new System.Drawing.Point(19, 65);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(308, 46);
@@ -121,8 +121,8 @@
             this.close.ImageZoom = 50;
             this.close.LabelPosition = 41;
             this.close.LabelText = "";
-            this.close.Location = new System.Drawing.Point(1143, -6);
-            this.close.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.close.Location = new System.Drawing.Point(857, -5);
+            this.close.Margin = new System.Windows.Forms.Padding(6);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(88, 132);
             this.close.TabIndex = 54;
@@ -141,8 +141,8 @@
             this.bunifuTileButton1.ImageZoom = 70;
             this.bunifuTileButton1.LabelPosition = 41;
             this.bunifuTileButton1.LabelText = "";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(1043, 690);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.bunifuTileButton1.Location = new System.Drawing.Point(782, 561);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6);
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(200, 364);
             this.bunifuTileButton1.TabIndex = 53;
@@ -269,8 +269,8 @@
             this.dateofbirth.ForeColor = System.Drawing.Color.White;
             this.dateofbirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dateofbirth.FormatCustom = null;
-            this.dateofbirth.Location = new System.Drawing.Point(751, 452);
-            this.dateofbirth.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dateofbirth.Location = new System.Drawing.Point(563, 367);
+            this.dateofbirth.Margin = new System.Windows.Forms.Padding(4);
             this.dateofbirth.Name = "dateofbirth";
             this.dateofbirth.Size = new System.Drawing.Size(383, 44);
             this.dateofbirth.TabIndex = 43;
@@ -305,8 +305,8 @@
             this.mobile.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.mobile.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.mobile.LineThickness = 3;
-            this.mobile.Location = new System.Drawing.Point(749, 366);
-            this.mobile.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.mobile.Location = new System.Drawing.Point(562, 297);
+            this.mobile.Margin = new System.Windows.Forms.Padding(4);
             this.mobile.MaxLength = 32767;
             this.mobile.Name = "mobile";
             this.mobile.Size = new System.Drawing.Size(384, 41);
@@ -329,8 +329,8 @@
             this.password.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.password.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.password.LineThickness = 3;
-            this.password.Location = new System.Drawing.Point(749, 268);
-            this.password.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.password.Location = new System.Drawing.Point(562, 218);
+            this.password.Margin = new System.Windows.Forms.Padding(4);
             this.password.MaxLength = 32767;
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(384, 41);
@@ -353,8 +353,8 @@
             this.email.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.email.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.email.LineThickness = 3;
-            this.email.Location = new System.Drawing.Point(749, 177);
-            this.email.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.email.Location = new System.Drawing.Point(562, 144);
+            this.email.Margin = new System.Windows.Forms.Padding(4);
             this.email.MaxLength = 32767;
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(384, 47);
@@ -377,8 +377,8 @@
             this.last.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.last.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.last.LineThickness = 3;
-            this.last.Location = new System.Drawing.Point(959, 105);
-            this.last.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.last.Location = new System.Drawing.Point(719, 85);
+            this.last.Margin = new System.Windows.Forms.Padding(4);
             this.last.MaxLength = 32767;
             this.last.Name = "last";
             this.last.Size = new System.Drawing.Size(175, 39);
@@ -401,8 +401,8 @@
             this.first.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.first.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.first.LineThickness = 3;
-            this.first.Location = new System.Drawing.Point(749, 105);
-            this.first.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.first.Location = new System.Drawing.Point(562, 85);
+            this.first.Margin = new System.Windows.Forms.Padding(4);
             this.first.MaxLength = 32767;
             this.first.Name = "first";
             this.first.Size = new System.Drawing.Size(181, 39);
@@ -439,8 +439,8 @@
             this.bunifuTileButton2.ImageZoom = 50;
             this.bunifuTileButton2.LabelPosition = 41;
             this.bunifuTileButton2.LabelText = "";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(279, 380);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.bunifuTileButton2.Location = new System.Drawing.Point(209, 309);
+            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6);
             this.bunifuTileButton2.Name = "bunifuTileButton2";
             this.bunifuTileButton2.Size = new System.Drawing.Size(219, 251);
             this.bunifuTileButton2.TabIndex = 59;
@@ -462,6 +462,26 @@
             this.bunifuLabel3.Text = "Here you can view, edit and update your account information.\r\n\r\n";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuTileButton3
+            // 
+            this.bunifuTileButton3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTileButton3.color = System.Drawing.Color.Transparent;
+            this.bunifuTileButton3.colorActive = System.Drawing.Color.Transparent;
+            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton3.Image = global::Trivago.Properties.Resources.bk1;
+            this.bunifuTileButton3.ImagePosition = 20;
+            this.bunifuTileButton3.ImageZoom = 50;
+            this.bunifuTileButton3.LabelPosition = 41;
+            this.bunifuTileButton3.LabelText = "";
+            this.bunifuTileButton3.Location = new System.Drawing.Point(-8, -11);
+            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton3.Name = "bunifuTileButton3";
+            this.bunifuTileButton3.Size = new System.Drawing.Size(79, 116);
+            this.bunifuTileButton3.TabIndex = 61;
+            this.bunifuTileButton3.Click += new System.EventHandler(this.bunifuTileButton3_Click);
             // 
             // AccountSettings
             // 
@@ -494,6 +514,7 @@
             this.Controls.Add(this.last);
             this.Controls.Add(this.first);
             this.Controls.Add(this.bunifuLabel1);
+            this.Controls.Add(this.bunifuTileButton3);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AccountSettings";
@@ -529,5 +550,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
     }
 }

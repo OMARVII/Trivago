@@ -16,7 +16,7 @@ namespace Trivago.Forms
     public partial class ReserveRoom : Form
     {
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         Dictionary<Tuple<string, Tuple<string, string>>, bool> alreadyAddedOffer;
         Dictionary<Tuple<string, string>, int> alreadyAddedPanels;
 
@@ -421,12 +421,43 @@ w.id = riw.website_id
             */
         }
 
-        private void AccountSettingsIcon_Click(object sender, EventArgs e)
+        private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
             conn.Close();
-            AccountSettings NewAccountSettingsForm = new AccountSettings();
-            NewAccountSettingsForm.ShowDialog();
+            this.Hide();
+            UserFeedback a = new UserFeedback();
+
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void bunifuPictureBox2_Click(object sender, EventArgs e)
+        {
+            conn.Close();
+            this.Hide();
+            AccountSettings a = new AccountSettings();
+
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void bunifuTileButton3_Click(object sender, EventArgs e)
+        {
+            conn.Close();
+            this.Hide();
+            AccountSettings a = new AccountSettings();
+
+            a.ShowDialog();
             this.Close();
         }
     }

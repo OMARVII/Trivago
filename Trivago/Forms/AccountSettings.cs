@@ -175,8 +175,17 @@ namespace Trivago.Forms
 
         private void close_Click(object sender, EventArgs e)
         {
-            conn.Close();
             Application.Exit();
+        }
+
+        private void bunifuTileButton3_Click(object sender, EventArgs e)
+        {
+            conn.Close();
+            this.Hide();
+            ReserveRoom a = new ReserveRoom();
+
+            a.ShowDialog();
+            this.Close();
         }
     }
 }

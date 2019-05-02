@@ -63,6 +63,26 @@ namespace Trivago.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bk {
+            get {
+                object obj = ResourceManager.GetObject("bk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bk1 {
+            get {
+                object obj = ResourceManager.GetObject("bk1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap closeNavy {
             get {
                 object obj = ResourceManager.GetObject("closeNavy", resourceCulture);
@@ -103,9 +123,29 @@ namespace Trivago.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap navy1 {
+        internal static System.Drawing.Bitmap setnavy {
             get {
-                object obj = ResourceManager.GetObject("navy1", resourceCulture);
+                object obj = ResourceManager.GetObject("setnavy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setnavy1 {
+            get {
+                object obj = ResourceManager.GetObject("setnavy1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setnavy2 {
+            get {
+                object obj = ResourceManager.GetObject("setnavy2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

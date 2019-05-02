@@ -26,7 +26,7 @@ namespace Trivago.Forms
                int nHeightEllipse // width of ellipse
            );
         OracleConnection FeedBackConnection;
-        string ordb = "Data Source=orcl;User Id=HR;Password=HR;";
+        string ordb = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
         public UserFeedback()
         {
             InitializeComponent();
@@ -124,12 +124,22 @@ namespace Trivago.Forms
             this.Close();
         }
 
-        private void AccountSettingsIcon_Click(object sender, EventArgs e)
+        private void bunifuPictureBox2_Click(object sender, EventArgs e)
         {
-            this.Hide();
             FeedBackConnection.Close();
-            AccountSettings NewAccountSettingsForm = new AccountSettings();
-            NewAccountSettingsForm.ShowDialog();
+            this.Hide();
+            ReserveRoom a = new ReserveRoom();
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void bunifuTileButton3_Click(object sender, EventArgs e)
+        {
+            FeedBackConnection.Close();
+            this.Hide();
+            AccountSettings a = new AccountSettings();
+
+            a.ShowDialog();
             this.Close();
         }
     }

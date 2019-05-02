@@ -46,20 +46,23 @@
             this.SingleRadio = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.HotelDataGrid = new System.Windows.Forms.DataGridView();
             this.HotelRatingError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.RoomsDataGrid)).BeginInit();
             this.RadioBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HotelDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelRatingError)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // RoomsDataGrid
             // 
             this.RoomsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.RoomsDataGrid.Location = new System.Drawing.Point(0, 545);
-            this.RoomsDataGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RoomsDataGrid.Location = new System.Drawing.Point(-1, 431);
             this.RoomsDataGrid.Name = "RoomsDataGrid";
             this.RoomsDataGrid.RowTemplate.Height = 24;
-            this.RoomsDataGrid.Size = new System.Drawing.Size(1652, 417);
+            this.RoomsDataGrid.Size = new System.Drawing.Size(641, 166);
             this.RoomsDataGrid.TabIndex = 2;
             this.RoomsDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RoomsDataGrid_CellContentClick);
             // 
@@ -79,11 +82,9 @@
             this.RadioBox.Controls.Add(this.SingleLabel);
             this.RadioBox.Controls.Add(this.SingleRadio);
             this.RadioBox.ForeColor = System.Drawing.Color.White;
-            this.RadioBox.Location = new System.Drawing.Point(16, 345);
-            this.RadioBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RadioBox.Location = new System.Drawing.Point(0, 274);
             this.RadioBox.Name = "RadioBox";
-            this.RadioBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.RadioBox.Size = new System.Drawing.Size(1636, 193);
+            this.RadioBox.Size = new System.Drawing.Size(640, 157);
             this.RadioBox.TabIndex = 3;
             this.RadioBox.TabStop = false;
             this.RadioBox.Text = "Room Type";
@@ -111,14 +112,14 @@
             this.LoadButton.IconVisible = true;
             this.LoadButton.IconZoom = 90D;
             this.LoadButton.IsTab = false;
-            this.LoadButton.Location = new System.Drawing.Point(57, 116);
-            this.LoadButton.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
+            this.LoadButton.Location = new System.Drawing.Point(43, 94);
+            this.LoadButton.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Normalcolor = System.Drawing.Color.White;
             this.LoadButton.OnHovercolor = System.Drawing.Color.White;
             this.LoadButton.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.LoadButton.selected = true;
-            this.LoadButton.Size = new System.Drawing.Size(349, 68);
+            this.LoadButton.Size = new System.Drawing.Size(262, 55);
             this.LoadButton.TabIndex = 32;
             this.LoadButton.Text = "Load Room Type";
             this.LoadButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,14 +150,14 @@
             this.ReportButton.IconVisible = true;
             this.ReportButton.IconZoom = 90D;
             this.ReportButton.IsTab = false;
-            this.ReportButton.Location = new System.Drawing.Point(1205, 116);
-            this.ReportButton.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
+            this.ReportButton.Location = new System.Drawing.Point(904, 94);
+            this.ReportButton.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.ReportButton.Name = "ReportButton";
             this.ReportButton.Normalcolor = System.Drawing.Color.White;
             this.ReportButton.OnHovercolor = System.Drawing.Color.White;
             this.ReportButton.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.ReportButton.selected = true;
-            this.ReportButton.Size = new System.Drawing.Size(349, 68);
+            this.ReportButton.Size = new System.Drawing.Size(262, 55);
             this.ReportButton.TabIndex = 31;
             this.ReportButton.Text = "Generate Report";
             this.ReportButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -170,7 +171,7 @@
             this.HotelRating.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.HotelRating.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.HotelRating.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.HotelRating.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.HotelRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.HotelRating.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.HotelRating.HintForeColor = System.Drawing.Color.White;
             this.HotelRating.HintText = "Insert Hotel Rating";
@@ -305,23 +306,57 @@
             // HotelDataGrid
             // 
             this.HotelDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.HotelDataGrid.Location = new System.Drawing.Point(0, -4);
-            this.HotelDataGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HotelDataGrid.Location = new System.Drawing.Point(2, 53);
             this.HotelDataGrid.Name = "HotelDataGrid";
             this.HotelDataGrid.RowTemplate.Height = 24;
-            this.HotelDataGrid.Size = new System.Drawing.Size(1652, 341);
+            this.HotelDataGrid.Size = new System.Drawing.Size(638, 220);
             this.HotelDataGrid.TabIndex = 33;
+            this.HotelDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HotelDataGrid_CellContentClick);
             // 
             // HotelRatingError
             // 
             this.HotelRatingError.ContainerControl = this;
+            // 
+            // bunifuPictureBox2
+            // 
+            this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox2.BorderRadius = 23;
+            this.bunifuPictureBox2.Image = global::Trivago.Properties.Resources.bk;
+            this.bunifuPictureBox2.IsCircle = true;
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(2, 9);
+            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(46, 46);
+            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox2.TabIndex = 73;
+            this.bunifuPictureBox2.TabStop = false;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox2.Click += new System.EventHandler(this.bunifuPictureBox2_Click);
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.closeW;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(594, 9);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 74;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // ViewHotels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(1652, 956);
+            this.ClientSize = new System.Drawing.Size(644, 594);
+            this.Controls.Add(this.bunifuPictureBox1);
+            this.Controls.Add(this.bunifuPictureBox2);
             this.Controls.Add(this.HotelDataGrid);
             this.Controls.Add(this.RadioBox);
             this.Controls.Add(this.RoomsDataGrid);
@@ -335,6 +370,8 @@
             this.RadioBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HotelDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelRatingError)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,5 +394,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton LoadButton;
         private System.Windows.Forms.DataGridView HotelDataGrid;
         private System.Windows.Forms.ErrorProvider HotelRatingError;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
     }
 }

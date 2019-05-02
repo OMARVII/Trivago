@@ -32,9 +32,9 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.EmailTxtBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.PasswordTxtBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.LoginBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.LoginBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,11 +53,11 @@
             this.EmailTxtBox.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.EmailTxtBox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.EmailTxtBox.LineThickness = 3;
-            this.EmailTxtBox.Location = new System.Drawing.Point(130, 70);
-            this.EmailTxtBox.Margin = new System.Windows.Forms.Padding(5);
+            this.EmailTxtBox.Location = new System.Drawing.Point(98, 57);
+            this.EmailTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EmailTxtBox.MaxLength = 32767;
             this.EmailTxtBox.Name = "EmailTxtBox";
-            this.EmailTxtBox.Size = new System.Drawing.Size(336, 41);
+            this.EmailTxtBox.Size = new System.Drawing.Size(252, 33);
             this.EmailTxtBox.TabIndex = 7;
             this.EmailTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -76,13 +76,48 @@
             this.PasswordTxtBox.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.PasswordTxtBox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.PasswordTxtBox.LineThickness = 3;
-            this.PasswordTxtBox.Location = new System.Drawing.Point(130, 147);
-            this.PasswordTxtBox.Margin = new System.Windows.Forms.Padding(5);
+            this.PasswordTxtBox.Location = new System.Drawing.Point(98, 119);
+            this.PasswordTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PasswordTxtBox.MaxLength = 32767;
             this.PasswordTxtBox.Name = "PasswordTxtBox";
-            this.PasswordTxtBox.Size = new System.Drawing.Size(336, 41);
+            this.PasswordTxtBox.Size = new System.Drawing.Size(252, 33);
             this.PasswordTxtBox.TabIndex = 8;
             this.PasswordTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.closeW;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(420, 2);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 67;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
+            // 
+            // bunifuTileButton1
+            // 
+            this.bunifuTileButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTileButton1.color = System.Drawing.Color.Transparent;
+            this.bunifuTileButton1.colorActive = System.Drawing.Color.Transparent;
+            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.bunifuTileButton1.ForeColor = System.Drawing.Color.Transparent;
+            this.bunifuTileButton1.Image = global::Trivago.Properties.Resources.trivagoo;
+            this.bunifuTileButton1.ImagePosition = -10;
+            this.bunifuTileButton1.ImageZoom = 70;
+            this.bunifuTileButton1.LabelPosition = 41;
+            this.bunifuTileButton1.LabelText = "";
+            this.bunifuTileButton1.Location = new System.Drawing.Point(358, 220);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton1.Name = "bunifuTileButton1";
+            this.bunifuTileButton1.Size = new System.Drawing.Size(118, 84);
+            this.bunifuTileButton1.TabIndex = 66;
             // 
             // LoginBtn
             // 
@@ -104,8 +139,7 @@
             this.LoginBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(65)))), ((int)(((byte)(95)))));
             this.LoginBtn.IdleIconLeftImage = null;
             this.LoginBtn.IdleIconRightImage = null;
-            this.LoginBtn.Location = new System.Drawing.Point(130, 246);
-            this.LoginBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.LoginBtn.Location = new System.Drawing.Point(98, 200);
             this.LoginBtn.Name = "LoginBtn";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             stateProperties1.BorderRadius = 1;
@@ -114,58 +148,23 @@
             stateProperties1.IconLeftImage = null;
             stateProperties1.IconRightImage = null;
             this.LoginBtn.onHoverState = stateProperties1;
-            this.LoginBtn.Size = new System.Drawing.Size(336, 55);
+            this.LoginBtn.Size = new System.Drawing.Size(252, 45);
             this.LoginBtn.TabIndex = 21;
             this.LoginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
-            // bunifuTileButton1
-            // 
-            this.bunifuTileButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTileButton1.color = System.Drawing.Color.Transparent;
-            this.bunifuTileButton1.colorActive = System.Drawing.Color.Transparent;
-            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.bunifuTileButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuTileButton1.Image = global::Trivago.Properties.Resources.trivagoo;
-            this.bunifuTileButton1.ImagePosition = -10;
-            this.bunifuTileButton1.ImageZoom = 70;
-            this.bunifuTileButton1.LabelPosition = 41;
-            this.bunifuTileButton1.LabelText = "";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(478, 271);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(158, 104);
-            this.bunifuTileButton1.TabIndex = 66;
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.BorderRadius = 25;
-            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.closeW;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(560, 3);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(51, 51);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 67;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
-            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(624, 352);
+            this.ClientSize = new System.Drawing.Size(468, 286);
             this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.bunifuTileButton1);
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.PasswordTxtBox);
             this.Controls.Add(this.EmailTxtBox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

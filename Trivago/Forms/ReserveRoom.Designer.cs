@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReserveRoom));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.SearchTextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -49,14 +50,17 @@
             this.RoomTypeDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.reserveFromLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.reserveToLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.AccountSettingsIcon = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.reserveTo = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.reserveFrom = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
             this.DisplayPanel.SuspendLayout();
             this.tempPanel.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             this.bunifuShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // SearchTextbox
@@ -65,7 +69,7 @@
             this.SearchTextbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.SearchTextbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.SearchTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SearchTextbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.SearchTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.SearchTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.SearchTextbox.HintForeColor = System.Drawing.Color.Empty;
             this.SearchTextbox.HintText = "Enter Hotel name or country or city or street";
@@ -74,11 +78,10 @@
             this.SearchTextbox.LineIdleColor = System.Drawing.Color.Gray;
             this.SearchTextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.SearchTextbox.LineThickness = 3;
-            this.SearchTextbox.Location = new System.Drawing.Point(13, 29);
-            this.SearchTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchTextbox.Location = new System.Drawing.Point(10, 28);
             this.SearchTextbox.MaxLength = 32767;
             this.SearchTextbox.Name = "SearchTextbox";
-            this.SearchTextbox.Size = new System.Drawing.Size(362, 32);
+            this.SearchTextbox.Size = new System.Drawing.Size(272, 26);
             this.SearchTextbox.TabIndex = 0;
             this.SearchTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SearchTextbox.OnValueChanged += new System.EventHandler(this.SearchTextbox_OnValueChanged);
@@ -86,9 +89,10 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(12, 9);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(9, 11);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(61, 17);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(47, 13);
             this.bunifuCustomLabel1.TabIndex = 1;
             this.bunifuCustomLabel1.Text = "Search :";
             // 
@@ -98,12 +102,13 @@
             this.DisplayPanel.BorderColor = System.Drawing.Color.Gainsboro;
             this.DisplayPanel.Controls.Add(this.tempPanel);
             this.DisplayPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DisplayPanel.Location = new System.Drawing.Point(0, 95);
+            this.DisplayPanel.Location = new System.Drawing.Point(0, 181);
+            this.DisplayPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DisplayPanel.Name = "DisplayPanel";
             this.DisplayPanel.PanelColor = System.Drawing.Color.Empty;
             this.DisplayPanel.ShadowDept = 2;
             this.DisplayPanel.ShadowTopLeftVisible = false;
-            this.DisplayPanel.Size = new System.Drawing.Size(1285, 518);
+            this.DisplayPanel.Size = new System.Drawing.Size(964, 421);
             this.DisplayPanel.TabIndex = 2;
             this.DisplayPanel.Tag = "main";
             // 
@@ -117,24 +122,26 @@
             this.tempPanel.Controls.Add(this.RoomId);
             this.tempPanel.Controls.Add(this.HotelRating);
             this.tempPanel.Controls.Add(this.HotelName);
-            this.tempPanel.Location = new System.Drawing.Point(3, 3);
+            this.tempPanel.Location = new System.Drawing.Point(2, 6);
+            this.tempPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tempPanel.Name = "tempPanel";
             this.tempPanel.PanelColor = System.Drawing.Color.Empty;
             this.tempPanel.ShadowDept = 2;
             this.tempPanel.ShadowTopLeftVisible = false;
-            this.tempPanel.Size = new System.Drawing.Size(1270, 135);
+            this.tempPanel.Size = new System.Drawing.Size(952, 110);
             this.tempPanel.TabIndex = 0;
             // 
             // bunifuShadowPanel2
             // 
             this.bunifuShadowPanel2.BorderColor = System.Drawing.Color.Gainsboro;
             this.bunifuShadowPanel2.Controls.Add(this.bunifuButton1);
-            this.bunifuShadowPanel2.Location = new System.Drawing.Point(946, 4);
+            this.bunifuShadowPanel2.Location = new System.Drawing.Point(710, 7);
+            this.bunifuShadowPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuShadowPanel2.Name = "bunifuShadowPanel2";
             this.bunifuShadowPanel2.PanelColor = System.Drawing.Color.Empty;
             this.bunifuShadowPanel2.ShadowDept = 2;
             this.bunifuShadowPanel2.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel2.Size = new System.Drawing.Size(321, 128);
+            this.bunifuShadowPanel2.Size = new System.Drawing.Size(241, 104);
             this.bunifuShadowPanel2.TabIndex = 8;
             // 
             // bunifuShadowPanel1
@@ -144,74 +151,82 @@
             this.bunifuShadowPanel1.Controls.Add(this.bunifuCustomLabel2);
             this.bunifuShadowPanel1.Controls.Add(this.WebsiteName);
             this.bunifuShadowPanel1.Controls.Add(this.RoomPrice);
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(570, 0);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(428, 4);
+            this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.Empty;
             this.bunifuShadowPanel1.ShadowDept = 2;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(370, 135);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(278, 110);
             this.bunifuShadowPanel1.TabIndex = 7;
             // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(146, 46);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(110, 41);
+            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(137, 17);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(103, 13);
             this.bunifuCustomLabel3.TabIndex = 8;
             this.bunifuCustomLabel3.Text = "bunifuCustomLabel3";
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(3, 44);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(2, 40);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(137, 17);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(103, 13);
             this.bunifuCustomLabel2.TabIndex = 7;
             this.bunifuCustomLabel2.Text = "bunifuCustomLabel2";
             // 
             // WebsiteName
             // 
             this.WebsiteName.AutoSize = true;
-            this.WebsiteName.Location = new System.Drawing.Point(4, 4);
+            this.WebsiteName.Location = new System.Drawing.Point(3, 7);
+            this.WebsiteName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WebsiteName.Name = "WebsiteName";
-            this.WebsiteName.Size = new System.Drawing.Size(96, 17);
+            this.WebsiteName.Size = new System.Drawing.Size(74, 13);
             this.WebsiteName.TabIndex = 6;
             this.WebsiteName.Text = "WebsiteName";
             // 
             // RoomPrice
             // 
             this.RoomPrice.AutoSize = true;
-            this.RoomPrice.Location = new System.Drawing.Point(191, 4);
+            this.RoomPrice.Location = new System.Drawing.Point(143, 7);
+            this.RoomPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RoomPrice.Name = "RoomPrice";
-            this.RoomPrice.Size = new System.Drawing.Size(77, 17);
+            this.RoomPrice.Size = new System.Drawing.Size(59, 13);
             this.RoomPrice.TabIndex = 5;
             this.RoomPrice.Text = "RoomPrice";
             // 
             // HotelLocation
             // 
             this.HotelLocation.AutoSize = true;
-            this.HotelLocation.Location = new System.Drawing.Point(3, 86);
+            this.HotelLocation.Location = new System.Drawing.Point(2, 74);
+            this.HotelLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HotelLocation.Name = "HotelLocation";
-            this.HotelLocation.Size = new System.Drawing.Size(95, 17);
+            this.HotelLocation.Size = new System.Drawing.Size(73, 13);
             this.HotelLocation.TabIndex = 4;
             this.HotelLocation.Text = "HotelLocation";
             // 
             // RoomType
             // 
             this.RoomType.AutoSize = true;
-            this.RoomType.Location = new System.Drawing.Point(300, 46);
+            this.RoomType.Location = new System.Drawing.Point(225, 41);
+            this.RoomType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RoomType.Name = "RoomType";
-            this.RoomType.Size = new System.Drawing.Size(81, 17);
+            this.RoomType.Size = new System.Drawing.Size(62, 13);
             this.RoomType.TabIndex = 3;
             this.RoomType.Text = "Room Type";
             // 
             // RoomId
             // 
             this.RoomId.AutoSize = true;
-            this.RoomId.Location = new System.Drawing.Point(300, 4);
+            this.RoomId.Location = new System.Drawing.Point(225, 7);
+            this.RoomId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RoomId.Name = "RoomId";
-            this.RoomId.Size = new System.Drawing.Size(62, 17);
+            this.RoomId.Size = new System.Drawing.Size(49, 13);
             this.RoomId.TabIndex = 2;
             this.RoomId.Text = "Room ID";
             // 
@@ -219,28 +234,29 @@
             // 
             this.HotelRating.BackColor = System.Drawing.Color.Transparent;
             this.HotelRating.ForeColor = System.Drawing.Color.SeaGreen;
-            this.HotelRating.Location = new System.Drawing.Point(4, 35);
-            this.HotelRating.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HotelRating.Location = new System.Drawing.Point(3, 32);
             this.HotelRating.Name = "HotelRating";
-            this.HotelRating.Size = new System.Drawing.Size(240, 40);
+            this.HotelRating.Size = new System.Drawing.Size(180, 32);
             this.HotelRating.TabIndex = 1;
             this.HotelRating.Value = 0;
             // 
             // HotelName
             // 
             this.HotelName.AutoSize = true;
-            this.HotelName.Location = new System.Drawing.Point(4, 4);
+            this.HotelName.Location = new System.Drawing.Point(3, 7);
+            this.HotelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HotelName.Name = "HotelName";
-            this.HotelName.Size = new System.Drawing.Size(78, 17);
+            this.HotelName.Size = new System.Drawing.Size(60, 13);
             this.HotelName.TabIndex = 0;
             this.HotelName.Text = "HotelName";
             // 
             // RoomTypeLabel
             // 
             this.RoomTypeLabel.AutoSize = true;
-            this.RoomTypeLabel.Location = new System.Drawing.Point(980, 9);
+            this.RoomTypeLabel.Location = new System.Drawing.Point(735, 11);
+            this.RoomTypeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RoomTypeLabel.Name = "RoomTypeLabel";
-            this.RoomTypeLabel.Size = new System.Drawing.Size(89, 17);
+            this.RoomTypeLabel.Size = new System.Drawing.Size(68, 13);
             this.RoomTypeLabel.TabIndex = 4;
             this.RoomTypeLabel.Text = "Room Type :";
             // 
@@ -267,9 +283,10 @@
             this.RoomTypeDropdown.ItemForeColor = System.Drawing.Color.Purple;
             this.RoomTypeDropdown.ItemHeight = 26;
             this.RoomTypeDropdown.ItemHighLightColor = System.Drawing.Color.Thistle;
-            this.RoomTypeDropdown.Location = new System.Drawing.Point(983, 29);
+            this.RoomTypeDropdown.Location = new System.Drawing.Point(737, 28);
+            this.RoomTypeDropdown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RoomTypeDropdown.Name = "RoomTypeDropdown";
-            this.RoomTypeDropdown.Size = new System.Drawing.Size(217, 32);
+            this.RoomTypeDropdown.Size = new System.Drawing.Size(164, 32);
             this.RoomTypeDropdown.TabIndex = 5;
             this.RoomTypeDropdown.Text = null;
             this.RoomTypeDropdown.SelectedIndexChanged += new System.EventHandler(this.RoomTypeDropdown_SelectedIndexChanged);
@@ -277,40 +294,72 @@
             // reserveFromLabel
             // 
             this.reserveFromLabel.AutoSize = true;
-            this.reserveFromLabel.Location = new System.Drawing.Point(430, 9);
+            this.reserveFromLabel.Location = new System.Drawing.Point(322, 11);
+            this.reserveFromLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.reserveFromLabel.Name = "reserveFromLabel";
-            this.reserveFromLabel.Size = new System.Drawing.Size(105, 17);
+            this.reserveFromLabel.Size = new System.Drawing.Size(79, 13);
             this.reserveFromLabel.TabIndex = 9;
             this.reserveFromLabel.Text = "Reserve From :";
             // 
             // reserveToLabel
             // 
             this.reserveToLabel.AutoSize = true;
-            this.reserveToLabel.Location = new System.Drawing.Point(705, 9);
+            this.reserveToLabel.Location = new System.Drawing.Point(529, 11);
+            this.reserveToLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.reserveToLabel.Name = "reserveToLabel";
-            this.reserveToLabel.Size = new System.Drawing.Size(90, 17);
+            this.reserveToLabel.Size = new System.Drawing.Size(69, 13);
             this.reserveToLabel.TabIndex = 10;
             this.reserveToLabel.Text = "Reserve To :";
             // 
-            // AccountSettingsIcon
+            // bunifuButton2
             // 
-            this.AccountSettingsIcon.BackColor = System.Drawing.Color.Transparent;
-            this.AccountSettingsIcon.color = System.Drawing.Color.Transparent;
-            this.AccountSettingsIcon.colorActive = System.Drawing.Color.Transparent;
-            this.AccountSettingsIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AccountSettingsIcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.AccountSettingsIcon.ForeColor = System.Drawing.Color.White;
-            this.AccountSettingsIcon.Image = global::Trivago.Properties.Resources.navy1;
-            this.AccountSettingsIcon.ImagePosition = 20;
-            this.AccountSettingsIcon.ImageZoom = 50;
-            this.AccountSettingsIcon.LabelPosition = 41;
-            this.AccountSettingsIcon.LabelText = "";
-            this.AccountSettingsIcon.Location = new System.Drawing.Point(1211, -13);
-            this.AccountSettingsIcon.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.AccountSettingsIcon.Name = "AccountSettingsIcon";
-            this.AccountSettingsIcon.Size = new System.Drawing.Size(88, 132);
-            this.AccountSettingsIcon.TabIndex = 21;
-            this.AccountSettingsIcon.Click += new System.EventHandler(this.AccountSettingsIcon_Click);
+            this.bunifuButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton2.BackgroundImage")));
+            this.bunifuButton2.ButtonText = "feedback";
+            this.bunifuButton2.ButtonTextMarginLeft = 0;
+            this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.bunifuButton2.DisabledFillColor = System.Drawing.Color.Gray;
+            this.bunifuButton2.DisabledForecolor = System.Drawing.Color.White;
+            this.bunifuButton2.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton2.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton2.IconPadding = 10;
+            this.bunifuButton2.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton2.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.bunifuButton2.IdleBorderRadius = 1;
+            this.bunifuButton2.IdleBorderThickness = 0;
+            this.bunifuButton2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.bunifuButton2.IdleIconLeftImage = null;
+            this.bunifuButton2.IdleIconRightImage = null;
+            this.bunifuButton2.Location = new System.Drawing.Point(459, 99);
+            this.bunifuButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuButton2.Name = "bunifuButton2";
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 1;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.bunifuButton2.onHoverState = stateProperties2;
+            this.bunifuButton2.Size = new System.Drawing.Size(236, 37);
+            this.bunifuButton2.TabIndex = 9;
+            this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton2.Click += new System.EventHandler(this.bunifuButton2_Click);
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.closeW;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(712, 98);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 68;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // reserveTo
             // 
@@ -326,10 +375,11 @@
             this.reserveTo.Icon = ((System.Drawing.Image)(resources.GetObject("reserveTo.Icon")));
             this.reserveTo.IconColor = System.Drawing.Color.Purple;
             this.reserveTo.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.reserveTo.Location = new System.Drawing.Point(708, 29);
-            this.reserveTo.MinimumSize = new System.Drawing.Size(217, 32);
+            this.reserveTo.Location = new System.Drawing.Point(531, 28);
+            this.reserveTo.Margin = new System.Windows.Forms.Padding(2);
+            this.reserveTo.MinimumSize = new System.Drawing.Size(164, 32);
             this.reserveTo.Name = "reserveTo";
-            this.reserveTo.Size = new System.Drawing.Size(217, 32);
+            this.reserveTo.Size = new System.Drawing.Size(164, 32);
             this.reserveTo.TabIndex = 8;
             this.reserveTo.Value = new System.DateTime(2019, 5, 31, 0, 0, 0, 0);
             this.reserveTo.ValueChanged += new System.EventHandler(this.reserveTo_ValueChanged);
@@ -348,10 +398,11 @@
             this.reserveFrom.Icon = ((System.Drawing.Image)(resources.GetObject("reserveFrom.Icon")));
             this.reserveFrom.IconColor = System.Drawing.Color.Purple;
             this.reserveFrom.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.reserveFrom.Location = new System.Drawing.Point(433, 29);
-            this.reserveFrom.MinimumSize = new System.Drawing.Size(217, 32);
+            this.reserveFrom.Location = new System.Drawing.Point(325, 28);
+            this.reserveFrom.Margin = new System.Windows.Forms.Padding(2);
+            this.reserveFrom.MinimumSize = new System.Drawing.Size(164, 32);
             this.reserveFrom.Name = "reserveFrom";
-            this.reserveFrom.Size = new System.Drawing.Size(217, 32);
+            this.reserveFrom.Size = new System.Drawing.Size(164, 32);
             this.reserveFrom.TabIndex = 7;
             this.reserveFrom.ValueChanged += new System.EventHandler(this.reserveFrom_ValueChanged);
             // 
@@ -374,25 +425,49 @@
             this.bunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
-            this.bunifuButton1.Location = new System.Drawing.Point(3, 79);
+            this.bunifuButton1.Location = new System.Drawing.Point(0, 69);
+            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuButton1.Name = "bunifuButton1";
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.BorderRadius = 1;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.bunifuButton1.onHoverState = stateProperties2;
-            this.bunifuButton1.Size = new System.Drawing.Size(315, 46);
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.BorderRadius = 1;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.bunifuButton1.onHoverState = stateProperties1;
+            this.bunifuButton1.Size = new System.Drawing.Size(236, 37);
             this.bunifuButton1.TabIndex = 8;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
+            // 
+            // bunifuTileButton3
+            // 
+            this.bunifuTileButton3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTileButton3.color = System.Drawing.Color.Transparent;
+            this.bunifuTileButton3.colorActive = System.Drawing.Color.Transparent;
+            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton3.Image = global::Trivago.Properties.Resources.setnavy2;
+            this.bunifuTileButton3.ImagePosition = 20;
+            this.bunifuTileButton3.ImageZoom = 50;
+            this.bunifuTileButton3.LabelPosition = 41;
+            this.bunifuTileButton3.LabelText = "";
+            this.bunifuTileButton3.Location = new System.Drawing.Point(356, 98);
+            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton3.Name = "bunifuTileButton3";
+            this.bunifuTileButton3.Size = new System.Drawing.Size(66, 107);
+            this.bunifuTileButton3.TabIndex = 76;
+            this.bunifuTileButton3.Click += new System.EventHandler(this.bunifuTileButton3_Click);
             // 
             // ReserveRoom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1285, 613);
-            this.Controls.Add(this.AccountSettingsIcon);
+            this.ClientSize = new System.Drawing.Size(964, 602);
+            this.Controls.Add(this.bunifuTileButton3);
+            this.Controls.Add(this.bunifuButton2);
+            this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.reserveToLabel);
             this.Controls.Add(this.reserveFromLabel);
             this.Controls.Add(this.reserveTo);
@@ -402,6 +477,7 @@
             this.Controls.Add(this.DisplayPanel);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.SearchTextbox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ReserveRoom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReserveRoom";
@@ -411,6 +487,7 @@
             this.bunifuShadowPanel2.ResumeLayout(false);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -440,6 +517,8 @@
         private Bunifu.UI.WinForms.BunifuDatePicker reserveTo;
         private Bunifu.Framework.UI.BunifuCustomLabel reserveFromLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel reserveToLabel;
-        private Bunifu.Framework.UI.BunifuTileButton AccountSettingsIcon;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
     }
 }

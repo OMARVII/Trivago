@@ -121,10 +121,10 @@
   <data name="AddButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAlCAYAAACziFDNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACMSURBVHhe7dK7FUAAAMBAgzCLZxFsZlSfXkuaK65Km2Ga
-        t31cthP+8jw3vAX4mvFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFI
-        GI+E8UgYj4TxSBiPhPFIGI+E8UgYj4TxSBiPhPFIGI+E8UgYj8Q93nq8BfjOelwxiISaheemIgAAAABJ
-        RU5ErkJggg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACOSURBVHhe7dKxFUBQAMDAPxMLWYNlbMF4PL2WNFdclTZj
+        2s5l3s4L/vI8N94CfM14JIxHwngkjEfCeCSMR8J4JIxHwngkjEfCeCSMR8J4JIxHwngkjEfCeCSMR8J4
+        JIxHwngkjEfCeCSMR8J4JIxHwngkjEfCeCSMR8J4JIxHwngkjEdizOuxvwX4zHrsN5eUgek0mN9JAAAA
+        AElFTkSuQmCC
 </value>
   </data>
   <data name="TypeCheckBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -43,9 +43,9 @@
             this.HotelLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.PriceTextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.WebsiteLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.AddButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.TypeCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.SingleRoomPanel.SuspendLayout();
             this.RoomsTypePanel.SuspendLayout();
             this.HotelPanel.SuspendLayout();
@@ -288,13 +288,28 @@
             // WebsiteLabel
             // 
             this.WebsiteLabel.AutoSize = true;
-            this.WebsiteLabel.ForeColor = System.Drawing.Color.White;
             this.WebsiteLabel.Location = new System.Drawing.Point(10, 8);
             this.WebsiteLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WebsiteLabel.Name = "WebsiteLabel";
             this.WebsiteLabel.Size = new System.Drawing.Size(46, 13);
             this.WebsiteLabel.TabIndex = 13;
             this.WebsiteLabel.Text = "Website";
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.bk;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(281, 164);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 68;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // AddButton
             // 
@@ -384,22 +399,6 @@
             this.TypeCheckBox.ThreeState = false;
             this.TypeCheckBox.ToolTipText = null;
             this.TypeCheckBox.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs>(this.TypeCheckBox_CheckedChanged);
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.BorderRadius = 19;
-            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.closeW;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(536, 18);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 14;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // MakeWebsitesOffers
             // 

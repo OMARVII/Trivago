@@ -16,7 +16,7 @@ namespace Trivago.Forms
     public partial class MakeWebsitesOffers : Form
     {
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=hr;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
            (
@@ -259,7 +259,12 @@ namespace Trivago.Forms
         private void bunifuPictureBox1_Click(object sender, EventArgs e)
         {
             conn.Close();
-            Application.Exit();
+            this.Hide();
+            makewebsiteForm a = new makewebsiteForm();
+
+            a.ShowDialog();
+            this.Close();
         }
+    
     }
 }

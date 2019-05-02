@@ -16,8 +16,7 @@ namespace Trivago
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            Application.Run(new Forms.UserFeedback());
+            Application.Run(new Forms.Register());
 
         }
     }

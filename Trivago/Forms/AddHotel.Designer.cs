@@ -62,6 +62,7 @@
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.close = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.HotelNameError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelEmailError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumberError)).BeginInit();
@@ -70,16 +71,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.CityError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StreetError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DescriptionError)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // HotelRating
             // 
             this.HotelRating.BackColor = System.Drawing.Color.Transparent;
             this.HotelRating.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.HotelRating.Location = new System.Drawing.Point(605, 267);
-            this.HotelRating.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HotelRating.Location = new System.Drawing.Point(603, 266);
             this.HotelRating.Name = "HotelRating";
-            this.HotelRating.Size = new System.Drawing.Size(314, 52);
+            this.HotelRating.Size = new System.Drawing.Size(236, 42);
             this.HotelRating.TabIndex = 4;
             this.HotelRating.Value = 0;
             // 
@@ -102,16 +103,17 @@
             this.AddHotelButton.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.AddHotelButton.IdleIconLeftImage = null;
             this.AddHotelButton.IdleIconRightImage = null;
-            this.AddHotelButton.Location = new System.Drawing.Point(532, 569);
+            this.AddHotelButton.Location = new System.Drawing.Point(603, 511);
+            this.AddHotelButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddHotelButton.Name = "AddHotelButton";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.BorderRadius = 1;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.AddHotelButton.onHoverState = stateProperties1;
-            this.AddHotelButton.Size = new System.Drawing.Size(210, 45);
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 1;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.AddHotelButton.onHoverState = stateProperties2;
+            this.AddHotelButton.Size = new System.Drawing.Size(158, 37);
             this.AddHotelButton.TabIndex = 6;
             this.AddHotelButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddHotelButton.Click += new System.EventHandler(this.AddHotelButton_Click);
@@ -164,11 +166,11 @@
             this.HotelName.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.HotelName.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.HotelName.LineThickness = 3;
-            this.HotelName.Location = new System.Drawing.Point(605, 0);
-            this.HotelName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.HotelName.Location = new System.Drawing.Point(603, 49);
+            this.HotelName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HotelName.MaxLength = 32767;
             this.HotelName.Name = "HotelName";
-            this.HotelName.Size = new System.Drawing.Size(314, 47);
+            this.HotelName.Size = new System.Drawing.Size(236, 38);
             this.HotelName.TabIndex = 40;
             this.HotelName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -178,10 +180,9 @@
             this.HotelNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.HotelNameLabel.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotelNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.HotelNameLabel.Location = new System.Drawing.Point(392, 21);
-            this.HotelNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HotelNameLabel.Location = new System.Drawing.Point(443, 66);
             this.HotelNameLabel.Name = "HotelNameLabel";
-            this.HotelNameLabel.Size = new System.Drawing.Size(151, 26);
+            this.HotelNameLabel.Size = new System.Drawing.Size(118, 20);
             this.HotelNameLabel.TabIndex = 43;
             this.HotelNameLabel.Text = "Hotel Name:";
             // 
@@ -201,11 +202,11 @@
             this.HotelEmail.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.HotelEmail.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.HotelEmail.LineThickness = 3;
-            this.HotelEmail.Location = new System.Drawing.Point(605, 65);
-            this.HotelEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.HotelEmail.Location = new System.Drawing.Point(603, 102);
+            this.HotelEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HotelEmail.MaxLength = 32767;
             this.HotelEmail.Name = "HotelEmail";
-            this.HotelEmail.Size = new System.Drawing.Size(314, 47);
+            this.HotelEmail.Size = new System.Drawing.Size(236, 38);
             this.HotelEmail.TabIndex = 44;
             this.HotelEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -215,10 +216,9 @@
             this.HotelEmailLabel.BackColor = System.Drawing.Color.Transparent;
             this.HotelEmailLabel.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotelEmailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.HotelEmailLabel.Location = new System.Drawing.Point(392, 86);
-            this.HotelEmailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HotelEmailLabel.Location = new System.Drawing.Point(443, 119);
             this.HotelEmailLabel.Name = "HotelEmailLabel";
-            this.HotelEmailLabel.Size = new System.Drawing.Size(148, 26);
+            this.HotelEmailLabel.Size = new System.Drawing.Size(116, 20);
             this.HotelEmailLabel.TabIndex = 45;
             this.HotelEmailLabel.Text = "Hotel Email:";
             // 
@@ -238,11 +238,11 @@
             this.HotelContactNumber.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.HotelContactNumber.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.HotelContactNumber.LineThickness = 3;
-            this.HotelContactNumber.Location = new System.Drawing.Point(605, 122);
-            this.HotelContactNumber.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.HotelContactNumber.Location = new System.Drawing.Point(603, 148);
+            this.HotelContactNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HotelContactNumber.MaxLength = 32767;
             this.HotelContactNumber.Name = "HotelContactNumber";
-            this.HotelContactNumber.Size = new System.Drawing.Size(314, 47);
+            this.HotelContactNumber.Size = new System.Drawing.Size(236, 38);
             this.HotelContactNumber.TabIndex = 46;
             this.HotelContactNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -252,10 +252,9 @@
             this.HotelNumberLabel.BackColor = System.Drawing.Color.Transparent;
             this.HotelNumberLabel.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotelNumberLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.HotelNumberLabel.Location = new System.Drawing.Point(389, 143);
-            this.HotelNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HotelNumberLabel.Location = new System.Drawing.Point(441, 165);
             this.HotelNumberLabel.Name = "HotelNumberLabel";
-            this.HotelNumberLabel.Size = new System.Drawing.Size(175, 26);
+            this.HotelNumberLabel.Size = new System.Drawing.Size(137, 20);
             this.HotelNumberLabel.TabIndex = 47;
             this.HotelNumberLabel.Text = "Hotel Number:";
             // 
@@ -275,11 +274,11 @@
             this.HotelDescription.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.HotelDescription.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.HotelDescription.LineThickness = 3;
-            this.HotelDescription.Location = new System.Drawing.Point(605, 179);
-            this.HotelDescription.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.HotelDescription.Location = new System.Drawing.Point(603, 194);
+            this.HotelDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HotelDescription.MaxLength = 32767;
             this.HotelDescription.Name = "HotelDescription";
-            this.HotelDescription.Size = new System.Drawing.Size(314, 47);
+            this.HotelDescription.Size = new System.Drawing.Size(236, 38);
             this.HotelDescription.TabIndex = 48;
             this.HotelDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -289,10 +288,9 @@
             this.HotelDescriptionLabel.BackColor = System.Drawing.Color.Transparent;
             this.HotelDescriptionLabel.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotelDescriptionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.HotelDescriptionLabel.Location = new System.Drawing.Point(385, 200);
-            this.HotelDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HotelDescriptionLabel.Location = new System.Drawing.Point(438, 211);
             this.HotelDescriptionLabel.Name = "HotelDescriptionLabel";
-            this.HotelDescriptionLabel.Size = new System.Drawing.Size(211, 26);
+            this.HotelDescriptionLabel.Size = new System.Drawing.Size(165, 20);
             this.HotelDescriptionLabel.TabIndex = 49;
             this.HotelDescriptionLabel.Text = "Hotel Description:";
             // 
@@ -302,10 +300,9 @@
             this.HotelRatingLabel.BackColor = System.Drawing.Color.Transparent;
             this.HotelRatingLabel.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotelRatingLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.HotelRatingLabel.Location = new System.Drawing.Point(389, 283);
-            this.HotelRatingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HotelRatingLabel.Location = new System.Drawing.Point(441, 279);
             this.HotelRatingLabel.Name = "HotelRatingLabel";
-            this.HotelRatingLabel.Size = new System.Drawing.Size(159, 26);
+            this.HotelRatingLabel.Size = new System.Drawing.Size(124, 20);
             this.HotelRatingLabel.TabIndex = 50;
             this.HotelRatingLabel.Text = "Hotel Rating:";
             // 
@@ -325,11 +322,11 @@
             this.HotelCountry.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.HotelCountry.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.HotelCountry.LineThickness = 3;
-            this.HotelCountry.Location = new System.Drawing.Point(605, 326);
-            this.HotelCountry.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.HotelCountry.Location = new System.Drawing.Point(603, 314);
+            this.HotelCountry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HotelCountry.MaxLength = 32767;
             this.HotelCountry.Name = "HotelCountry";
-            this.HotelCountry.Size = new System.Drawing.Size(314, 47);
+            this.HotelCountry.Size = new System.Drawing.Size(236, 38);
             this.HotelCountry.TabIndex = 51;
             this.HotelCountry.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -339,10 +336,9 @@
             this.HotelCountryLabel.BackColor = System.Drawing.Color.Transparent;
             this.HotelCountryLabel.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotelCountryLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.HotelCountryLabel.Location = new System.Drawing.Point(385, 347);
-            this.HotelCountryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HotelCountryLabel.Location = new System.Drawing.Point(438, 331);
             this.HotelCountryLabel.Name = "HotelCountryLabel";
-            this.HotelCountryLabel.Size = new System.Drawing.Size(175, 26);
+            this.HotelCountryLabel.Size = new System.Drawing.Size(136, 20);
             this.HotelCountryLabel.TabIndex = 52;
             this.HotelCountryLabel.Text = "Hotel Country:";
             // 
@@ -362,11 +358,11 @@
             this.HotelCity.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.HotelCity.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.HotelCity.LineThickness = 3;
-            this.HotelCity.Location = new System.Drawing.Point(605, 400);
-            this.HotelCity.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.HotelCity.Location = new System.Drawing.Point(603, 374);
+            this.HotelCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HotelCity.MaxLength = 32767;
             this.HotelCity.Name = "HotelCity";
-            this.HotelCity.Size = new System.Drawing.Size(314, 47);
+            this.HotelCity.Size = new System.Drawing.Size(236, 38);
             this.HotelCity.TabIndex = 53;
             this.HotelCity.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -376,10 +372,9 @@
             this.HotelCityLabel.BackColor = System.Drawing.Color.Transparent;
             this.HotelCityLabel.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotelCityLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.HotelCityLabel.Location = new System.Drawing.Point(385, 421);
-            this.HotelCityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HotelCityLabel.Location = new System.Drawing.Point(438, 391);
             this.HotelCityLabel.Name = "HotelCityLabel";
-            this.HotelCityLabel.Size = new System.Drawing.Size(131, 26);
+            this.HotelCityLabel.Size = new System.Drawing.Size(102, 20);
             this.HotelCityLabel.TabIndex = 54;
             this.HotelCityLabel.Text = "Hotel City:";
             // 
@@ -399,11 +394,11 @@
             this.HotelStreet.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.HotelStreet.LineMouseHoverColor = System.Drawing.Color.DarkBlue;
             this.HotelStreet.LineThickness = 3;
-            this.HotelStreet.Location = new System.Drawing.Point(605, 466);
-            this.HotelStreet.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.HotelStreet.Location = new System.Drawing.Point(603, 428);
+            this.HotelStreet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HotelStreet.MaxLength = 32767;
             this.HotelStreet.Name = "HotelStreet";
-            this.HotelStreet.Size = new System.Drawing.Size(314, 47);
+            this.HotelStreet.Size = new System.Drawing.Size(236, 38);
             this.HotelStreet.TabIndex = 55;
             this.HotelStreet.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -413,10 +408,9 @@
             this.HotelStreetLabel.BackColor = System.Drawing.Color.Transparent;
             this.HotelStreetLabel.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HotelStreetLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.HotelStreetLabel.Location = new System.Drawing.Point(392, 487);
-            this.HotelStreetLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HotelStreetLabel.Location = new System.Drawing.Point(443, 445);
             this.HotelStreetLabel.Name = "HotelStreetLabel";
-            this.HotelStreetLabel.Size = new System.Drawing.Size(156, 26);
+            this.HotelStreetLabel.Size = new System.Drawing.Size(121, 20);
             this.HotelStreetLabel.TabIndex = 56;
             this.HotelStreetLabel.Text = "Hotel Street:";
             // 
@@ -426,11 +420,10 @@
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(89, 1);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel1.Location = new System.Drawing.Point(66, 65);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(178, 46);
+            this.bunifuLabel1.Size = new System.Drawing.Size(146, 37);
             this.bunifuLabel1.TabIndex = 57;
             this.bunifuLabel1.Text = "Add Hotel";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -442,11 +435,10 @@
             this.WelcomeLabel.CursorType = null;
             this.WelcomeLabel.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WelcomeLabel.ForeColor = System.Drawing.Color.White;
-            this.WelcomeLabel.Location = new System.Drawing.Point(3, 136);
-            this.WelcomeLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.WelcomeLabel.Location = new System.Drawing.Point(2, 114);
             this.WelcomeLabel.Name = "WelcomeLabel";
             this.WelcomeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.WelcomeLabel.Size = new System.Drawing.Size(158, 43);
+            this.WelcomeLabel.Size = new System.Drawing.Size(125, 34);
             this.WelcomeLabel.TabIndex = 59;
             this.WelcomeLabel.Text = "Welcome";
             this.WelcomeLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -465,10 +457,10 @@
             this.bunifuTileButton2.ImageZoom = 50;
             this.bunifuTileButton2.LabelPosition = 41;
             this.bunifuTileButton2.LabelText = "";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(248, 487);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.bunifuTileButton2.Location = new System.Drawing.Point(262, 391);
+            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(132, 230);
+            this.bunifuTileButton2.Size = new System.Drawing.Size(99, 187);
             this.bunifuTileButton2.TabIndex = 62;
             // 
             // bunifuLabel3
@@ -479,11 +471,10 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel3.Location = new System.Drawing.Point(3, 267);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel3.Location = new System.Drawing.Point(2, 217);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(388, 52);
+            this.bunifuLabel3.Size = new System.Drawing.Size(291, 42);
             this.bunifuLabel3.TabIndex = 63;
             this.bunifuLabel3.Text = "Here you can add a new hotel to our system.";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -502,10 +493,10 @@
             this.bunifuTileButton1.ImageZoom = 70;
             this.bunifuTileButton1.LabelPosition = 41;
             this.bunifuTileButton1.LabelText = "";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(819, 539);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.bunifuTileButton1.Location = new System.Drawing.Point(796, 550);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(198, 127);
+            this.bunifuTileButton1.Size = new System.Drawing.Size(148, 103);
             this.bunifuTileButton1.TabIndex = 64;
             // 
             // close
@@ -521,21 +512,38 @@
             this.close.ImageZoom = 50;
             this.close.LabelPosition = 41;
             this.close.LabelText = "";
-            this.close.Location = new System.Drawing.Point(921, -20);
-            this.close.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.close.Location = new System.Drawing.Point(866, -5);
+            this.close.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(85, 132);
+            this.close.Size = new System.Drawing.Size(64, 107);
             this.close.TabIndex = 65;
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.bk;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 69;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
+            // 
             // AddHotel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.BackgroundImage = global::Trivago.Properties.Resources.navy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(996, 626);
+            this.ClientSize = new System.Drawing.Size(929, 631);
+            this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.close);
             this.Controls.Add(this.bunifuTileButton1);
             this.Controls.Add(this.bunifuLabel3);
@@ -560,6 +568,7 @@
             this.Controls.Add(this.AddHotelButton);
             this.Controls.Add(this.HotelRating);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddHotel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddHotel";
@@ -572,6 +581,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CityError)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StreetError)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DescriptionError)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -609,5 +619,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
         private Bunifu.Framework.UI.BunifuTileButton close;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
     }
 }

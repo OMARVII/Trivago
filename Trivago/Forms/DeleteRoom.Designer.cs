@@ -35,7 +35,9 @@
             this.DeleteBTN = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // hotelDropDown
@@ -64,8 +66,7 @@
             this.hotelDropDown.ItemForeColor = System.Drawing.Color.White;
             this.hotelDropDown.ItemHeight = 26;
             this.hotelDropDown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
-            this.hotelDropDown.Location = new System.Drawing.Point(136, 143);
-            this.hotelDropDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hotelDropDown.Location = new System.Drawing.Point(113, 135);
             this.hotelDropDown.Name = "hotelDropDown";
             this.hotelDropDown.Size = new System.Drawing.Size(335, 32);
             this.hotelDropDown.TabIndex = 4;
@@ -98,8 +99,7 @@
             this.roomDropDown.ItemForeColor = System.Drawing.Color.White;
             this.roomDropDown.ItemHeight = 26;
             this.roomDropDown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
-            this.roomDropDown.Location = new System.Drawing.Point(136, 236);
-            this.roomDropDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roomDropDown.Location = new System.Drawing.Point(113, 211);
             this.roomDropDown.Name = "roomDropDown";
             this.roomDropDown.Size = new System.Drawing.Size(335, 32);
             this.roomDropDown.TabIndex = 5;
@@ -125,8 +125,7 @@
             this.DeleteBTN.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(65)))), ((int)(((byte)(95)))));
             this.DeleteBTN.IdleIconLeftImage = null;
             this.DeleteBTN.IdleIconRightImage = null;
-            this.DeleteBTN.Location = new System.Drawing.Point(136, 327);
-            this.DeleteBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteBTN.Location = new System.Drawing.Point(113, 285);
             this.DeleteBTN.Name = "DeleteBTN";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             stateProperties1.BorderRadius = 1;
@@ -147,8 +146,7 @@
             this.bunifuPictureBox1.BorderRadius = 25;
             this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.closeW;
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(531, 17);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(410, 12);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(51, 51);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,8 +161,7 @@
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Verdana", 14.25F);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(39, 33);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel1.Location = new System.Drawing.Point(32, 69);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(157, 31);
@@ -174,12 +171,29 @@
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
+            // bunifuPictureBox2
+            // 
+            this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox2.BorderRadius = 20;
+            this.bunifuPictureBox2.Image = global::Trivago.Properties.Resources.bk;
+            this.bunifuPictureBox2.IsCircle = true;
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(2, 12);
+            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox2.TabIndex = 70;
+            this.bunifuPictureBox2.TabStop = false;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox2.Click += new System.EventHandler(this.bunifuPictureBox2_Click);
+            // 
             // DeleteRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(613, 506);
+            this.ClientSize = new System.Drawing.Size(460, 411);
+            this.Controls.Add(this.bunifuPictureBox2);
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.roomDropDown);
@@ -192,6 +206,7 @@
             this.Text = "DeleteRoom";
             this.Load += new System.EventHandler(this.DeleteRoom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,5 +219,6 @@
         private Bunifu.UI.WinForms.BunifuDropdown roomDropDown;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
     }
 }

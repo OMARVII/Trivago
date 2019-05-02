@@ -91,5 +91,13 @@ namespace Trivago.Forms
         {
 
         }
+
+        private void bunifuPictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            editForm a = new editForm();
+            a.ShowDialog();
+            this.Close();
+        }
     }
 }

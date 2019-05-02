@@ -175,5 +175,13 @@ namespace Trivago.Forms
         {
             this.Close();
         }
+
+        private void bunifuPictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            delForm a = new delForm();
+            a.ShowDialog();
+            this.Close();
+        }
     }
 }

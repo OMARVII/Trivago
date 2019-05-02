@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditRoom));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.HotelNameDropDown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.RoomIdDropDown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.RoomTypeDropDown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.SubmitButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // HotelNameDropDown
@@ -65,7 +67,7 @@
             this.HotelNameDropDown.ItemHeight = 26;
             this.HotelNameDropDown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.HotelNameDropDown.Location = new System.Drawing.Point(120, 63);
-            this.HotelNameDropDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HotelNameDropDown.Margin = new System.Windows.Forms.Padding(2);
             this.HotelNameDropDown.Name = "HotelNameDropDown";
             this.HotelNameDropDown.Size = new System.Drawing.Size(213, 32);
             this.HotelNameDropDown.TabIndex = 0;
@@ -98,7 +100,7 @@
             this.RoomIdDropDown.ItemHeight = 26;
             this.RoomIdDropDown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.RoomIdDropDown.Location = new System.Drawing.Point(120, 136);
-            this.RoomIdDropDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RoomIdDropDown.Margin = new System.Windows.Forms.Padding(2);
             this.RoomIdDropDown.Name = "RoomIdDropDown";
             this.RoomIdDropDown.Size = new System.Drawing.Size(213, 32);
             this.RoomIdDropDown.TabIndex = 1;
@@ -131,7 +133,7 @@
             this.RoomTypeDropDown.ItemHeight = 26;
             this.RoomTypeDropDown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.RoomTypeDropDown.Location = new System.Drawing.Point(120, 210);
-            this.RoomTypeDropDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RoomTypeDropDown.Margin = new System.Windows.Forms.Padding(2);
             this.RoomTypeDropDown.Name = "RoomTypeDropDown";
             this.RoomTypeDropDown.Size = new System.Drawing.Size(213, 32);
             this.RoomTypeDropDown.TabIndex = 2;
@@ -157,15 +159,15 @@
             this.SubmitButton.IdleIconLeftImage = null;
             this.SubmitButton.IdleIconRightImage = null;
             this.SubmitButton.Location = new System.Drawing.Point(120, 290);
-            this.SubmitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SubmitButton.Margin = new System.Windows.Forms.Padding(2);
             this.SubmitButton.Name = "SubmitButton";
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties3.BorderRadius = 1;
-            stateProperties3.BorderThickness = 1;
-            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties3.IconLeftImage = null;
-            stateProperties3.IconRightImage = null;
-            this.SubmitButton.onHoverState = stateProperties3;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.BorderRadius = 1;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.SubmitButton.onHoverState = stateProperties1;
             this.SubmitButton.Size = new System.Drawing.Size(212, 39);
             this.SubmitButton.TabIndex = 5;
             this.SubmitButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -187,23 +189,41 @@
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
+            // bunifuPictureBox2
+            // 
+            this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox2.BorderRadius = 23;
+            this.bunifuPictureBox2.Image = global::Trivago.Properties.Resources.bk;
+            this.bunifuPictureBox2.IsCircle = true;
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(12, 4);
+            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(46, 46);
+            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox2.TabIndex = 72;
+            this.bunifuPictureBox2.TabStop = false;
+            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox2.Click += new System.EventHandler(this.bunifuPictureBox2_Click);
+            // 
             // EditRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
             this.ClientSize = new System.Drawing.Size(460, 411);
+            this.Controls.Add(this.bunifuPictureBox2);
             this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.RoomTypeDropDown);
             this.Controls.Add(this.RoomIdDropDown);
             this.Controls.Add(this.HotelNameDropDown);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditRoom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditRoom";
             this.Load += new System.EventHandler(this.EditRoom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -215,5 +235,6 @@
         private Bunifu.UI.WinForms.BunifuDropdown RoomTypeDropDown;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton SubmitButton;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
     }
 }

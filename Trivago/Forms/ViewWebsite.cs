@@ -28,7 +28,7 @@ namespace Trivago.Forms
              int nHeightEllipse // width of ellipse
          );
         OracleConnection conn;
-        string constr = "Data Source=orcl;User Id=HR;Password=hr;";
+        string constr = "Data Source=orcl;User Id=HR;Password=ALAAalaa21;";
 
         OracleDataAdapter adapter;
         OracleCommandBuilder builder;
@@ -126,6 +126,13 @@ namespace Trivago.Forms
             this.Close();
         }
 
-
+        private void bunifuPictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            viewForm a = new viewForm();
+            a.ShowDialog();
+            this.Close();
+        
+    }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddRoom));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.NewRoomPanel = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -38,7 +38,9 @@
             this.AddRoomButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AvaliableHotelsDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.NewRoomPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // NewRoomPanel
@@ -48,12 +50,13 @@
             this.NewRoomPanel.Controls.Add(this.bunifuLabel2);
             this.NewRoomPanel.Controls.Add(this.RoomIDTextBox);
             this.NewRoomPanel.Controls.Add(this.RoomTypeDropdown);
-            this.NewRoomPanel.Location = new System.Drawing.Point(37, 128);
+            this.NewRoomPanel.Location = new System.Drawing.Point(67, 130);
+            this.NewRoomPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NewRoomPanel.Name = "NewRoomPanel";
             this.NewRoomPanel.PanelColor = System.Drawing.Color.Empty;
             this.NewRoomPanel.ShadowDept = 2;
             this.NewRoomPanel.ShadowTopLeftVisible = false;
-            this.NewRoomPanel.Size = new System.Drawing.Size(568, 203);
+            this.NewRoomPanel.Size = new System.Drawing.Size(426, 165);
             this.NewRoomPanel.TabIndex = 10;
             this.NewRoomPanel.Visible = false;
             // 
@@ -63,11 +66,10 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Verdana", 10F);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel3.Location = new System.Drawing.Point(8, 11);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel3.Location = new System.Drawing.Point(6, 9);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(107, 22);
+            this.bunifuLabel3.Size = new System.Drawing.Size(78, 18);
             this.bunifuLabel3.TabIndex = 16;
             this.bunifuLabel3.Text = "Room\'s ID : ";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -80,11 +82,10 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Verdana", 10F);
             this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(8, 108);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel2.Location = new System.Drawing.Point(6, 88);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(113, 22);
+            this.bunifuLabel2.Size = new System.Drawing.Size(85, 18);
             this.bunifuLabel2.TabIndex = 15;
             this.bunifuLabel2.Text = "Room Type :";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -106,11 +107,11 @@
             this.RoomIDTextBox.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.RoomIDTextBox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
             this.RoomIDTextBox.LineThickness = 3;
-            this.RoomIDTextBox.Location = new System.Drawing.Point(8, 47);
-            this.RoomIDTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.RoomIDTextBox.Location = new System.Drawing.Point(6, 38);
+            this.RoomIDTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RoomIDTextBox.MaxLength = 32767;
             this.RoomIDTextBox.Name = "RoomIDTextBox";
-            this.RoomIDTextBox.Size = new System.Drawing.Size(336, 41);
+            this.RoomIDTextBox.Size = new System.Drawing.Size(252, 33);
             this.RoomIDTextBox.TabIndex = 14;
             this.RoomIDTextBox.Text = "Enter New Name";
             this.RoomIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -141,10 +142,9 @@
             this.RoomTypeDropdown.ItemForeColor = System.Drawing.Color.White;
             this.RoomTypeDropdown.ItemHeight = 26;
             this.RoomTypeDropdown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
-            this.RoomTypeDropdown.Location = new System.Drawing.Point(8, 147);
-            this.RoomTypeDropdown.Margin = new System.Windows.Forms.Padding(4);
+            this.RoomTypeDropdown.Location = new System.Drawing.Point(6, 119);
             this.RoomTypeDropdown.Name = "RoomTypeDropdown";
-            this.RoomTypeDropdown.Size = new System.Drawing.Size(335, 32);
+            this.RoomTypeDropdown.Size = new System.Drawing.Size(252, 32);
             this.RoomTypeDropdown.TabIndex = 12;
             this.RoomTypeDropdown.Text = "Select Room Type";
             // 
@@ -167,16 +167,17 @@
             this.AddRoomButton.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
             this.AddRoomButton.IdleIconLeftImage = null;
             this.AddRoomButton.IdleIconRightImage = null;
-            this.AddRoomButton.Location = new System.Drawing.Point(302, 402);
+            this.AddRoomButton.Location = new System.Drawing.Point(265, 353);
+            this.AddRoomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddRoomButton.Name = "AddRoomButton";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.BorderRadius = 1;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.AddRoomButton.onHoverState = stateProperties1;
-            this.AddRoomButton.Size = new System.Drawing.Size(210, 45);
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 1;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.AddRoomButton.onHoverState = stateProperties2;
+            this.AddRoomButton.Size = new System.Drawing.Size(158, 37);
             this.AddRoomButton.TabIndex = 8;
             this.AddRoomButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddRoomButton.Click += new System.EventHandler(this.AddRoomButton_Click);
@@ -207,10 +208,9 @@
             this.AvaliableHotelsDropdown.ItemForeColor = System.Drawing.Color.White;
             this.AvaliableHotelsDropdown.ItemHeight = 26;
             this.AvaliableHotelsDropdown.ItemHighLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(105)))));
-            this.AvaliableHotelsDropdown.Location = new System.Drawing.Point(37, 58);
-            this.AvaliableHotelsDropdown.Margin = new System.Windows.Forms.Padding(4);
+            this.AvaliableHotelsDropdown.Location = new System.Drawing.Point(67, 73);
             this.AvaliableHotelsDropdown.Name = "AvaliableHotelsDropdown";
-            this.AvaliableHotelsDropdown.Size = new System.Drawing.Size(335, 32);
+            this.AvaliableHotelsDropdown.Size = new System.Drawing.Size(252, 32);
             this.AvaliableHotelsDropdown.TabIndex = 13;
             this.AvaliableHotelsDropdown.Text = "Select Hotel";
             this.AvaliableHotelsDropdown.SelectedIndexChanged += new System.EventHandler(this.AvaliableHotelsDropdown_SelectedIndexChanged);
@@ -221,26 +221,43 @@
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Verdana", 10F);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(37, 19);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel1.Location = new System.Drawing.Point(67, 41);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(62, 22);
+            this.bunifuLabel1.Size = new System.Drawing.Size(48, 18);
             this.bunifuLabel1.TabIndex = 14;
             this.bunifuLabel1.Text = "Hotel :";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.BorderRadius = 19;
+            this.bunifuPictureBox1.Image = global::Trivago.Properties.Resources.bk;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(3, 4);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 70;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
+            // 
             // AddRoom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(44)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(552, 426);
+            this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.AvaliableHotelsDropdown);
             this.Controls.Add(this.NewRoomPanel);
             this.Controls.Add(this.AddRoomButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddRoom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddRoom";
@@ -248,6 +265,7 @@
             this.Load += new System.EventHandler(this.AddRoom_Load);
             this.NewRoomPanel.ResumeLayout(false);
             this.NewRoomPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,5 +280,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
     }
 }

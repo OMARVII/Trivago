@@ -27,7 +27,7 @@ namespace Trivago.Forms
         OracleDataAdapter adapter;
         OracleCommandBuilder builder;
         DataSet ds;
-        string connST = "Data Source=ORCL;User Id=HR;Password=hr;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         string cmdstr = "select id, first_name as First, last_name as Last, mobile as Mobile, email as Email, gender as Gender, date_of_birth as BirthDate from users";
         public ViewCustomers()
         {
@@ -75,5 +75,14 @@ namespace Trivago.Forms
             CustomerReportViewer reportViewer = new CustomerReportViewer();
             reportViewer.ShowDialog();
         }
+
+        private void bunifuPictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            viewForm a = new viewForm();
+            a.ShowDialog();
+            this.Close();
+        
+    }
     }
 }

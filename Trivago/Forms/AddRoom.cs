@@ -17,7 +17,7 @@ namespace Trivago.Forms
         
         //Add multiply rooms?
         OracleConnection conn;
-        string connST = "Data Source=ORCL;User Id=HR;Password=HR;";
+        string connST = "Data Source=ORCL;User Id=HR;Password=ALAAalaa21;";
         public AddRoom()
         {
             InitializeComponent();
@@ -108,6 +108,14 @@ namespace Trivago.Forms
         private void AddRoom_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addForm a = new addForm();
+            a.ShowDialog();
+            this.Close();
         }
     }
 }
